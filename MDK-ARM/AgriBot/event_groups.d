@@ -1,0 +1,15 @@
+agribot\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
+agribot\event_groups.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+agribot\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+agribot\event_groups.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+agribot\event_groups.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+agribot\event_groups.o: ../Core/Inc/FreeRTOSConfig.h
+agribot\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+agribot\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+agribot\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+agribot\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+agribot\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+agribot\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+agribot\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+agribot\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+agribot\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h

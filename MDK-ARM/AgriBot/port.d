@@ -1,0 +1,12 @@
+agribot\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c
+agribot\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+agribot\port.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+agribot\port.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+agribot\port.o: ../Core/Inc/FreeRTOSConfig.h
+agribot\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+agribot\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+agribot\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+agribot\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+agribot\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+agribot\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+agribot\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

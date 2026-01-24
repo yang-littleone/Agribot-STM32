@@ -1,0 +1,14 @@
+agribot\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c
+agribot\stream_buffer.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+agribot\stream_buffer.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+agribot\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+agribot\stream_buffer.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+agribot\stream_buffer.o: ../Core/Inc/FreeRTOSConfig.h
+agribot\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+agribot\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+agribot\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+agribot\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+agribot\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+agribot\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+agribot\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+agribot\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h

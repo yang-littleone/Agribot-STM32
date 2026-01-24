@@ -1,0 +1,14 @@
+agribot\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/croutine.c
+agribot\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+agribot\croutine.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+agribot\croutine.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+agribot\croutine.o: ../Core/Inc/FreeRTOSConfig.h
+agribot\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+agribot\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+agribot\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+agribot\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+agribot\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+agribot\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+agribot\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+agribot\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h
+agribot\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

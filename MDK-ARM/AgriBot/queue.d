@@ -1,0 +1,15 @@
+agribot\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/queue.c
+agribot\queue.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+agribot\queue.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+agribot\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+agribot\queue.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+agribot\queue.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+agribot\queue.o: ../Core/Inc/FreeRTOSConfig.h
+agribot\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+agribot\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+agribot\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+agribot\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+agribot\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+agribot\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+agribot\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+agribot\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
