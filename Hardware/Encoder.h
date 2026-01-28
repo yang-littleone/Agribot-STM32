@@ -2,6 +2,7 @@
 #define __ENCODER_H
 
 #include "main.h"
+#include "tim.h"
 
 // define encoder structure, A~D represents four motors
 typedef struct

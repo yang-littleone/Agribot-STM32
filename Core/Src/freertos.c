@@ -48,7 +48,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
-
+SemaphoreHandle_t g_TimeSemaphore;
 /* USER CODE END Variables */
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
@@ -65,6 +65,7 @@ const osThreadAttr_t defaultTask_attributes = {
 
 void StartDefaultTask(void *argument);
 
+extern void MX_USB_HOST_Init(void);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
 /**
@@ -74,7 +75,7 @@ void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
   */
 void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN Init */
-
+  
   /* USER CODE END Init */
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -83,6 +84,7 @@ void MX_FREERTOS_Init(void) {
 
   /* USER CODE BEGIN RTOS_SEMAPHORES */
   /* add semaphores, ... */
+  g_TimeSemaphore = xSemaphoreCreateBinary();
   /* USER CODE END RTOS_SEMAPHORES */
 
   /* USER CODE BEGIN RTOS_TIMERS */
@@ -116,13 +118,16 @@ void MX_FREERTOS_Init(void) {
 /* USER CODE END Header_StartDefaultTask */
 void StartDefaultTask(void *argument)
 {
+  /* init code for USB_HOST */
+  MX_USB_HOST_Init();
   /* USER CODE BEGIN StartDefaultTask */
   delay_init(168);
-  xTaskCreate(LedTask, "LedTask", 128, NULL, 3, NULL);
+//  MX_USB_HOST_Init(); 
+	xTaskCreate(LedTask, "LedTask", 128, NULL, 3, NULL);
   xTaskCreate(ShowTask, "ShowTask", 256, NULL, 3, NULL);
-  xTaskCreate(ICM20948_task, "ImuTask", 128, NULL, 3, NULL);
-  xTaskCreate(UsartTask, "UsartTask", 128, NULL, 3, NULL);
-  xTaskCreate(MotorTask, "MotorTask", 128, NULL, 3, NULL);
+  xTaskCreate(ICM20948Task, "ImuTask", 256, NULL, 3, NULL);
+  xTaskCreate(UsartTask, "UsartTask", 256, NULL, 3, NULL);
+  xTaskCreate(CarControlTask, "CarControlTask", 512, NULL, 4, NULL);
 
   vTaskDelete(defaultTaskHandle);
   /* Infinite loop */

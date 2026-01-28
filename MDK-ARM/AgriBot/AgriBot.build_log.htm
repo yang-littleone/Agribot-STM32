@@ -22,27 +22,16 @@ Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
 D:\MCU\STM32\AgriBot\AgriBot\MDK-ARM\AgriBot.uvprojx
-Project File Date:  01/23/2026
+Project File Date:  01/26/2026
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'AgriBot'
-compiling MyTask.c...
-..\System\MyTask.c(45): warning:  #167-D: argument of type "volatile Encoder_t *" is incompatible with parameter of type "void *"
-    memset(&EncoderCount, 0, sizeof(Encoder_t));
-..\System\MyTask.c(54): warning:  #167-D: argument of type "volatile Encoder_t *" is incompatible with parameter of type "void *const"
-      xQueueReceive(g_EncoderQueue, &EncoderCount, 0);
-..\System\MyTask.c(43): warning:  #177-D: variable "i"  was declared but never referenced
-    uint8_t i = 0;
-..\System\MyTask.c(47): warning:  #177-D: variable "curcle"  was declared but never referenced
-    double curcle = 0.0f;
-..\System\MyTask.c(75): warning:  #177-D: variable "str"  was declared but never referenced
-    char *str = "hello world\r\n";
-..\System\MyTask.c: 5 warnings, 0 errors
+compiling usbh_hid_GamePad.c...
 linking...
-Program Size: Code=29840 RO-data=2880 RW-data=364 ZI-data=21788  
+Program Size: Code=53484 RO-data=2884 RW-data=532 ZI-data=26700  
 FromELF: creating hex file...
-"AgriBot\AgriBot.axf" - 0 Error(s), 5 Warning(s).
+"AgriBot\AgriBot.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -66,7 +55,7 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE@5.6.0
       Include file:  CMSIS/Core/Include/tz_context.h
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

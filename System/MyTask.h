@@ -1,41 +1,32 @@
 #ifndef __MYTASK_H
 #define __MYTASK_H
 
-#include "system.h"
 #include "main.h"
+#include "system.h"
 #include "sys.h"
+#include "ICM20948.h"
+#include "CarControl.h"
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "semphr.h"
+#include "OLED.h"
+#include "usart.h"
 
 // 用户调用函数：
 void LedTask(void *argument);
 void ShowTask(void *argument);
 void UsartTask(void *pvParameters);
-void MotorTask(void const *argument);
-#define IMU_TASK_PRIO      3
-#define IMU_STK_SIZE       256
-#define IMU_TASK_RATE      RATE_100_HZ
+void ICM20948Task(void *pvParameters);
+void CarControlTask(void const *argument);
 
-typedef struct{
-	short x;
-	short y;
-	short z;
-}IMU_BASE_t;
+#define IMU_TASK_PRIO 3
+#define IMU_STK_SIZE 256
+#define IMU_TASK_RATE RATE_100_HZ
 
-//imu三轴数据,包含偏差值和原始值
-typedef struct{
-	IMU_BASE_t Deviation_accel;//偏差值,用于纠正误差.该值采集后不会发生改变
-	IMU_BASE_t Deviation_gyro;
-	IMU_BASE_t Original_accel;
-	IMU_BASE_t Original_gyro;
-	IMU_BASE_t gyro;
-	IMU_BASE_t accel;
-}IMU_DATA_t;
+// extern IMU_DATA_t imu;
 
-extern IMU_DATA_t imu;
-
-//对外接口
-void ICM20948_task(void *pvParameters);
-
-void ImuData_copy(IMU_BASE_t* req_val,const IMU_BASE_t* copied_val);
+// 对外接口
+// void ImuData_copy(IMU_BASE_t *req_val, const IMU_BASE_t *copied_val);
 
 #endif
-

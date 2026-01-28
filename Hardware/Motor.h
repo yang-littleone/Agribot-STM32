@@ -2,6 +2,7 @@
 #define __MOTOR_H
 
 #include "main.h"
+#include "tim.h"
 
 #define _MAX_COMPARE 16799
 

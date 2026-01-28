@@ -30,3 +30,5 @@ agribot\system_stm32f4xx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pw
 agribot\system_stm32f4xx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 agribot\system_stm32f4xx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 agribot\system_stm32f4xx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+agribot\system_stm32f4xx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h
+agribot\system_stm32f4xx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h

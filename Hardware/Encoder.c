@@ -1,5 +1,4 @@
 #include "Encoder.h"
-
 /* 电机A的编码器定时器为TIM2 ，编码器A为TIM2 CH2，编码器B为TIM2 CH1 */
 /* 电机B的编码器定时器为TIM3 ，编码器A为TIM3 CH2，编码器B为TIM3 CH1 */
 /* 电机C的编码器定时器为TIM4 ，编码器A为TIM4 CH2，编码器B为TIM4 CH1 */
@@ -49,11 +48,11 @@ int Encoder_GetCount(char Motor_ID)
         __HAL_TIM_SET_COUNTER(&ENCODERB_HANDLE, 0);
         break;
     case 'C':
-        count = (short)__HAL_TIM_GET_COUNTER(&ENCODERC_HANDLE);
+        count = -(short)__HAL_TIM_GET_COUNTER(&ENCODERC_HANDLE);
         __HAL_TIM_SET_COUNTER(&ENCODERC_HANDLE, 0);
         break;
     case 'D':
-        count = (short)__HAL_TIM_GET_COUNTER(&ENCODERD_HANDLE);
+        count = -(short)__HAL_TIM_GET_COUNTER(&ENCODERD_HANDLE);
         __HAL_TIM_SET_COUNTER(&ENCODERD_HANDLE, 0);
         break;
     default:
@@ -61,3 +60,4 @@ int Encoder_GetCount(char Motor_ID)
     }
     return count;
 }
+

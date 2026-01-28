@@ -1,0 +1,13 @@
+agribot\bsp_gamepad.o: ..\Hardware\USB\bsp_gamepad.c
+agribot\bsp_gamepad.o: ..\Hardware\USB\bsp_gamepad.h
+agribot\bsp_gamepad.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+agribot\bsp_gamepad.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+agribot\bsp_gamepad.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+agribot\bsp_gamepad.o: ../Core/Inc/FreeRTOSConfig.h
+agribot\bsp_gamepad.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+agribot\bsp_gamepad.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+agribot\bsp_gamepad.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+agribot\bsp_gamepad.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+agribot\bsp_gamepad.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+agribot\bsp_gamepad.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+agribot\bsp_gamepad.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

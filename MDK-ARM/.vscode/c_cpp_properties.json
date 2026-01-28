@@ -14,6 +14,11 @@
                 "d:\\MCU\\STM32\\AgriBot\\AgriBot\\System",
                 "d:\\MCU\\STM32\\AgriBot\\AgriBot\\Hardware",
                 "d:\\MCU\\STM32\\AgriBot\\AgriBot\\Hardware\\ICM20948",
+                "d:\\MCU\\STM32\\AgriBot\\AgriBot\\Hardware\\USB",
+                "d:\\MCU\\STM32\\AgriBot\\AgriBot\\USB_HOST\\App",
+                "d:\\MCU\\STM32\\AgriBot\\AgriBot\\USB_HOST\\Target",
+                "d:\\MCU\\STM32\\AgriBot\\AgriBot\\Middlewares\\ST\\STM32_USB_Host_Library\\Core\\Inc",
+                "d:\\MCU\\STM32\\AgriBot\\AgriBot\\Middlewares\\ST\\STM32_USB_Host_Library\\Class\\HID\\Inc",
                 "D:\\Keil_v5\\ARM\\ARMCC\\include",
                 "D:\\Keil_v5\\ARM\\ARMCC\\include\\arm_linux",
                 "D:\\Keil_v5\\ARM\\ARMCC\\include\\arm_linux_compat",
@@ -22,7 +27,9 @@
                 "d:\\MCU\\STM32\\AgriBot\\AgriBot\\Core\\Src",
                 "d:\\MCU\\STM32\\AgriBot\\AgriBot\\Drivers\\STM32F4xx_HAL_Driver\\Src",
                 "d:\\MCU\\STM32\\AgriBot\\AgriBot\\Middlewares\\Third_Party\\FreeRTOS\\Source",
-                "d:\\MCU\\STM32\\AgriBot\\AgriBot\\Middlewares\\Third_Party\\FreeRTOS\\Source\\portable\\MemMang"
+                "d:\\MCU\\STM32\\AgriBot\\AgriBot\\Middlewares\\Third_Party\\FreeRTOS\\Source\\portable\\MemMang",
+                "d:\\MCU\\STM32\\AgriBot\\AgriBot\\Middlewares\\ST\\STM32_USB_Host_Library\\Core\\Src",
+                "d:\\MCU\\STM32\\AgriBot\\AgriBot\\Middlewares\\ST\\STM32_USB_Host_Library\\Class\\HID\\Src"
             ],
             "defines": [
                 "USE_HAL_DRIVER",

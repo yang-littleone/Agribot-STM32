@@ -1,4 +1,4 @@
-#include "motor.h"
+#include "Motor.h"
 
 /*四个电机，左后为A，左前为B，右后为D，右前为C*/
 
@@ -45,6 +45,9 @@ void MotorA_ON(void)
  */
 void Set_PWM(int Motor_A, int Motor_B, int Motor_C, int Motor_D)
 {
+	// 因为电机分为左右两侧，所以对 C D电机进行取反
+	Motor_C = -Motor_C;
+	Motor_D = -Motor_D;
     // Forward and reverse control of motor
     // 电机正反转控制
     if (Motor_A < 0)

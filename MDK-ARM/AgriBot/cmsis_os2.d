@@ -47,3 +47,5 @@ agribot\cmsis_os2.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 agribot\cmsis_os2.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 agribot\cmsis_os2.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 agribot\cmsis_os2.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+agribot\cmsis_os2.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_hcd.h
+agribot\cmsis_os2.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h

@@ -36,29 +36,30 @@ extern "C" {
 #include "cmsis_os2.h"
 
 // freertos
-#include "FreeRTOS.h"
-#include "task.h"
-#include "queue.h"
-#include "semphr.h"
+//#include "FreeRTOS.h"
+//#include "task.h"
+//#include "queue.h"
+//#include "semphr.h"
 
 // stm32
-#include "usart.h"
-#include "gpio.h"
-#include "tim.h"
-#include "main.h"
+//#include "usart.h"
+//#include "gpio.h"
+//#include "tim.h"
 
 // customer define
-#include "DATA.h"
-#include "sys.h"
-#include "system.h"
-#include "i2c.h"
-#include "myi2c.h"
-#include "icm20948.h"
-#include "oled.h"
-#include "delay.h"
-#include "mytask.h"
-#include "motor.h"
-#include "Encoder.h"
+//#include "DATA.h"
+//#include "sys.h"
+//#include "system.h"
+//#include "i2c.h"
+//#include "myi2c.h"
+//#include "ICM20948.h"
+//#include "OLED.h"
+//#include "delay.h"
+//#include "MyTask.h"
+//#include "Motor.h"
+//#include "Encoder.h"
+//#include "CarControl.h"
+//#include "bsp_gamepad.h"
 
 /* USER CODE END Includes */
 
