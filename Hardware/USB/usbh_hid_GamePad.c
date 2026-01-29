@@ -106,8 +106,19 @@ static USBH_StatusTypeDef USBH_HID_InterfaceInit(USBH_HandleTypeDef *phost)
   (void)USBH_memset(HID_Handle, 0, sizeof(HID_HandleTypeDef));
 
   HID_Handle->state = USBH_HID_ERROR;
-  printf("device pid:%x,vid:%x\r\n", phost->device.DevDesc.idProduct, phost->device.DevDesc.idVendor);
-
+  printf("device pid:%x,vid:%x\r\n", (unsigned int)phost->device.DevDesc.idProduct, (unsigned int)phost->device.DevDesc.idVendor);
+  unsigned int device_pid = (unsigned int)phost->device.DevDesc.idProduct;
+  unsigned int device_vid = (unsigned int)phost->device.DevDesc.idVendor;
+  // 显示收到的所有hid数据
+  //  printf("hid data: ");
+  for (int i = 0; i < 32; i++)
+  {
+    printf("%02x ", phost->device.Data[i]);
+  }
+  printf("\r\n");
+//#include "usart.h"
+//  HAL_UART_Transmit_IT(&huart3, (uint8_t *)&phost->device.Data, sizeof(phost->device.Data));
+  printf("phost->device.Data: %x\r\n", phost->device.Data);
   // 根据HID设备的 PID、VID进行不同的设备类型识别
   if (phost->device.DevDesc.idProduct == Wired_PS2_PID && phost->device.DevDesc.idVendor == Wired_PS2_VID)
   { // 有线PS2手柄的PID/VID
@@ -133,8 +144,8 @@ static USBH_StatusTypeDef USBH_HID_InterfaceInit(USBH_HandleTypeDef *phost)
   //	  gamepad_brand = PS2_Wiredless_PC;
   //	  HID_Handle->Init = USBH_HID_GamePadInit;
   //  }
-
-  else if (phost->device.DevDesc.idProduct == Xbox360_GamePad_PID && phost->device.DevDesc.idVendor == Xbox360_GamePad_VID)
+  // device_pid == 0x126 && device_vid == 0x79
+  else if ((device_pid == Xbox360_GamePad_PID && device_vid == Xbox360_GamePad_VID) || (device_pid == 0x126 && device_vid == 0x79))
   {
     // 以制造商数据区分同样的PID、VID产品
     if (strcmp(GamePad_Manufacturer, "Flydigi") == 0)
@@ -570,7 +581,7 @@ USBH_StatusTypeDef USBH_HID_GamePadInit(USBH_HandleTypeDef *phost)
   {
     HID_Handle->length = (uint16_t)sizeof(GamePadReportData);
   }
-
+  printf("hid length:%d\r\n", HID_Handle->length);
   // 初始化pData,必须步骤.
   HID_Handle->pData = GamePadReportData;
 
@@ -596,6 +607,8 @@ USBH_StatusTypeDef USBH_HID_GamePadInit(USBH_HandleTypeDef *phost)
   return USBH_OK;
 }
 
+#include "usart.h"
+
 // ps2数据解码,入口参数为HID设备.运行环境为任务.
 USBH_StatusTypeDef USBH_HID_PS2_Decode(USBH_HandleTypeDef *phost)
 {
@@ -610,13 +623,26 @@ USBH_StatusTypeDef USBH_HID_PS2_Decode(USBH_HandleTypeDef *phost)
   {
     return USBH_FAIL;
   }
-
+  uint8_t fifodata[128] = {0};
+  // 从fifo中读取hid数据并且全部打印
+  // if (USBH_HID_FifoRead(&HID_Handle->fifo, fifodata, HID_Handle->length) == HID_Handle->length)
+  // {
+  //   printf("fifo data: ");
+  //   for (int i = 0; i < HID_Handle->length; i++)
+  //   {
+  //     HAL_UART_Transmit_IT(&huart3, &fifodata[i], 1);
+  //   }
+  //   printf("\r\n");
+  // }
   // 从fifo中读取hid数据放入GamePadReportData，并进行解析
   if (USBH_HID_FifoRead(&HID_Handle->fifo, (uint8_t *)GamePadReportData, HID_Handle->length) == HID_Handle->length)
   {
     /* 根据实际接入的不同游戏手柄,调用不同的处理函数 */
-    GamePadDebug.ready = 1; // 手柄调试,表示有数据接收
-
+    // for (int i = 0; i < HID_Handle->length; i++)
+    // {
+    //   printf("%02x ", GamePadReportData[i]);
+    // }
+    // printf("\r\n");
     // xbox360格式解码
     // LX  GamePadReportData[7]  左段128-0,右段0-127
     // LY GamePadReportData[9]  下段128-0,上段0-127

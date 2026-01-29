@@ -54,4 +54,3 @@ agribot\usbh_core.o: ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_iore
 agribot\usbh_core.o: ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_core.h
 agribot\usbh_core.o: ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_pipes.h
 agribot\usbh_core.o: ../Middlewares/ST/STM32_USB_Host_Library/Core/Inc/usbh_ctlreq.h
-agribot\usbh_core.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h

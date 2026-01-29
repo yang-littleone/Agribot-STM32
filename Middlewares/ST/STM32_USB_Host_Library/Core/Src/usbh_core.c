@@ -84,10 +84,7 @@ static void USBH_Process_OS(void *argument);
 #endif /* (osCMSIS < 0x20000U) */
 #endif /* (USBH_USE_OS == 1U) */
 
-#include "main.h"
-#include "freertos.h"
 
-#include "queue.h"
 /**
   * @brief  HCD_Init
   *         Initialize the HOST Core.
@@ -95,89 +92,6 @@ static void USBH_Process_OS(void *argument);
   * @param  pUsrFunc: User Callback
   * @retval USBH Status
   */
-//USBH_StatusTypeDef USBH_Init(USBH_HandleTypeDef *phost,
-//                             void (*pUsrFunc)(USBH_HandleTypeDef *phost,
-//                                              uint8_t id), uint8_t id)
-//{
-//  /* Check whether the USB Host handle is valid */
-//  if (phost == NULL)
-//  {
-//    USBH_ErrLog("Invalid Host handle");
-//    return USBH_FAIL;
-//  }
-
-//  /* Set DRiver ID */
-//  phost->id = id;
-
-//  /* Unlink class*/
-//  phost->pActiveClass = NULL;
-//  phost->ClassNumber = 0U;
-
-//  /* Restore default states and prepare EP0 */
-//  (void)DeInitStateMachine(phost);
-
-//  /* Restore default Device connection states */
-//  phost->device.PortEnabled = 0U;
-//  phost->device.is_connected = 0U;
-//  phost->device.is_disconnected = 0U;
-//  phost->device.is_ReEnumerated = 0U;
-
-//  /* Assign User process */
-//  if (pUsrFunc != NULL)
-//  {
-//    phost->pUser = pUsrFunc;
-//  }
-
-//#if (USBH_USE_OS == 1U)
-//#if (osCMSIS < 0x20000U)
-
-//  /* Create USB Host Queue */
-//  osMessageQDef(USBH_Queue, MSGQUEUE_OBJECTS, uint16_t);
-//  phost->os_event = osMessageCreate(osMessageQ(USBH_Queue), NULL);
-
-//  /* Create USB Host Task */
-//#if defined (USBH_PROCESS_STACK_SIZE)
-//  osThreadDef(USBH_Thread, USBH_Process_OS, USBH_PROCESS_PRIO, 0U, USBH_PROCESS_STACK_SIZE);
-//#else
-//  osThreadDef(USBH_Thread, USBH_Process_OS, USBH_PROCESS_PRIO, 0U, 8U * configMINIMAL_STACK_SIZE);
-//#endif /* defined (USBH_PROCESS_STACK_SIZE) */
-
-//  phost->thread = osThreadCreate(osThread(USBH_Thread), phost);
-
-//#else
-
-//  /* Create USB Host Queue */
-//  //phost->os_event = osMessageQueueNew(MSGQUEUE_OBJECTS, sizeof(uint32_t), NULL);
-//  phost->os_event = xQueueCreate(MSGQUEUE_OBJECTS, sizeof(uint32_t));
-//  
-//  /* Create USB Host Task */
-////  USBH_Thread_Atrr.name = "USBH_Queue";
-
-////#if defined (USBH_PROCESS_STACK_SIZE)
-////  USBH_Thread_Atrr.stack_size = USBH_PROCESS_STACK_SIZE;
-////#else
-////  USBH_Thread_Atrr.stack_size = (8U * configMINIMAL_STACK_SIZE);
-////#endif /* defined (USBH_PROCESS_STACK_SIZE) */
-
-//  #if defined (USBH_PROCESS_STACK_SIZE)
-//    uint32_t stack_size = USBH_PROCESS_STACK_SIZE;
-//  #else
-//    uint32_t stack_size = 8U * configMINIMAL_STACK_SIZE;
-//  #endif /* defined (USBH_PROCESS_STACK_SIZE) */
-
-////  USBH_Thread_Atrr.priority = USBH_PROCESS_PRIO;
-////  phost->thread = osThreadNew(USBH_Process_OS, phost, &USBH_Thread_Atrr);
-//	xTaskCreate(USBH_Process_OS,"USBH_Queue",stack_size,phost,USBH_PROCESS_PRIO,(TaskHandle_t *)&phost->thread); 
-//	
-//#endif /* (osCMSIS < 0x20000U) */
-//#endif /* (USBH_USE_OS == 1U) */
-
-//  /* Initialize low level driver */
-//  (void)USBH_LL_Init(phost);
-
-//  return USBH_OK;
-//}
-
 USBH_StatusTypeDef USBH_Init(USBH_HandleTypeDef *phost,
                              void (*pUsrFunc)(USBH_HandleTypeDef *phost,
                                               uint8_t id), uint8_t id)
@@ -252,6 +166,8 @@ USBH_StatusTypeDef USBH_Init(USBH_HandleTypeDef *phost,
 
   return USBH_OK;
 }
+
+
 /**
   * @brief  HCD_Init
   *         De-Initialize the Host portion of the driver.

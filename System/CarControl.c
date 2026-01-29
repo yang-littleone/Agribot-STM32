@@ -1,7 +1,7 @@
 #include "CarControl.h"
 #include "Motor.h"
 
-//#include "main.h"
+// #include "main.h"
 /**
  * @brief 获取电机的速度
  * @param pMotor 电机结构体指针
@@ -236,7 +236,9 @@ void PS2_control(Robot_t *pRobot, IMU_DATA_t *pIMUData)
 
     // 顺逆时针
     RX = 127 - GamePadInterface->RX;
-
+    // 输出 GamePadInterface 的全部数据
+    // printf("LX: %d, LY: %d, RX: %d, LT: %d, RT: %d\r\n",
+    //        GamePadInterface->LX, GamePadInterface->LY, GamePadInterface->RX, GamePadInterface->LT, GamePadInterface->RT);
     // 摇杆微小幅度过滤
     if (fabs(LY) < 20)
         LY = 0;
@@ -306,8 +308,6 @@ void PS2_control(Robot_t *pRobot, IMU_DATA_t *pIMUData)
     pRobot->MoveSpeed.X_Speed = pRobot->MoveSpeed.X_Speed / 1000;
     pRobot->MoveSpeed.Y_Speed = pRobot->MoveSpeed.Y_Speed / 1000;
     pRobot->MoveSpeed.Z_Speed = pRobot->MoveSpeed.Z_Speed;
-
-    
 
     // Control target value is obtained and kinematics analysis is performed
     // 得到控制目标值，进行运动学分析

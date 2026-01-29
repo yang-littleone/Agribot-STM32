@@ -64,3 +64,4 @@ agribot\usbh_hid_gamepad.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/t
 agribot\usbh_hid_gamepad.o: ..\Hardware\USB\bsp_gamepad.h
 agribot\usbh_hid_gamepad.o: ..\Hardware\USB\xbox360_gamepad.h
 agribot\usbh_hid_gamepad.o: ..\Hardware\USB\WiredPS2_gamepad.h
+agribot\usbh_hid_gamepad.o: ../Core/Inc/usart.h

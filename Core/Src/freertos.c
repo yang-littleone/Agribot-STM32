@@ -119,10 +119,10 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* init code for USB_HOST */
-  MX_USB_HOST_Init();
+//  MX_USB_HOST_Init();
   /* USER CODE BEGIN StartDefaultTask */
   delay_init(168);
-//  MX_USB_HOST_Init(); 
+  MX_USB_HOST_Init(); 
 	xTaskCreate(LedTask, "LedTask", 128, NULL, 3, NULL);
   xTaskCreate(ShowTask, "ShowTask", 256, NULL, 3, NULL);
   xTaskCreate(ICM20948Task, "ImuTask", 256, NULL, 3, NULL);
