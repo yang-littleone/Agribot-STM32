@@ -39,6 +39,9 @@
 
 extern USBH_StatusTypeDef USBH_HID_PS2_Decode(USBH_HandleTypeDef *phost);
 
+#include "CarControl.h"
+extern ControlMode_t ControlMode;
+
 // usb数据读取后,最终进入此回调函数.数据解码在此函数进行(任务环境)
 void USBH_HID_EventCallback(USBH_HandleTypeDef *phost)
 {
@@ -46,9 +49,9 @@ void USBH_HID_EventCallback(USBH_HandleTypeDef *phost)
   USBH_HID_PS2_Decode(phost);
 
   // 游戏手柄模式启动
-  if (GamePadInterface->StartFlag == 1 && PS2_ON_Flag == 0 && SysVal.Time_count >= CONTROL_DELAY && GamePadInterface->LY > 150)
+  if (GamePadInterface->StartFlag == 1 && ControlMode != PS2_CONTROL && GamePadInterface->LY > 150)
   {
-    PS2_ON_Flag = 1, Remote_ON_Flag = 0, APP_ON_Flag = 0, CAN_ON_Flag = 0, Usart1_ON_Flag = 0, Usart5_ON_Flag = 0;
+    ControlMode = PS2_CONTROL;
   }
 }
 /* USER CODE END PFP */
@@ -61,7 +64,6 @@ ApplicationTypeDef Appli_state = APPLICATION_IDLE;
  * -- Insert your variables declaration here --
  */
 /* USER CODE BEGIN 0 */
-
 
 /* USER CODE END 0 */
 
@@ -78,9 +80,9 @@ static void USBH_UserProcess(USBH_HandleTypeDef *phost, uint8_t id);
 /* USER CODE END 1 */
 
 /**
-  * Init USB host library, add supported class and start the library
-  * @retval None
-  */
+ * Init USB host library, add supported class and start the library
+ * @retval None
+ */
 void MX_USB_HOST_Init(void)
 {
   /* USER CODE BEGIN USB_HOST_Init_PreTreatment */
@@ -131,7 +133,7 @@ void MX_USB_HOST_Init(void)
 /*
  * user callback definition
  */
-static void USBH_UserProcess  (USBH_HandleTypeDef *phost, uint8_t id)
+static void USBH_UserProcess(USBH_HandleTypeDef *phost, uint8_t id)
 {
   /* USER CODE BEGIN CALL_BACK_1 */
   switch (id)
@@ -158,10 +160,9 @@ static void USBH_UserProcess  (USBH_HandleTypeDef *phost, uint8_t id)
 }
 
 /**
-  * @}
-  */
+ * @}
+ */
 
 /**
-  * @}
-  */
-
+ * @}
+ */

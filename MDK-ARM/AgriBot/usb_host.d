@@ -23,6 +23,9 @@ agribot\usb_host.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
 agribot\usb_host.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 agribot\usb_host.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 agribot\usb_host.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+agribot\usb_host.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+agribot\usb_host.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h
+agribot\usb_host.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 agribot\usb_host.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 agribot\usb_host.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 agribot\usb_host.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
@@ -66,3 +69,12 @@ agribot\usb_host.o: ../System/sys.h
 agribot\usb_host.o: ../System/delay.h
 agribot\usb_host.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 agribot\usb_host.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+agribot\usb_host.o: ../System/CarControl.h
+agribot\usb_host.o: ../Hardware/ICM20948/ICM20948.h
+agribot\usb_host.o: ../Hardware/ICM20948/Public_StdTypes.h
+agribot\usb_host.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+agribot\usb_host.o: ../Hardware/ICM20948/Public_StdMacros.h
+agribot\usb_host.o: ../Hardware/USB/WiredPS2_gamepad.h
+agribot\usb_host.o: ../Hardware/USB/usbh_hid_GamePad.h
+agribot\usb_host.o: ../Hardware/Encoder.h
+agribot\usb_host.o: ../Core/Inc/tim.h

@@ -24,6 +24,9 @@ agribot\mytask.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
 agribot\mytask.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 agribot\mytask.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 agribot\mytask.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+agribot\mytask.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+agribot\mytask.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h
+agribot\mytask.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 agribot\mytask.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 agribot\mytask.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 agribot\mytask.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
@@ -80,3 +83,5 @@ agribot\mytask.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 agribot\mytask.o: ../Hardware/OLED.h
 agribot\mytask.o: ../Hardware/OLED_Data.h
 agribot\mytask.o: ../Core/Inc/usart.h
+agribot\mytask.o: ../Hardware/GetVolt.h
+agribot\mytask.o: ..\System\Data.h

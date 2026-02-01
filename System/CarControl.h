@@ -6,6 +6,7 @@
 #include "WiredPS2_gamepad.h"
 #include "Encoder.h"
 #include "system.h"
+// 移除对Data.h的包含，使用前向声明解决循环依赖
 
 #define PI 3.1415926f
 
@@ -46,11 +47,22 @@ typedef struct
     MoveSpeed_t MoveSpeed;
 } Robot_t;
 
+
+
+typedef enum
+{
+    ROS_CONTROL,
+    PS2_CONTROL,
+    BLUE_CONTROL,
+} ControlMode_t;
+
 void GetVelocityFromEncoder(Robot_t *pRobot);
 void VelocityPIDControl(Robot_t *pRobot);
 float target_limit_float(float insert, float low, float high);
 void InverseKinematic(Robot_t *pRobot);
-void PS2_control(Robot_t *pRobot, IMU_DATA_t *pIMUData);
+void ForwardKinematics(Robot_t *pRobot);
+void PS2_control(Robot_t *pRobot);
+void ROS_Control(Robot_t *pRobot, MoveSpeed_t *pMoveSpeed);
 
 static void Incremental_PI(MotorParam_t *pMotorParam);
 

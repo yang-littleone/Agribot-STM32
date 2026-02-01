@@ -7,40 +7,40 @@
 #include "usbh_hid_GamePad.h"
 #include "bsp_gamepad.h"
 
-//ÓĞÏßÊÖ±ú²úÆ·±êÊ¶·û
+//æœ‰çº¿æ‰‹æŸ„äº§å“æ ‡è¯†ç¬¦
 #define Wired_PS2_VID 0x0810
 #define Wired_PS2_PID 0x0001
 
-//µÚ¶ş´úÓĞÏß
+//ç¬¬äºŒä»£æœ‰çº¿
 #define WiredV2_PS2_VID 0x0079
 #define WiredV2_PS2_PID 0x0006
 
-//PS2°´¼üÎ»ÖÃÃ¶¾Ù(bit0~bit15·Ö±ğÎªÏÂÃæµÄ0~15)
+//PS2æŒ‰é”®ä½ç½®æšä¸¾(bit0~bit15åˆ†åˆ«ä¸ºä¸‹é¢çš„0~15)
 enum 
 {
-	PS2KEY_SELECT	   = 0, //Ñ¡Ôñ°´¼ü
-	PS2KEY_LROCKER      , //×óÓÒÒ¡¸Ë°´ÏÂ¼üÖµ
+	PS2KEY_SELECT	   = 0, //é€‰æ‹©æŒ‰é”®
+	PS2KEY_LROCKER      , //å·¦å³æ‘‡æ†æŒ‰ä¸‹é”®å€¼
 	PS2KEY_RROCKER      ,
-	PS2KEY_START        , //¿ªÊ¼°´¼ü
-	PS2KEY_UP           , //×ó°´¼üÇøÓò
+	PS2KEY_START        , //å¼€å§‹æŒ‰é”®
+	PS2KEY_UP           , //å·¦æŒ‰é”®åŒºåŸŸ
 	PS2KEY_RIGHT        ,
 	PS2KEY_DOWN         ,
 	PS2KEY_LEFT         ,
-	PS2KEY_L2           ,	//×óÓÒ°â»ú°´¼üÖµ
+	PS2KEY_L2           ,	//å·¦å³æ‰³æœºæŒ‰é”®å€¼
 	PS2KEY_R2           ,
 	PS2KEY_L1           ,  
 	PS2KEY_R1           ,
-	PS2KEY_1GREEN       , //ÓÒ°´¼üÇøÓò
+	PS2KEY_1GREEN       , //å³æŒ‰é”®åŒºåŸŸ
 	PS2KEY_2RED         , 
 	PS2KEY_3BLUE        , 
 	PS2KEY_4PINK           
 };
 
 
-//ÊÖ±ú½âÂëº¯Êı
+//æ‰‹æŸ„è§£ç å‡½æ•°
 void Wired_USB_PS2gamepad_Decode(USBH_HandleTypeDef *phost,uint8_t* buffer,uint8_t datalen);
 void Wired_USB_V2_PS2gamepad_Decode(USBH_HandleTypeDef *phost,uint8_t* buffer,uint8_t datalen);
-//¶ÔÍâÌá¹©ÊÖ±ú¶ÔÏó
+//å¯¹å¤–æä¾›æ‰‹æŸ„å¯¹è±¡
 extern GamePadType_t Wired_USB_PS2Gamepad;
 
 #endif /* __Xbox360_GAMEPAD_H */

@@ -23,6 +23,9 @@ agribot\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
 agribot\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 agribot\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 agribot\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+agribot\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+agribot\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h
+agribot\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 agribot\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 agribot\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 agribot\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
@@ -44,6 +47,7 @@ agribot\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4
 agribot\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
 agribot\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 agribot\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+agribot\main.o: ../Core/Inc/adc.h
 agribot\main.o: ../Core/Inc/tim.h
 agribot\main.o: ../Core/Inc/usart.h
 agribot\main.o: ../USB_HOST/App/usb_host.h

@@ -4,6 +4,8 @@
 #include "FreeRTOS.h"
 #include "timers.h"
 
+uint8_t Debug = 0;
+
 // 手柄支持包
 #include "bsp_gamepad.h"
 
@@ -106,24 +108,29 @@ static USBH_StatusTypeDef USBH_HID_InterfaceInit(USBH_HandleTypeDef *phost)
   (void)USBH_memset(HID_Handle, 0, sizeof(HID_HandleTypeDef));
 
   HID_Handle->state = USBH_HID_ERROR;
-  printf("device pid:%x,vid:%x\r\n", (unsigned int)phost->device.DevDesc.idProduct, (unsigned int)phost->device.DevDesc.idVendor);
+  if(Debug)
+	printf("device pid:%x,vid:%x\r\n", (unsigned int)phost->device.DevDesc.idProduct, (unsigned int)phost->device.DevDesc.idVendor);
   unsigned int device_pid = (unsigned int)phost->device.DevDesc.idProduct;
   unsigned int device_vid = (unsigned int)phost->device.DevDesc.idVendor;
   // 显示收到的所有hid数据
   //  printf("hid data: ");
-  for (int i = 0; i < 32; i++)
+  if(Debug)
   {
-    printf("%02x ", phost->device.Data[i]);
+	  for (int i = 0; i < 32; i++)
+	  {
+		printf("%02x ", phost->device.Data[i]);
+	  }
+	  printf("\r\n");  
+	  printf("phost->device.Data: %x\r\n", phost->device.Data);
   }
-  printf("\r\n");
+
 //#include "usart.h"
 //  HAL_UART_Transmit_IT(&huart3, (uint8_t *)&phost->device.Data, sizeof(phost->device.Data));
-  printf("phost->device.Data: %x\r\n", phost->device.Data);
   // 根据HID设备的 PID、VID进行不同的设备类型识别
   if (phost->device.DevDesc.idProduct == Wired_PS2_PID && phost->device.DevDesc.idVendor == Wired_PS2_VID)
   { // 有线PS2手柄的PID/VID
     USBH_UsrLog("Wired PS2 device found!");
-    printf("Wired PS2 device found!\r\n");
+    if(Debug) printf("Wired PS2 device found!\r\n");
     gamepad_brand = PS2_USB_Wired;
     GamePadInterface = &Wired_USB_PS2Gamepad;
     HID_Handle->Init = USBH_HID_GamePadInit;
@@ -131,7 +138,7 @@ static USBH_StatusTypeDef USBH_HID_InterfaceInit(USBH_HandleTypeDef *phost)
   else if (phost->device.DevDesc.idProduct == WiredV2_PS2_PID && phost->device.DevDesc.idVendor == WiredV2_PS2_VID)
   {
     // 第二代usb有线
-    printf("Wired PS2 V2 device found!\r\n");
+    if(Debug) printf("Wired PS2 V2 device found!\r\n");
     USBH_UsrLog("Wired PS2 V2 device found!");
     gamepad_brand = PS2_USB_WiredV2;
     GamePadInterface = &Wired_USB_PS2Gamepad;
@@ -151,12 +158,12 @@ static USBH_StatusTypeDef USBH_HID_InterfaceInit(USBH_HandleTypeDef *phost)
     if (strcmp(GamePad_Manufacturer, "Flydigi") == 0)
     {
       gamepad_brand = Xbox360;
-      printf("XBox360 device found!\r\n");
+      if(Debug) printf("XBox360 device found!\r\n");
     }
     else
     {
       gamepad_brand = PS2_USB_Wiredless;
-      printf("PS2 Wiredless PC device found!\r\n");
+      if(Debug) printf("PS2 Wiredless PC device found!\r\n");
     }
     // XBOX360平台
     USBH_UsrLog("XBox360 device found!");
@@ -581,7 +588,7 @@ USBH_StatusTypeDef USBH_HID_GamePadInit(USBH_HandleTypeDef *phost)
   {
     HID_Handle->length = (uint16_t)sizeof(GamePadReportData);
   }
-  printf("hid length:%d\r\n", HID_Handle->length);
+//  printf("hid length:%d\r\n", HID_Handle->length);
   // 初始化pData,必须步骤.
   HID_Handle->pData = GamePadReportData;
 

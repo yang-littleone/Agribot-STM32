@@ -84,7 +84,35 @@ void VelocityPIDControl(Robot_t *pRobot)
     Set_PWM(pRobot->MotorA.Motor_PWM, pRobot->MotorB.Motor_PWM, pRobot->MotorC.Motor_PWM, pRobot->MotorD.Motor_PWM);
 }
 
-// 运动学逆解，根据vx,vy,vz计算四个电机的目标速度
+/**************************************************************************
+四驱机器人运动学正解逆解公式
+电机AB为左轮，电机CD为右轮，A、D后轮，B、C前轮
+同侧电机转速一致，分为VL、VR，Vx为x轴速度，Vy为y轴速度，w为角速度，也就是所谓的Vz，y为ICR的Y向位置
+
+运动学逆解公式：
+VL = Vx-y*w
+Vr = Vx+y*w
+
+运动学正解公式：
+Vx = (VL+VR)/2
+Vy = 0
+w = -(VL-VR)/2y
+
+式中y值为ICR的Y向位置， y 值的取值需结合轮距和轴距校准，最终通过实验整定得到：
+y = (WHEEL_SPACING + AXLE_SPACING) / 2.0f;
+
+以下为官方给的关于y值的解释：
+轮距 D 定义为左右车轮的距离，同侧车轮的纵向速度由 ICR 到车轮的距离决定：左侧车轮到 ICR 的 Y 向距离为yG−D/2，右侧为yG+D/2；模型简化时，因结构对称，ICR 的 Y 向位置（y）需与轮距匹配，确保左右车轮的速度差符合转向逻辑（即vR−vL与转向角速度ω正相关）
+轴距是前后车轮的距离，其影响小车的 “转向灵活性” 和 ICR 的实际位置：轴距越长，转向时 ICR 越远，y 值越大；
+此处 y 值的本质是 “ICR 的纵坐标”，是轮距、轴距、转向状态（ω）共同作用的结果，而非简单的 “轮距 + 轴距”（两者单位均为长度，相加无物理意义，且轮距是 Y 向距离，轴距是 X 向距离，维度一致但作用方向不同）
+简化过程也可以看到，忽略侧向速度vY时，四驱车的逆运动学模型与 “两轮差速小车” 等价，对比一下两轮差速小车的逆运动学模型，可发现：四驱车的 y 值等价于 “两轮差速小车轮距的一半（W/2）” 的扩展形式，因四驱车是 “滑动转向”（非差速转向），需通过 y 值补偿前后轮的转向差异，而 y 值的取值需结合轮距（D）和轴距校准，最终通过实验整定
+**************************************************************************/
+
+/**
+ * @brief 运动学逆解，根据vx,vy,vz计算四个电机的目标速度
+ * @param pRobot 机器人结构体指针
+ * @return void
+ */
 void InverseKinematic(Robot_t *pRobot)
 {
     float amplitude = 1.0f; // 车轮目标速度限幅
@@ -105,6 +133,15 @@ void InverseKinematic(Robot_t *pRobot)
     // pRobot->MotorB.Target *= LeftWheelDiff;
     // pRobot->MotorC.Target *= RightWheelDiff;
     // pRobot->MotorD.Target *= RightWheelDiff;
+}
+
+// 运动学正解，根据四个电机的速度计算vx,vy,vz
+void ForwardKinematics(Robot_t *pRobot)
+{
+    // 运动学正解，根据四个电机的速度计算vx,vy,vz
+    pRobot->MoveSpeed.X_Speed = (pRobot->MotorA.Velocity + pRobot->MotorB.Velocity + pRobot->MotorC.Velocity + pRobot->MotorD.Velocity) / 4.0f;
+    pRobot->MoveSpeed.Y_Speed = 0.0f;
+    pRobot->MoveSpeed.Z_Speed = (-pRobot->MotorA.Velocity - pRobot->MotorB.Velocity + pRobot->MotorC.Velocity + pRobot->MotorD.Velocity) / 2.0f / (WHEEL_SPACING + AXLE_SPACING);
 }
 
 float target_limit_float(float insert, float low, float high)
@@ -223,7 +260,7 @@ static uint8_t map_to_vib(float x)
     return (uint8_t)(result + 0.5f);
 }
 
-void PS2_control(Robot_t *pRobot, IMU_DATA_t *pIMUData)
+void PS2_control(Robot_t *pRobot)
 {
     float LX = 127, LY = 127, RX = 127;
     float ThrottleTri = 255;
@@ -317,16 +354,25 @@ void PS2_control(Robot_t *pRobot, IMU_DATA_t *pIMUData)
 // 根据加速度反应震动情况传达到手柄
 #include "bsp_gamepad.h"
 
-    // Z轴数据判断震动强度
-    float now_z = pIMUData->accel.z / 1671.84f;
-    static float last_z = 0;
-    float strength = fabs(last_z - now_z);
+    // // Z轴数据判断震动强度
+    // float now_z = pIMUData->accel.z / 1671.84f;
+    // static float last_z = 0;
+    // float strength = fabs(last_z - now_z);
 
-    // 震动映射到手柄
-    if (strength > 0.1f && SysVal.Time_count > CONTROL_DELAY)
-    {
-        if (GamePadInterface->SetVibration != NULL)
-            GamePadInterface->SetVibration(map_to_vib(strength), 0);
-    }
-    last_z = now_z;
+    // // 震动映射到手柄
+    // if (strength > 0.1f && SysVal.Time_count > CONTROL_DELAY)
+    // {
+    //     if (GamePadInterface->SetVibration != NULL)
+    //         GamePadInterface->SetVibration(map_to_vib(strength), 0);
+    // }
+    // last_z = now_z;
+}
+
+void ROS_Control(Robot_t *pRobot, MoveSpeed_t *pMoveSpeed)
+{
+    pRobot->MoveSpeed.X_Speed = pMoveSpeed->X_Speed;
+    pRobot->MoveSpeed.Y_Speed = pMoveSpeed->Y_Speed;
+    pRobot->MoveSpeed.Z_Speed = pMoveSpeed->Z_Speed;
+    InverseKinematic(pRobot);
+    VelocityPIDControl(pRobot);
 }

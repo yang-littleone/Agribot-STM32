@@ -49,13 +49,16 @@
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
 SemaphoreHandle_t g_TimeSemaphore;
+QueueHandle_t g_RobotQueue;
+QueueHandle_t g_IMUQueue;
+QueueHandle_t g_VoltQueue;
 /* USER CODE END Variables */
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
-  .name = "defaultTask",
-  .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
+    .name = "defaultTask",
+    .stack_size = 128 * 4,
+    .priority = (osPriority_t)osPriorityNormal,
 };
 
 /* Private function prototypes -----------------------------------------------*/
@@ -69,13 +72,14 @@ extern void MX_USB_HOST_Init(void);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
 /**
-  * @brief  FreeRTOS initialization
-  * @param  None
-  * @retval None
-  */
-void MX_FREERTOS_Init(void) {
+ * @brief  FreeRTOS initialization
+ * @param  None
+ * @retval None
+ */
+void MX_FREERTOS_Init(void)
+{
   /* USER CODE BEGIN Init */
-  
+
   /* USER CODE END Init */
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -85,6 +89,9 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN RTOS_SEMAPHORES */
   /* add semaphores, ... */
   g_TimeSemaphore = xSemaphoreCreateBinary();
+  g_RobotQueue = xQueueCreate(1, sizeof(Robot_t));
+  g_IMUQueue = xQueueCreate(1, sizeof(IMU_DATA_t));
+  g_VoltQueue = xQueueCreate(1, sizeof(float));
   /* USER CODE END RTOS_SEMAPHORES */
 
   /* USER CODE BEGIN RTOS_TIMERS */
@@ -106,7 +113,6 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN RTOS_EVENTS */
   /* add events, ... */
   /* USER CODE END RTOS_EVENTS */
-
 }
 
 /* USER CODE BEGIN Header_StartDefaultTask */
@@ -119,14 +125,13 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* init code for USB_HOST */
-//  MX_USB_HOST_Init();
+  MX_USB_HOST_Init();
   /* USER CODE BEGIN StartDefaultTask */
   delay_init(168);
-  MX_USB_HOST_Init(); 
-	xTaskCreate(LedTask, "LedTask", 128, NULL, 3, NULL);
+  xTaskCreate(LedTask, "LedTask", 128, NULL, 3, NULL);
   xTaskCreate(ShowTask, "ShowTask", 256, NULL, 3, NULL);
   xTaskCreate(ICM20948Task, "ImuTask", 256, NULL, 3, NULL);
-  xTaskCreate(UsartTask, "UsartTask", 256, NULL, 3, NULL);
+  xTaskCreate(DataTask, "DataTask", 256, NULL, 3, NULL);
   xTaskCreate(CarControlTask, "CarControlTask", 512, NULL, 4, NULL);
 
   vTaskDelete(defaultTaskHandle);
@@ -144,4 +149,3 @@ void StartDefaultTask(void *argument)
 /* USER CODE BEGIN Application */
 
 /* USER CODE END Application */
-

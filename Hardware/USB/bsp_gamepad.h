@@ -3,96 +3,102 @@
 
 #include <stdint.h>
 
-//ÓÎÏ·ÊÖ±ú°´¼üÍ¨ÓÃÊÂ¼ş
-typedef enum{
-    GamePadKeyEvent_NONE,         //ÎŞ°´¼üÊÂ¼ş
-    GamePadKeyEvent_SINGLECLICK,  //µ¥»÷ÊÂ¼ş
-    GamePadKeyEvent_DOUBLECLICK,  //Ë«»÷ÊÂ¼ş
-    GamePadKeyEvent_LONGCLICK     //³¤°´ÊÂ¼ş
-}GamePadKeyEventType_t;
-
-//ÓÎÏ·ÊÖ±úÍ¨ÓÃ°´¼ü×´Ì¬
-typedef enum{
-	GamePadKeyState_Release = 0,  //ËÉ¿ª
-	GamePadKeyState_Press = 1     //°´ÏÂ
-}GamePadKeyStateType_t;
-
-//Í¨ÓÃÊÖ±ú°´¼ü¼ì²â×´Ì¬»ú
-typedef enum{
-    WaitToPress = 0,
-    WaitToRelease ,
-    KEYPress    ,
-    KEYUp       ,
-    LONG_CLICK  ,
-}GamePad_StateMachineType_t;
-
-//Í¨ÓÃÊÖ±úµ¥¸ö°´¼üÊôĞÔ
-typedef struct 
+// æ¸¸æˆæ‰‹æŸ„æŒ‰é”®é€šç”¨äº‹ä»¶
+typedef enum
 {
-    uint8_t keystate;
-    uint32_t timebase;
-    uint32_t statetime;
-    GamePad_StateMachineType_t statemachine;
-}GamePad_CheckEventType_t;
+	GamePadKeyEvent_NONE,		 // æ— æŒ‰é”®äº‹ä»¶
+	GamePadKeyEvent_SINGLECLICK, // å•å‡»äº‹ä»¶
+	GamePadKeyEvent_DOUBLECLICK, // åŒå‡»äº‹ä»¶
+	GamePadKeyEvent_LONGCLICK	 // é•¿æŒ‰äº‹ä»¶
+} GamePadKeyEventType_t;
 
-//ÓÎÏ·ÊÖ±ú°´¼üÍ¨ÓÃ¼ì²âÊ±¼ä,µ¥Î»ms
-#define GamePad_LONGPRESS_TIEM 1000 //³¤°´¼ì²âÊ±¼ä
-#define GamePad_CLICK_TIME     400  //µ¥Ë«»÷¼ì²âÊ±¼ä
-#define GamePad_KEYFILTER_TIME 50   //°´¼üÂË²¨Ê±¼ä
+// æ¸¸æˆæ‰‹æŸ„é€šç”¨æŒ‰é”®çŠ¶æ€
+typedef enum
+{
+	GamePadKeyState_Release = 0, // æ¾å¼€
+	GamePadKeyState_Press = 1	 // æŒ‰ä¸‹
+} GamePadKeyStateType_t;
 
-//Í¨ÓÃÓÎÏ·ÊÖ±ú¶ÔÏó
-typedef struct{
-	uint8_t LX;  //4¸ö·½ÏòÒ¡¸ËÖµ,È¡Öµ0~255
+// é€šç”¨æ‰‹æŸ„æŒ‰é”®æ£€æµ‹çŠ¶æ€æœº
+typedef enum
+{
+	WaitToPress = 0,
+	WaitToRelease,
+	KEYPress,
+	KEYUp,
+	LONG_CLICK,
+} GamePad_StateMachineType_t;
+
+// é€šç”¨æ‰‹æŸ„å•ä¸ªæŒ‰é”®å±æ€§
+typedef struct
+{
+	uint8_t keystate;
+	uint32_t timebase;
+	uint32_t statetime;
+	GamePad_StateMachineType_t statemachine;
+} GamePad_CheckEventType_t;
+
+// æ¸¸æˆæ‰‹æŸ„æŒ‰é”®é€šç”¨æ£€æµ‹æ—¶é—´,å•ä½ms
+#define GamePad_LONGPRESS_TIEM 1000 // é•¿æŒ‰æ£€æµ‹æ—¶é—´
+#define GamePad_CLICK_TIME 400		// å•åŒå‡»æ£€æµ‹æ—¶é—´
+#define GamePad_KEYFILTER_TIME 50	// æŒ‰é”®æ»¤æ³¢æ—¶é—´
+
+// é€šç”¨æ¸¸æˆæ‰‹æŸ„å¯¹è±¡
+typedef struct
+{
+	uint8_t LX; // 4ä¸ªæ–¹å‘æ‘‡æ†å€¼,å–å€¼0~255
 	uint8_t LY;
 	uint8_t RX;
 	uint8_t RY;
-	uint8_t LT;  //×óÓÒÁ½¸öÓÍÃÅ°â»ú
+	uint8_t LT; // å·¦å³ä¸¤ä¸ªæ²¹é—¨æ‰³æœº
 	uint8_t RT;
-	void (*SetVibration)(uint8_t m1,uint8_t m2);//Õğ¶¯½Ó¿Ú
+	void (*SetVibration)(uint8_t m1, uint8_t m2); // éœ‡åŠ¨æ¥å£
 	GamePadKeyStateType_t (*getKeyState)(uint8_t keybit);
 	uint8_t StartFlag;
 	uint8_t Vib_EN;
-}GamePadType_t;
+} GamePadType_t;
 
-
-//ÓÎÏ·ÊÖ±úÆ·ÅÆ
-typedef enum{
-	UnKnown_Dev,          //Î´ÖªÉè±¸
-	PS2_Classic,           //¾­µäPS2ÊÖ±ú
-	PS2_USB_Wired,         //ÓĞÏßps2ÊÖ±ú
-	PS2_USB_WiredV2,       //µÚ¶ş´úÓĞÏßps2
-	PS2_USB_Wiredless,    //ÎŞÏßps2ÊÖ±ú
-	Xbox360,    //xbox360±êÊ¶·û
+// æ¸¸æˆæ‰‹æŸ„å“ç‰Œ
+typedef enum
+{
+	UnKnown_Dev,	   // æœªçŸ¥è®¾å¤‡
+	PS2_Classic,	   // ç»å…¸PS2æ‰‹æŸ„
+	PS2_USB_Wired,	   // æœ‰çº¿ps2æ‰‹æŸ„
+	PS2_USB_WiredV2,   // ç¬¬äºŒä»£æœ‰çº¿ps2
+	PS2_USB_Wiredless, // æ— çº¿ps2æ‰‹æŸ„
+	Xbox360,		   // xbox360æ ‡è¯†ç¬¦
 	SwitchPro,
-}GamePadBrandType_t;
+} GamePadBrandType_t;
 
-//ÊÖ±úµ÷ÊÔ½á¹¹Ìå
-enum{
+// æ‰‹æŸ„è°ƒè¯•ç»“æ„ä½“
+enum
+{
 	EnumNULL = 0,
-	EnumWait ,
-	EnumDone ,
+	EnumWait,
+	EnumDone,
 };
-typedef struct{
+typedef struct
+{
 	uint8_t ready;
 	uint8_t enmu_state;
 	GamePadBrandType_t type;
-}GamePadDebugValType_t;
+} GamePadDebugValType_t;
 
-//¶ÔÓÎÏ·ÊÖ±úÌá¹©°´¼ü¼ì²âµÄ½Ó¿Úº¯Êı
-GamePadKeyEventType_t GamePadKey_CheckEvent(uint16_t keysource,GamePad_CheckEventType_t* key,uint8_t bit);
+// å¯¹æ¸¸æˆæ‰‹æŸ„æä¾›æŒ‰é”®æ£€æµ‹çš„æ¥å£å‡½æ•°
+GamePadKeyEventType_t GamePadKey_CheckEvent(uint16_t keysource, GamePad_CheckEventType_t *key, uint8_t bit);
 
-//¶ÔÍâÌá¹©ÓÎÏ·ÊÖ±úÆ·ÅÆ²ÎÊı
+// å¯¹å¤–æä¾›æ¸¸æˆæ‰‹æŸ„å“ç‰Œå‚æ•°
 extern GamePadBrandType_t gamepad_brand;
 
-//ÊÖ±úÉè±¸²åÈëÓë°Î³ö»Øµ÷º¯Êı
+// æ‰‹æŸ„è®¾å¤‡æ’å…¥ä¸æ‹”å‡ºå›è°ƒå‡½æ•°
 void USB_GamePad_InsertCallback(void);
 void USB_GamePad_PullOutCallback(void);
 
-//Í¨ÓÃÓÎÏ·ÊÖ±ú½Ó¿Ú
-extern GamePadType_t* GamePadInterface;
+// é€šç”¨æ¸¸æˆæ‰‹æŸ„æ¥å£
+extern GamePadType_t *GamePadInterface;
 extern GamePadType_t GamePadDefalut;
 
-//Í¨ÓÃÊÖ±úµ÷ÊÔ½Ó¿Ú
+// é€šç”¨æ‰‹æŸ„è°ƒè¯•æ¥å£
 extern GamePadDebugValType_t GamePadDebug;
 
 #endif /* __BSP_GAMEPAD_H */

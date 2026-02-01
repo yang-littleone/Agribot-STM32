@@ -3,43 +3,43 @@
 
 ICM20948_ST_SENSOR_DATA gstGyroOffset = {0,0,0};
 
-//磁力计数�?
+//磁力计数�?
 short magnet[3];
 /**************************************************************************
 Function: Initialize TIM2 as the encoder interface mode
 Input   : Gx, Gy, Gz: raw readings (plus or minus) of the x,y, and z axes of the gyroscope
 Output  : 0: success, others: error code
-函数功能：获得陀螺仪�?(原�?��?)
-入口参数：gx,gy,gz:陀螺仪x,y,z轴的原�?��?�数(带�?�负)
-返回  值：0:成功, 其他:错�??代码
+函数功能：获得陀螺仪�?(原�?��?)
+入口参数：gx,gy,gz:陀螺仪x,y,z轴的原�?��?�数(带�?�负)
+返回  值：0:成功, 其他:错�??代码
 **************************************************************************/
 uint8_t ICM20948_Get_Gyroscope(IMU_DATA_t *IMU)
 {
 	static int onece=0;
     uint8_t res;
     invMSGyroRead(&IMU->gyro.x, &IMU->gyro.y, &IMU->gyro.z);
-    if(SysVal.Time_count<CONTROL_DELAY) // 10 seconds before starting //开机前10�?
+    if(SysVal.Time_count<CONTROL_DELAY) // 10 seconds before starting //开机前10�?
     {
-//		Led_Count=1; //LED high frequency flashing //LED高�?�闪�?
-		Flag_Stop=1; //The software fails to flag location 1 //�?件失能标志位�?1		
+//		Led_Count=1; //LED high frequency flashing //LED高�?�闪�?
+		Flag_Stop=1; //The software fails to flag location 1 //�?件失能标志位�?1		
 
     }
-    else //10 seconds after starting //开�?10秒后
+    else //10 seconds after starting //开�?10秒后
     {
 		if(onece==0)
 		{
-			Flag_Stop=0; //The software fails to flag location 0 //�?件失能标志位�?0
+			Flag_Stop=0; //The software fails to flag location 0 //�?件失能标志位�?0
 			onece=1;
 		}	
-//		Led_Count=300; //The LED returns to normal flicker frequency //LED恢�?��?�常�?烁�?�率
+//		Led_Count=300; //The LED returns to normal flicker frequency //LED恢�?��?�常�?烁�?�率
         //Save the raw data to update zero by clicking the user button
-        //保存原�?�数�?用于单击用户按键更新零点
+        //保存原�?�数�?用于单击用户按键更新零点
 		IMU->Original_gyro.x = IMU->gyro.x;
 		IMU->Original_gyro.y = IMU->gyro.y;
 		IMU->Original_gyro.z = IMU->gyro.z;
 
         //Removes zero drift data
-        //去除零点漂移的数�?
+        //去除零点漂移的数�?
 		IMU->gyro.x = IMU->Original_gyro.x - IMU->Deviation_gyro.x;
 		IMU->gyro.y = IMU->Original_gyro.y - IMU->Deviation_gyro.y;
 		IMU->gyro.z = IMU->Original_gyro.z - IMU->Deviation_gyro.z;
@@ -52,20 +52,20 @@ uint8_t ICM20948_Get_Gyroscope(IMU_DATA_t *IMU)
 uint8_t ICM20948_Get_Accel(IMU_DATA_t *IMU)
 {
     uint8_t res;
-    invMSAccelRead(&IMU->accel.x, &IMU->accel.y, &IMU->accel.z); //得到加速度传感器数�?
-    if(SysVal.Time_count<CONTROL_DELAY) // 10 seconds before starting //开机前10�?
+    invMSAccelRead(&IMU->accel.x, &IMU->accel.y, &IMU->accel.z); //得到加速度传感器数�?
+    if(SysVal.Time_count<CONTROL_DELAY) // 10 seconds before starting //开机前10�?
     {
 		
     }
-    else //10 seconds after starting //开�?10秒后
+    else //10 seconds after starting //开�?10秒后
     {
         //Save the raw data to update zero by clicking the user button
-        //保存原�?�数�?用于单击用户按键更新零点
+        //保存原�?�数�?用于单击用户按键更新零点
 		IMU->Original_accel.x = IMU->accel.x;
 		IMU->Original_accel.y = IMU->accel.y;
 		IMU->Original_accel.z = IMU->accel.z;
         //Removes zero drift data
-        //去除零点漂移的数�?
+        //去除零点漂移的数�?
 		IMU->accel.x = IMU->Original_accel.x - IMU->Deviation_accel.x ;
 		IMU->accel.y = IMU->Original_accel.y - IMU->Deviation_accel.y ;
 		IMU->accel.z = IMU->Original_accel.z - IMU->Deviation_accel.z + 16384;
@@ -75,10 +75,10 @@ uint8_t ICM20948_Get_Accel(IMU_DATA_t *IMU)
 }
 
 /**************************************************************************
-函数功能：�?�制imu的数�?
-入口参数：需要赋值的结构体变量，�?复制的结构体变量
-返回  值：�?
-�?    者：WHEELTEC
+函数功能：�?�制imu的数�?
+入口参数：需要赋值的结构体变量，�?复制的结构体变量
+返回  值：�?
+�?    者：WHEELTEC
 **************************************************************************/
 void ImuData_copy(IMU_BASE_t *req_val, const IMU_BASE_t *copied_val)
 {
@@ -107,7 +107,7 @@ bool invMSInit(void)
     bool bRet = false;
     if(invmsICM20948Check())//检测是否能识别到ICM20498器件
     {
-        invmsICM20948Init(); //ICM20498初�?�化
+        invmsICM20948Init(); //ICM20498初始化
         bRet = true;
     }
     return bRet;
@@ -143,7 +143,7 @@ static void invmsICM20948Init(void)
     return;
 }
 
-//角速度读取的底层实�?
+//角速度读取的底层实�?
 static void invmsICM20948GyroRead(int16_t* ps16X, int16_t* ps16Y, int16_t* ps16Z)
 {
     uint8_t uint8_tBuf[6];
@@ -182,7 +182,7 @@ static void invmsICM20948GyroRead(int16_t* ps16X, int16_t* ps16Y, int16_t* ps16Z
     return;
 }
 
-//加速度读取的底层实�?
+//加速度读取的底层实�?
 static void invmsICM20948AccelRead(int16_t* ps16X, int16_t* ps16Y, int16_t* ps16Z)
 {
     uint8_t uint8_tBuf[2];
@@ -221,7 +221,7 @@ static void invmsICM20948AccelRead(int16_t* ps16X, int16_t* ps16Y, int16_t* ps16
 
 }
 
-//磁力计�?�取的底层实�?
+//磁力计�?�取的底层实�?
 //static void invmsICM20948MagRead(int16_t* ps16X, int16_t* ps16Y, int16_t* ps16Z)
 //{
 //    uint8_t counter = 20;
@@ -400,7 +400,7 @@ static void invMSGyroRead(int16_t* ps16GyroX, int16_t* ps16GyroY, int16_t* ps16G
     return;
 }
 
-//读取磁力�?.若需要使用直接取消注释即�?
+//读取磁力�?.若需要使用直接取消注释即�?
 //static void invMSMagRead(int16_t* ps16MagnX, int16_t* ps16MagnY, int16_t* ps16MagnZ)
 //{
 //    invmsICM20948MagRead(ps16MagnX, ps16MagnY, ps16MagnZ);
