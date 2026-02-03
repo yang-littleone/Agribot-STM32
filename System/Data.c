@@ -81,10 +81,11 @@ static uint8_t Check_Sum(uint8_t *pBuffer, uint8_t Count_Number)
 }
 
 extern ReceiveData_t ReceiveData;
+uint8_t ReceiveDataTemp = 0;
 
 void DataRecive_Init(void)
 {
-    HAL_UART_Receive_IT(&huart3, (uint8_t *)ReceiveData.buffer, 11);
+    HAL_UART_Receive_IT(&huart3, (uint8_t *)&ReceiveDataTemp, 1);
 }
 
 // #include "CarControl.h"
@@ -92,22 +93,50 @@ extern ControlMode_t ControlMode;
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
+    static uint8_t count = 0;
+    static uint8_t status = 0;
     if (huart->Instance == USART3)
     {
         /* code */
-        HAL_UART_Receive_IT(&huart3, (uint8_t *)ReceiveData.buffer, 11);
-        if (ReceiveData.buffer[0] == FRAME_HEADER && ReceiveData.buffer[10] == FRAME_TAIL)
+        HAL_UART_Receive_IT(&huart3, (uint8_t *)&ReceiveDataTemp, 1);
+
+        if (count == 0 && ReceiveDataTemp == FRAME_HEADER && status == 0)
         {
-            if (Check_Sum(ReceiveData.buffer, 9) == ReceiveData.buffer[9])
+            ReceiveData.buffer[count] = ReceiveDataTemp;
+            count++;
+            status = 1;
+        }
+        else if (status == 1)
+        {
+            ReceiveData.buffer[count] = ReceiveDataTemp;
+            count++;
+            if (count == 11)
             {
-                if (ControlMode != ROS_CONTROL)
-                    ControlMode = ROS_CONTROL;
-                ReceiveData.MoveSpeed.X_Speed = (ReceiveData.buffer[3] << 8 | ReceiveData.buffer[4]) / 1000.0f;
-                ReceiveData.MoveSpeed.Y_Speed = (ReceiveData.buffer[5] << 8 | ReceiveData.buffer[6]) / 1000.0f;
-                ReceiveData.MoveSpeed.Z_Speed = (ReceiveData.buffer[7] << 8 | ReceiveData.buffer[8]) / 1000.0f;
-                HAL_UART_Transmit_IT(&huart3, (uint8_t *)ReceiveData.buffer, 11);
+                status = 0;
+                count = 0;
+                if (Check_Sum(ReceiveData.buffer, 9) == ReceiveData.buffer[9] && ReceiveData.buffer[10] == FRAME_TAIL)
+                {
+                    if (ControlMode != ROS_CONTROL)
+                        ControlMode = ROS_CONTROL;
+                    ReceiveData.MoveSpeed.X_Speed = (ReceiveData.buffer[3] << 8 | ReceiveData.buffer[4]) / 1000.0f;
+                    ReceiveData.MoveSpeed.Y_Speed = (ReceiveData.buffer[5] << 8 | ReceiveData.buffer[6]) / 1000.0f;
+                    ReceiveData.MoveSpeed.Z_Speed = (ReceiveData.buffer[7] << 8 | ReceiveData.buffer[8]) / 1000.0f;
+                }
             }
         }
+
+        // if (ReceiveData.buffer[0] == FRAME_HEADER && ReceiveData.buffer[10] == FRAME_TAIL)
+        // {
+        //     if (Check_Sum(ReceiveData.buffer, 9) == ReceiveData.buffer[9])
+        //     {
+        //         if (ControlMode != ROS_CONTROL)
+        //             ControlMode = ROS_CONTROL;
+        //         ReceiveData.MoveSpeed.X_Speed = (ReceiveData.buffer[3] << 8 | ReceiveData.buffer[4]) / 1000.0f;
+        //         ReceiveData.MoveSpeed.Y_Speed = (ReceiveData.buffer[5] << 8 | ReceiveData.buffer[6]) / 1000.0f;
+        //         ReceiveData.MoveSpeed.Z_Speed = (ReceiveData.buffer[7] << 8 | ReceiveData.buffer[8]) / 1000.0f;
+        //         HAL_UART_Transmit_IT(&huart3, (uint8_t *)ReceiveData.buffer, 11);
+        //     }
+        // }
         // HAL_UART_Transmit_IT(&huart3, (uint8_t *)ReceiveData, 8);
     }
 }

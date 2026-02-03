@@ -112,7 +112,7 @@ void DataTask(void *pvParameters)
     xQueueReceive(g_RobotQueue, &Robot, 0);
     DataTransfer(&SendData, &Robot, &IMU, &volt);
     // printf("X1_Speed:%.2f Y1_Speed:%.2f Z1_Speed:%.2f\r\n", Robot.MoveSpeed.X_Speed, Robot.MoveSpeed.Y_Speed, Robot.MoveSpeed.Z_Speed);
-    // HAL_UART_Transmit_IT(&huart3, (uint8_t *)SendData.buffer, SEND_DATA_SIZE);
+    HAL_UART_Transmit_IT(&huart3, (uint8_t *)SendData.buffer, SEND_DATA_SIZE);
   }
 }
 
