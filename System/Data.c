@@ -17,11 +17,11 @@ void DataTransfer(SendData_t *pSendData, Robot_t *pRobot, const IMU_DATA_t *pIMU
     pSendData->SensorData.Z_speed = (short)(pRobot->MoveSpeed.Z_Speed * 1000); // 转换为mm/s
 
     pSendData->SensorData.Accelerometer.X_data = pIMUData->accel.y; // 传感器坐标系与小车坐标系转换
-    pSendData->SensorData.Accelerometer.Y_data = pIMUData->accel.x; // 传感器坐标系与小车坐标系转换
+    pSendData->SensorData.Accelerometer.Y_data = -pIMUData->accel.x; // 传感器坐标系与小车坐标系转换
     pSendData->SensorData.Accelerometer.Z_data = pIMUData->accel.z;
 
     pSendData->SensorData.Gyroscope.X_data = pIMUData->gyro.y; // 传感器坐标系与小车坐标系转换
-    pSendData->SensorData.Gyroscope.Y_data = pIMUData->gyro.x; // 传感器坐标系与小车坐标系转换
+    pSendData->SensorData.Gyroscope.Y_data = -pIMUData->gyro.x; // 传感器坐标系与小车坐标系转换
     pSendData->SensorData.Gyroscope.Z_data = pIMUData->gyro.z;
 
     pSendData->SensorData.Power_Voltage = (short)(*pVolt * 1000); // 转换为mV
