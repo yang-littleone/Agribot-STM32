@@ -88,6 +88,14 @@ void DataRecive_Init(void)
     HAL_UART_Receive_IT(&huart3, (uint8_t *)&ReceiveDataTemp, 1);
 }
 
+float uchartoshort(uint8_t highdata, uint8_t lowdata)
+{
+	short shortdata = 0;
+	
+	shortdata = highdata << 8 | lowdata;
+	return shortdata;
+}
+
 // #include "CarControl.h"
 extern ControlMode_t ControlMode;
 
@@ -118,9 +126,9 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
                 {
                     if (ControlMode != ROS_CONTROL)
                         ControlMode = ROS_CONTROL;
-                    ReceiveData.MoveSpeed.X_Speed = (ReceiveData.buffer[3] << 8 | ReceiveData.buffer[4]) / 1000.0f;
-                    ReceiveData.MoveSpeed.Y_Speed = (ReceiveData.buffer[5] << 8 | ReceiveData.buffer[6]) / 1000.0f;
-                    ReceiveData.MoveSpeed.Z_Speed = (ReceiveData.buffer[7] << 8 | ReceiveData.buffer[8]) / 1000.0f;
+                    ReceiveData.MoveSpeed.X_Speed = (float)uchartoshort(ReceiveData.buffer[3] ,ReceiveData.buffer[4]) / 1000.0f;
+                    ReceiveData.MoveSpeed.Y_Speed = (float)uchartoshort(ReceiveData.buffer[5] ,ReceiveData.buffer[6]) / 1000.0f;
+                    ReceiveData.MoveSpeed.Z_Speed = (float)uchartoshort(ReceiveData.buffer[7] ,ReceiveData.buffer[8]) / 1000.0f;
                 }
             }
         }
