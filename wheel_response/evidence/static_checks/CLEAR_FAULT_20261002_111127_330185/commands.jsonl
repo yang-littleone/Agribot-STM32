@@ -1,0 +1,8 @@
+{"event": "connection_opened", "pc_monotonic_ns": 6923358034000, "local_time": "2026-10-02T11:11:29.350817+08:00", "port": "COM13"}
+{"event": "command_sent", "pc_monotonic_ns": 6923358598900, "local_time": "2026-10-02T11:11:29.351376+08:00", "command_sequence": 1, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 6923373330500, "local_time": "2026-10-02T11:11:29.366122+08:00", "fields": [1, 1, 0, 5, 255, 12, 0, 2]}
+{"event": "command_sent", "pc_monotonic_ns": 6923373626900, "local_time": "2026-10-02T11:11:29.366404+08:00", "command_sequence": 2, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 6923409679700, "local_time": "2026-10-02T11:11:29.402460+08:00", "fields": [2, 8, 0, 5, 255, 12, 0, 2]}
+{"event": "command_sent", "pc_monotonic_ns": 6939364644400, "local_time": "2026-10-02T11:11:45.357424+08:00", "command_sequence": 3, "opcode": "CLEAR_FAULT", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 6939385527800, "local_time": "2026-10-02T11:11:45.378307+08:00", "fields": [3, 9, 0, 0, 255, 12, 0, 0]}
+{"event": "fault_cause_resolution", "pc_monotonic_ns": 6939385584100, "local_time": "2026-10-02T11:11:45.378359+08:00", "reason": "正式试验运行中CRC错误触发主机ABORT；现场确认停稳，蓝牙两端靠近无遮挡，60秒零驱动复查6017样本无CRC或缺帧，恢复待机后仍先静态核验"}

@@ -1,0 +1,9 @@
+{
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "packages": {
+    "pyserial": "3.5",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2"
+  }
+}

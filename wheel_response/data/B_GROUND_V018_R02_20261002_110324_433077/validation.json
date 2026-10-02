@@ -1,0 +1,50 @@
+{
+  "valid": false,
+  "reasons": [
+    "bad_crc",
+    "missing_complete_sample",
+    "missing_sequence",
+    "noise_between_frames",
+    "not_normal_complete",
+    "phase_sample_count_mismatch"
+  ],
+  "mode": "run",
+  "raw_csv_match": true,
+  "hash_mismatch_files": [],
+  "expected_samples": 1100,
+  "actual_samples": 812,
+  "all_csv_samples": 1937,
+  "stage_counts": {
+    "0": 300,
+    "1": 500,
+    "2": 12
+  },
+  "sequence_missing": 12,
+  "duplicates": 0,
+  "segments": [
+    0
+  ],
+  "decoder_stats": {
+    "noise_bytes": 189,
+    "noise_before_first_frame": 82,
+    "frames": 1943,
+    "bad_crc": 1,
+    "noise_between_frames": 107
+  },
+  "trailing_incomplete_bytes": 51,
+  "queue_drop_max": 0,
+  "cycle_distribution": {
+    "min_us": 10000.0,
+    "median_us": 10000.0,
+    "mean_us": 10000.0,
+    "p95_us": 10000.0,
+    "max_us": 10000.0
+  },
+  "feedback_jump_threshold_m_s_per_sample": 0.2,
+  "feedback_jump_counts": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0
+  }
+}

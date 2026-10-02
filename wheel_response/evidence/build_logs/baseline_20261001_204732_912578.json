@@ -1,0 +1,24 @@
+{
+  "uv4": "D:\\Keil_v5\\UV4\\UV4.exe",
+  "project": "D:\\MCU\\STM32\\AgriBot-wheel-response\\MDK-ARM\\AgriBot.uvprojx",
+  "target": "AgriBot",
+  "command": [
+    "D:\\Keil_v5\\UV4\\UV4.exe",
+    "-b",
+    "D:\\MCU\\STM32\\AgriBot-wheel-response\\MDK-ARM\\AgriBot.uvprojx",
+    "-t",
+    "AgriBot",
+    "-o",
+    "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\build_logs\\baseline_20261001_204732_912578.log",
+    "-j0",
+    "-sg"
+  ],
+  "exit_code": 0,
+  "success": true,
+  "log": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\build_logs\\baseline_20261001_204732_912578.log",
+  "compiler_setting": "5060960::V5.06 update 7 (build 960)::.\\ARMCC",
+  "images": {
+    "MDK-ARM\\AgriBot\\AgriBot.hex": "992d730c0c54959f4ae87c8772797bf60eefc07b44973ea9024582d51ecceb7d",
+    "MDK-ARM\\AgriBot\\AgriBot.axf": "74d1585d107b2bfeb05b05219005d1e72536995834018d94e591571ec06b2908"
+  }
+}

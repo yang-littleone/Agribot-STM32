@@ -1,0 +1,41 @@
+{
+  "recorded_local": "2026-10-02T10:58:29.152428+08:00",
+  "trial_id": "B_GROUND_REACH040_5M",
+  "firmware_build_id": "WRS1-b87ba230e207f646",
+  "data_valid": true,
+  "continuation_check_passed": true,
+  "stage_samples": 1100,
+  "data_directory": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\data\\B_GROUND_REACH040_5M_20261002_105626_071165",
+  "sequence_missing": 0,
+  "bad_crc": 0,
+  "queue_drop_max": 0,
+  "performance_notes": {},
+  "wheel_tail_mean_m_s": {
+    "A": 0.400832756459713,
+    "B": 0.40093826085329054,
+    "C": 0.3998900170624256,
+    "D": 0.39989171728491785
+  },
+  "settling_time_s": {
+    "A": 0.6599999999998545,
+    "B": 0.669999999999618,
+    "C": 0.6999999999998181,
+    "D": 0.7099999999995816
+  },
+  "normal_post_stop_time_s": {
+    "A": 0.65,
+    "B": 0.71,
+    "C": 0.61,
+    "D": 0.62
+  },
+  "terminal_PWM_zero": true,
+  "terminal_feedback_in_locked_zero_band": true,
+  "PRE_battery_nominal_estimate_v": 12.162,
+  "battery_independently_calibrated": false,
+  "ground_motor_runs_started": 5,
+  "ground_prechecks_valid": 4,
+  "ground_formal_trials_started": 0,
+  "awaiting_physical_reset_for": "B_GROUND_V018_R01",
+  "physical_observation_of_this_trial": "User confirms actual motion and stopping normal, same configuration and load",
+  "next_reset_confirmed_local": "2026-10-02T10:58:53.559808+08:00"
+}

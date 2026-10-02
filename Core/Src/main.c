@@ -27,6 +27,11 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#if WHEEL_RESPONSE_EXPERIMENT
+#include "WheelResponseExperiment.h"
+#include "Bluetooth.h"
+#include "Motor.h"
+#endif
 
 /* USER CODE END Includes */
 
@@ -103,6 +108,10 @@ int main(void)
   MX_TIM11_Init();
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
+#if WHEEL_RESPONSE_EXPERIMENT
+  Set_PWM(0,0,0,0);
+  Bluetooth_Bootstrap();
+#endif
 
   /* USER CODE END 2 */
 
@@ -204,6 +213,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
+#if WHEEL_RESPONSE_EXPERIMENT
+  WRS_EmergencyZero();
+#endif
   /* User can add his own implementation to report the HAL error return state */
   __disable_irq();
   while (1)

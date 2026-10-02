@@ -1,0 +1,91 @@
+{
+  "mode": "clear-fault",
+  "start_local": "2026-10-01T23:36:12.289234+08:00",
+  "port": "COM12",
+  "complete": true,
+  "reason": "Intentional ABORT precheck completed; expected fault_flags=2 verified, all outputs zero for 1.3 s and operator confirmed wheels stopped. No unexplained hardware fault is being cleared.",
+  "ack": [
+    3,
+    9,
+    0,
+    0,
+    255,
+    23,
+    0,
+    0
+  ],
+  "board_config": {
+    "firmware_build_id": "WRS1-db73c13a727f9ae5",
+    "baseline_git_commit": "8655eb21f9537f84b5a66effc0fdb085a4993a99",
+    "configuration_version": 1,
+    "kp_ABCD": [
+      800,
+      800,
+      800,
+      800
+    ],
+    "ki_ABCD": [
+      500,
+      500,
+      500,
+      500
+    ],
+    "nominal_period_us": 10000,
+    "diameter_m": 0.065,
+    "encoder_ppr": 500,
+    "encoder_quadrature": 4,
+    "motor_reduction_ratio": 30,
+    "wheel_spacing_m": 0.187,
+    "axle_spacing_m": 0.173,
+    "pwm_limit": 16700,
+    "inverse_limit_m_s": 1.0,
+    "allowed_mm_s": [
+      50,
+      100,
+      180,
+      400
+    ],
+    "heartbeat_timeout_ms": 500,
+    "time_resolution_us": 1000,
+    "exec_invalid": 65535,
+    "battery_invalid": 65535,
+    "deadline_us": 15000,
+    "fatal_dt_us": 30000,
+    "queue_depth": 32,
+    "sample_struct_bytes": 84,
+    "heap_free": 11024,
+    "control_stack_free_words": 411,
+    "uart_stack_free_words": 326,
+    "clock_hz": 168000000,
+    "fault_bits": {
+      "heartbeat": 1,
+      "abort": 2,
+      "scheduling": 4,
+      "encoder_range": 8,
+      "rx": 16,
+      "uart": 32,
+      "memory": 64,
+      "drops": 128
+    },
+    "encoder_invalid_on_range_fault": 0,
+    "early_stop": 0,
+    "parser_errors": 0
+  },
+  "end_local": "2026-10-01T23:36:29.967425+08:00",
+  "decoder_stats": {
+    "noise_bytes": 32,
+    "noise_before_first_frame": 32,
+    "frames": 1768,
+    "noise_between_frames": 0
+  },
+  "trailing_bytes": 64,
+  "samples_received": 1764,
+  "hashes": {
+    "board_config.json": "8ffa51ed11b605fea38fa1d4f2eda6fe4cb09143046380c7ed0e10a9cb51d514",
+    "board_config_raw.json": "3587bbc22861ddde6f56e10852bb96e37a039e5532b806ef94744f48d71667fa",
+    "commands.jsonl": "0e757e9fd5f7eda6e02107237e638556ec2d843e4c4e666ed2ccd7cd5a5cc63c",
+    "raw_rx.bin": "c94e7c58bb1f294dc011f3be65d8179fe3c7fd585bd9268772f8dae33300fc65",
+    "raw_tx.bin": "e03c431432cd9f94371eecd65089875eefb3b0b22ffbac39a1be7d5fc710d4c2",
+    "samples.csv": "e98c6a68fad598b8be29aa5983bb5b4a660d8b9328df5dcc7666ebf967739d42"
+  }
+}

@@ -25,6 +25,21 @@
 /* USER CODE END 0 */
 
 UART_HandleTypeDef huart3;
+UART_HandleTypeDef huart2;
+
+/* PCB P1: PD5 = USART2_TX, PD6 = USART2_RX. */
+void MX_USART2_UART_Init(void)
+{
+  huart2.Instance = USART2;
+  huart2.Init.BaudRate = 115200;
+  huart2.Init.WordLength = UART_WORDLENGTH_8B;
+  huart2.Init.StopBits = UART_STOPBITS_1;
+  huart2.Init.Parity = UART_PARITY_NONE;
+  huart2.Init.Mode = UART_MODE_TX_RX;
+  huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart2.Init.OverSampling = UART_OVERSAMPLING_16;
+  if (HAL_UART_Init(&huart2) != HAL_OK) Error_Handler();
+}
 
 /* USART3 init function */
 
@@ -60,6 +75,20 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
 {
 
   GPIO_InitTypeDef GPIO_InitStruct = {0};
+
+  if(uartHandle->Instance==USART2)
+  {
+    __HAL_RCC_USART2_CLK_ENABLE();
+    __HAL_RCC_GPIOD_CLK_ENABLE();
+    GPIO_InitStruct.Pin = GPIO_PIN_5|GPIO_PIN_6;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    GPIO_InitStruct.Alternate = GPIO_AF7_USART2;
+    HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
+    HAL_NVIC_SetPriority(USART2_IRQn, 5, 0);
+    HAL_NVIC_EnableIRQ(USART2_IRQn);
+  }
   if(uartHandle->Instance==USART3)
   {
   /* USER CODE BEGIN USART3_MspInit 0 */
@@ -92,6 +121,13 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
 void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 {
 
+  if(uartHandle->Instance==USART2)
+  {
+    __HAL_RCC_USART2_CLK_DISABLE();
+    HAL_GPIO_DeInit(GPIOD, GPIO_PIN_5|GPIO_PIN_6);
+    HAL_NVIC_DisableIRQ(USART2_IRQn);
+  }
+
   if(uartHandle->Instance==USART3)
   {
   /* USER CODE BEGIN USART3_MspDeInit 0 */
@@ -123,7 +159,9 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 //////////////////////////////////////////////////////////////////////////////////////////////////
 int fputc(int ch, FILE *f)
 {
+#if !WHEEL_RESPONSE_EXPERIMENT
  	HAL_UART_Transmit(&huart3, (uint8_t *)&ch, 1, 0xffff);
+#endif
 //    HAL_UART_Transmit_IT(&huart3, (uint8_t *)&ch, strlen(ch));
 	
 	return ch;
@@ -138,7 +176,9 @@ int fputc(int ch, FILE *f)
 int fgetc(FILE *f)
 {
   uint8_t ch = 0;
+#if !WHEEL_RESPONSE_EXPERIMENT
   HAL_UART_Receive(&huart3, &ch, 1, 0xffff);
+#endif
   return ch;
 }
 /* USER CODE END 1 */

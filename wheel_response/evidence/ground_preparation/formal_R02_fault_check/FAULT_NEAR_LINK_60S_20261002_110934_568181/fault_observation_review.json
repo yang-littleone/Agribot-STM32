@@ -1,0 +1,189 @@
+{
+  "reviewed_local": "2026-10-02T11:10:36.331703+08:00",
+  "passed": true,
+  "reasons": [],
+  "samples": 6017,
+  "duration_requested_s": 60.0,
+  "expected_fault_flags": 2,
+  "directory": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\ground_preparation\\formal_R02_fault_check\\FAULT_NEAR_LINK_60S_20261002_110934_568181",
+  "no_motion_commands_sent": true,
+  "normal_validation": {
+    "valid": false,
+    "reasons": [
+      "fault_flags_present"
+    ],
+    "mode": "fault_observation",
+    "raw_csv_match": true,
+    "hash_mismatch_files": [],
+    "expected_samples": null,
+    "actual_samples": 6017,
+    "all_csv_samples": 6017,
+    "stage_counts": {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    "sequence_missing": 0,
+    "duplicates": 0,
+    "segments": [
+      0
+    ],
+    "decoder_stats": {
+      "noise_bytes": 43,
+      "noise_before_first_frame": 43,
+      "frames": 6022
+    },
+    "trailing_incomplete_bytes": 65,
+    "queue_drop_max": 0,
+    "cycle_distribution": {
+      "min_us": 10000.0,
+      "median_us": 10000.0,
+      "mean_us": 10000.0,
+      "p95_us": 10000.0,
+      "max_us": 10000.0
+    },
+    "feedback_jump_threshold_m_s_per_sample": 0.2,
+    "feedback_jump_counts": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    }
+  },
+  "board_config_start": {
+    "firmware_build_id": "WRS1-b87ba230e207f646",
+    "baseline_git_commit": "8655eb21f9537f84b5a66effc0fdb085a4993a99",
+    "configuration_version": 2,
+    "link": 1,
+    "btbaud": 115200,
+    "btdetected": 115200,
+    "btat": 1,
+    "btrx": 28723,
+    "bterr": 25,
+    "btsetup": 0,
+    "btreply": "2B424155443D380D0A",
+    "btlasterr": 0,
+    "bat_adc": 1369,
+    "bat_nominal": 1,
+    "kp_ABCD": [
+      800,
+      800,
+      800,
+      800
+    ],
+    "ki_ABCD": [
+      500,
+      500,
+      500,
+      500
+    ],
+    "nominal_period_us": 10000,
+    "diameter_m": 0.065,
+    "encoder_ppr": 500,
+    "encoder_quadrature": 4,
+    "motor_reduction_ratio": 30,
+    "wheel_spacing_m": 0.187,
+    "axle_spacing_m": 0.173,
+    "pwm_limit": 16700,
+    "inverse_limit_m_s": 1.0,
+    "allowed_mm_s": [
+      50,
+      100,
+      180,
+      400
+    ],
+    "heartbeat_timeout_ms": 500,
+    "time_resolution_us": 1000,
+    "exec_invalid": 65535,
+    "battery_invalid": 65535,
+    "deadline_us": 15000,
+    "fatal_dt_us": 30000,
+    "queue_depth": 32,
+    "sample_struct_bytes": 84,
+    "heap_free": 11032,
+    "control_stack_free_words": 411,
+    "uart_stack_free_words": 308,
+    "clock_hz": 168000000,
+    "fault_bits": {
+      "heartbeat": 1,
+      "abort": 2,
+      "scheduling": 4,
+      "encoder_range": 8,
+      "rx": 16,
+      "uart": 32,
+      "memory": 64,
+      "drops": 128
+    },
+    "encoder_invalid_on_range_fault": 0,
+    "early_stop": 0,
+    "parser_errors": 0
+  },
+  "board_config_end": {
+    "firmware_build_id": "WRS1-b87ba230e207f646",
+    "baseline_git_commit": "8655eb21f9537f84b5a66effc0fdb085a4993a99",
+    "configuration_version": 2,
+    "link": 1,
+    "btbaud": 115200,
+    "btdetected": 115200,
+    "btat": 1,
+    "btrx": 28749,
+    "bterr": 25,
+    "btsetup": 0,
+    "btreply": "2B424155443D380D0A",
+    "btlasterr": 0,
+    "bat_adc": 1372,
+    "bat_nominal": 1,
+    "kp_ABCD": [
+      800,
+      800,
+      800,
+      800
+    ],
+    "ki_ABCD": [
+      500,
+      500,
+      500,
+      500
+    ],
+    "nominal_period_us": 10000,
+    "diameter_m": 0.065,
+    "encoder_ppr": 500,
+    "encoder_quadrature": 4,
+    "motor_reduction_ratio": 30,
+    "wheel_spacing_m": 0.187,
+    "axle_spacing_m": 0.173,
+    "pwm_limit": 16700,
+    "inverse_limit_m_s": 1.0,
+    "allowed_mm_s": [
+      50,
+      100,
+      180,
+      400
+    ],
+    "heartbeat_timeout_ms": 500,
+    "time_resolution_us": 1000,
+    "exec_invalid": 65535,
+    "battery_invalid": 65535,
+    "deadline_us": 15000,
+    "fatal_dt_us": 30000,
+    "queue_depth": 32,
+    "sample_struct_bytes": 84,
+    "heap_free": 11032,
+    "control_stack_free_words": 411,
+    "uart_stack_free_words": 308,
+    "clock_hz": 168000000,
+    "fault_bits": {
+      "heartbeat": 1,
+      "abort": 2,
+      "scheduling": 4,
+      "encoder_range": 8,
+      "rx": 16,
+      "uart": 32,
+      "memory": 64,
+      "drops": 128
+    },
+    "encoder_invalid_on_range_fault": 0,
+    "early_stop": 0,
+    "parser_errors": 0
+  }
+}

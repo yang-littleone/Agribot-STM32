@@ -1,0 +1,48 @@
+{
+  "trial_id": "B_GROUND_V040_R01",
+  "reviewed_local": "2026-10-02T11:02:10.196665+08:00",
+  "passed": true,
+  "reasons": [],
+  "data_valid": true,
+  "samples": 1100,
+  "wheels": {
+    "A": {
+      "hold_peak_m_s": 0.4121507406234741,
+      "hold_min_m_s": 0.0,
+      "hold_net_counts": 553264,
+      "complete_feedback_max_abs_m_s": 0.0047647482715547085,
+      "final_100ms_feedback_max_abs_m_s": 0.0,
+      "complete_pwm_max_abs": 0,
+      "zero_drive_transition_note": "Any short COMPLETE transition feedback is retained; continuation requires final 100 ms within the prelocked zero band and zero PWM throughout COMPLETE. Normal POST metrics remain unchanged."
+    },
+    "B": {
+      "hold_peak_m_s": 0.41181039810180664,
+      "hold_min_m_s": 0.0,
+      "hold_net_counts": 552781,
+      "complete_feedback_max_abs_m_s": 0.0,
+      "final_100ms_feedback_max_abs_m_s": 0.0,
+      "complete_pwm_max_abs": 0,
+      "zero_drive_transition_note": "Any short COMPLETE transition feedback is retained; continuation requires final 100 ms within the prelocked zero band and zero PWM throughout COMPLETE. Normal POST metrics remain unchanged."
+    },
+    "C": {
+      "hold_peak_m_s": 0.4053439497947693,
+      "hold_min_m_s": 0.0,
+      "hold_net_counts": 549589,
+      "complete_feedback_max_abs_m_s": 0.0006806783494539559,
+      "final_100ms_feedback_max_abs_m_s": 0.00034033917472697794,
+      "complete_pwm_max_abs": 0,
+      "zero_drive_transition_note": "Any short COMPLETE transition feedback is retained; continuation requires final 100 ms within the prelocked zero band and zero PWM throughout COMPLETE. Normal POST metrics remain unchanged."
+    },
+    "D": {
+      "hold_peak_m_s": 0.40772634744644165,
+      "hold_min_m_s": 0.0,
+      "hold_net_counts": 549752,
+      "complete_feedback_max_abs_m_s": 0.01293288916349411,
+      "final_100ms_feedback_max_abs_m_s": 0.0,
+      "complete_pwm_max_abs": 0,
+      "zero_drive_transition_note": "Any short COMPLETE transition feedback is retained; continuation requires final 100 ms within the prelocked zero band and zero PWM throughout COMPLETE. Normal POST metrics remain unchanged."
+    }
+  },
+  "performance_notes": {},
+  "physical_setup_source": "GROUND setup recorded in the trial snapshot; operator independently confirms placement for each START. No physical observations inferred from telemetry."
+}

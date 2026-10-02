@@ -1,0 +1,84 @@
+{
+  "wheel": "B",
+  "turns": 1,
+  "operator_confirmed": true,
+  "counts_net": {
+    "A": 0,
+    "B": 59666,
+    "C": 20305,
+    "D": -1
+  },
+  "counts_absolute": {
+    "A": 8,
+    "B": 59996,
+    "C": 22107,
+    "D": 1
+  },
+  "counts_per_output_turn": 59666.0,
+  "source_nominal_counts_per_turn": 60000,
+  "relative_difference_from_source": -0.005566666666666667,
+  "comparison_tolerance_fraction": 0.01,
+  "comparison_tolerance_note": "One-turn marked manual check, 1% screening tolerance fixed before auditing B/C/D results; not an instrument precision claim.",
+  "direction_and_mapping_match": false,
+  "no_motion_commands": true,
+  "data_quality": {
+    "valid": true,
+    "reasons": [],
+    "mode": "listen",
+    "raw_csv_match": true,
+    "hash_mismatch_files": [],
+    "expected_samples": null,
+    "actual_samples": 12597,
+    "all_csv_samples": 12597,
+    "stage_counts": {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    "sequence_missing": 0,
+    "duplicates": 0,
+    "segments": [
+      0
+    ],
+    "decoder_stats": {
+      "frames": 12600,
+      "noise_bytes": 0,
+      "noise_between_frames": 0
+    },
+    "trailing_incomplete_bytes": 1,
+    "queue_drop_max": 0,
+    "cycle_distribution": {
+      "min_us": 10000.0,
+      "median_us": 10000.0,
+      "mean_us": 10000.0,
+      "p95_us": 10000.0,
+      "max_us": 10000.0
+    },
+    "feedback_jump_threshold_m_s_per_sample": 0.2,
+    "feedback_jump_counts": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    }
+  },
+  "method": "Net signed original control samples during a marked complete forward wheel/output-shaft turn; no second encoder reader.",
+  "source_scale_consistent": true,
+  "passed": false,
+  "temporal_review": {
+    "B_main_motion_from_capture_start_s": [
+      62.62,
+      73.49
+    ],
+    "C_main_motion_from_capture_start_s": [
+      122.05,
+      125.38
+    ],
+    "samples_with_B_and_C_both_nonzero": 0,
+    "operator_explanation": "User confirmed right-front C was also touched or turned."
+  },
+  "review_acceptance": {
+    "accepted_for_B_count_scale": true,
+    "basis": "Operator confirmed B made one full forward turn and C was additionally turned; B/C nonzero samples do not overlap, with C major motion ~49 s after B major motion ended. Preserve complete multi-wheel trace and failed strict single-wheel automatic check."
+  }
+}

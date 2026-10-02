@@ -1,0 +1,552 @@
+[
+  {
+    "trial_id": "B_AIR_V018_R01",
+    "condition": "AIR",
+    "speed": 0.18,
+    "start_local": "2026-10-02T00:08:11.779217+08:00",
+    "all_four_settled": true,
+    "wheels": {
+      "A": {
+        "settling_time_s": 0.7600000000002183,
+        "tail_rmse_mm_s": 1.4309371170026202
+      },
+      "B": {
+        "settling_time_s": 0.7100000000000364,
+        "tail_rmse_mm_s": 1.3348395227050922
+      },
+      "C": {
+        "settling_time_s": 0.7200000000002547,
+        "tail_rmse_mm_s": 1.2031922751157473
+      },
+      "D": {
+        "settling_time_s": 0.6900000000000546,
+        "tail_rmse_mm_s": 1.0808364126366163
+      }
+    },
+    "battery_nominal_min_max_v": null
+  },
+  {
+    "trial_id": "B_AIR_V018_R02",
+    "condition": "AIR",
+    "speed": 0.18,
+    "start_local": "2026-10-02T00:15:33.475258+08:00",
+    "all_four_settled": true,
+    "wheels": {
+      "A": {
+        "settling_time_s": 0.7699999999999818,
+        "tail_rmse_mm_s": 1.4010120732071425
+      },
+      "B": {
+        "settling_time_s": 0.7100000000000364,
+        "tail_rmse_mm_s": 1.3012491624731184
+      },
+      "C": {
+        "settling_time_s": 0.6700000000000728,
+        "tail_rmse_mm_s": 1.1483134085334703
+      },
+      "D": {
+        "settling_time_s": 0.6900000000000546,
+        "tail_rmse_mm_s": 0.995522536486995
+      }
+    },
+    "battery_nominal_min_max_v": null
+  },
+  {
+    "trial_id": "B_AIR_V018_R03",
+    "condition": "AIR",
+    "speed": 0.18,
+    "start_local": "2026-10-02T00:17:58.874979+08:00",
+    "all_four_settled": true,
+    "wheels": {
+      "A": {
+        "settling_time_s": 0.8099999999999454,
+        "tail_rmse_mm_s": 1.4569380432252375
+      },
+      "B": {
+        "settling_time_s": 0.7300000000000182,
+        "tail_rmse_mm_s": 1.2412252856631294
+      },
+      "C": {
+        "settling_time_s": 0.650000000000091,
+        "tail_rmse_mm_s": 1.1857304696588162
+      },
+      "D": {
+        "settling_time_s": 0.7100000000000364,
+        "tail_rmse_mm_s": 0.9909744854460307
+      }
+    },
+    "battery_nominal_min_max_v": null
+  },
+  {
+    "trial_id": "B_AIR_V018_R04",
+    "condition": "AIR",
+    "speed": 0.18,
+    "start_local": "2026-10-02T00:18:58.528164+08:00",
+    "all_four_settled": true,
+    "wheels": {
+      "A": {
+        "settling_time_s": 0.7999999999997272,
+        "tail_rmse_mm_s": 1.4342925237489281
+      },
+      "B": {
+        "settling_time_s": 0.7599999999997635,
+        "tail_rmse_mm_s": 1.2522997663490691
+      },
+      "C": {
+        "settling_time_s": 0.7100000000000364,
+        "tail_rmse_mm_s": 1.0971517586577715
+      },
+      "D": {
+        "settling_time_s": 0.6999999999998181,
+        "tail_rmse_mm_s": 0.9610804087318014
+      }
+    },
+    "battery_nominal_min_max_v": null
+  },
+  {
+    "trial_id": "B_AIR_V018_R05",
+    "condition": "AIR",
+    "speed": 0.18,
+    "start_local": "2026-10-02T00:19:57.039626+08:00",
+    "all_four_settled": true,
+    "wheels": {
+      "A": {
+        "settling_time_s": 0.75,
+        "tail_rmse_mm_s": 1.3927463499792119
+      },
+      "B": {
+        "settling_time_s": 0.7400000000002365,
+        "tail_rmse_mm_s": 1.2797075074420214
+      },
+      "C": {
+        "settling_time_s": 0.7000000000002728,
+        "tail_rmse_mm_s": 1.1267202906927294
+      },
+      "D": {
+        "settling_time_s": 0.6200000000003456,
+        "tail_rmse_mm_s": 0.9979570160997214
+      }
+    },
+    "battery_nominal_min_max_v": null
+  },
+  {
+    "trial_id": "B_AIR_V040_R01",
+    "condition": "AIR",
+    "speed": 0.4,
+    "start_local": "2026-10-02T00:20:46.257509+08:00",
+    "all_four_settled": true,
+    "wheels": {
+      "A": {
+        "settling_time_s": 0.7599999999997635,
+        "tail_rmse_mm_s": 1.1512587325139019
+      },
+      "B": {
+        "settling_time_s": 0.7799999999997453,
+        "tail_rmse_mm_s": 1.2921136323220903
+      },
+      "C": {
+        "settling_time_s": 0.7300000000000182,
+        "tail_rmse_mm_s": 1.0329558845286995
+      },
+      "D": {
+        "settling_time_s": 0.7300000000000182,
+        "tail_rmse_mm_s": 0.95981151593361
+      }
+    },
+    "battery_nominal_min_max_v": null
+  },
+  {
+    "trial_id": "B_AIR_V040_R02",
+    "condition": "AIR",
+    "speed": 0.4,
+    "start_local": "2026-10-02T00:22:32.681992+08:00",
+    "all_four_settled": true,
+    "wheels": {
+      "A": {
+        "settling_time_s": 0.7699999999999818,
+        "tail_rmse_mm_s": 1.1348494519108592
+      },
+      "B": {
+        "settling_time_s": 0.7199999999997999,
+        "tail_rmse_mm_s": 1.0849493400046586
+      },
+      "C": {
+        "settling_time_s": 0.7100000000000364,
+        "tail_rmse_mm_s": 1.0571879049030015
+      },
+      "D": {
+        "settling_time_s": 0.7300000000000182,
+        "tail_rmse_mm_s": 1.0328161752950915
+      }
+    },
+    "battery_nominal_min_max_v": null
+  },
+  {
+    "trial_id": "B_AIR_V040_R03",
+    "condition": "AIR",
+    "speed": 0.4,
+    "start_local": "2026-10-02T00:22:59.538153+08:00",
+    "all_four_settled": true,
+    "wheels": {
+      "A": {
+        "settling_time_s": 0.7699999999999818,
+        "tail_rmse_mm_s": 1.1876131949851494
+      },
+      "B": {
+        "settling_time_s": 0.7400000000002365,
+        "tail_rmse_mm_s": 1.0681897392933644
+      },
+      "C": {
+        "settling_time_s": 0.7100000000000364,
+        "tail_rmse_mm_s": 0.9270977609015633
+      },
+      "D": {
+        "settling_time_s": 0.7100000000000364,
+        "tail_rmse_mm_s": 0.978650967947131
+      }
+    },
+    "battery_nominal_min_max_v": null
+  },
+  {
+    "trial_id": "B_AIR_V040_R04",
+    "condition": "AIR",
+    "speed": 0.4,
+    "start_local": "2026-10-02T00:23:43.520094+08:00",
+    "all_four_settled": true,
+    "wheels": {
+      "A": {
+        "settling_time_s": 0.75,
+        "tail_rmse_mm_s": 1.1700321037945398
+      },
+      "B": {
+        "settling_time_s": 0.7400000000002365,
+        "tail_rmse_mm_s": 1.0604126280046382
+      },
+      "C": {
+        "settling_time_s": 0.7100000000000364,
+        "tail_rmse_mm_s": 1.0535612150789
+      },
+      "D": {
+        "settling_time_s": 0.7200000000002547,
+        "tail_rmse_mm_s": 0.8916134503209727
+      }
+    },
+    "battery_nominal_min_max_v": null
+  },
+  {
+    "trial_id": "B_AIR_V040_R05",
+    "condition": "AIR",
+    "speed": 0.4,
+    "start_local": "2026-10-02T00:24:10.346146+08:00",
+    "all_four_settled": true,
+    "wheels": {
+      "A": {
+        "settling_time_s": 0.75,
+        "tail_rmse_mm_s": 1.175341115996178
+      },
+      "B": {
+        "settling_time_s": 0.7199999999997999,
+        "tail_rmse_mm_s": 1.123612356700501
+      },
+      "C": {
+        "settling_time_s": 0.7300000000000182,
+        "tail_rmse_mm_s": 0.9997944163128627
+      },
+      "D": {
+        "settling_time_s": 0.7300000000000182,
+        "tail_rmse_mm_s": 0.8878829387969853
+      }
+    },
+    "battery_nominal_min_max_v": null
+  },
+  {
+    "trial_id": "B_GROUND_V018_R01",
+    "condition": "GROUND",
+    "speed": 0.18,
+    "start_local": "2026-10-02T10:58:53.798145+08:00",
+    "all_four_settled": true,
+    "wheels": {
+      "A": {
+        "settling_time_s": 0.6199999999998909,
+        "tail_rmse_mm_s": 2.9213795837330765
+      },
+      "B": {
+        "settling_time_s": 1.6599999999998545,
+        "tail_rmse_mm_s": 2.518801579460101
+      },
+      "C": {
+        "settling_time_s": 0.6300000000001091,
+        "tail_rmse_mm_s": 2.7521430490574885
+      },
+      "D": {
+        "settling_time_s": 0.6199999999998909,
+        "tail_rmse_mm_s": 3.216954361793133
+      }
+    },
+    "battery_nominal_min_max_v": [
+      12.1,
+      12.171
+    ]
+  },
+  {
+    "trial_id": "B_GROUND_V018_R02_RETEST03",
+    "condition": "GROUND",
+    "speed": 0.18,
+    "start_local": "2026-10-02T11:23:52.996929+08:00",
+    "all_four_settled": true,
+    "wheels": {
+      "A": {
+        "settling_time_s": 1.1999999999999886,
+        "tail_rmse_mm_s": 2.5843161170627966
+      },
+      "B": {
+        "settling_time_s": 1.1899999999999977,
+        "tail_rmse_mm_s": 2.5014162844892924
+      },
+      "C": {
+        "settling_time_s": 0.7099999999999795,
+        "tail_rmse_mm_s": 2.713284707246184
+      },
+      "D": {
+        "settling_time_s": 0.7099999999999795,
+        "tail_rmse_mm_s": 3.636919460812703
+      }
+    },
+    "battery_nominal_min_max_v": [
+      12.091,
+      12.206
+    ]
+  },
+  {
+    "trial_id": "B_GROUND_V018_R03",
+    "condition": "GROUND",
+    "speed": 0.18,
+    "start_local": "2026-10-02T11:27:25.609359+08:00",
+    "all_four_settled": true,
+    "wheels": {
+      "A": {
+        "settling_time_s": 0.6499999999999773,
+        "tail_rmse_mm_s": 2.8353399612529446
+      },
+      "B": {
+        "settling_time_s": 0.6499999999999773,
+        "tail_rmse_mm_s": 3.0531230961104767
+      },
+      "C": {
+        "settling_time_s": 0.7200000000000273,
+        "tail_rmse_mm_s": 3.007617832710224
+      },
+      "D": {
+        "settling_time_s": 3.2999999999999545,
+        "tail_rmse_mm_s": 3.853900748941865
+      }
+    },
+    "battery_nominal_min_max_v": [
+      12.091,
+      12.206
+    ]
+  },
+  {
+    "trial_id": "B_GROUND_V018_R04",
+    "condition": "GROUND",
+    "speed": 0.18,
+    "start_local": "2026-10-02T11:30:45.733535+08:00",
+    "all_four_settled": true,
+    "wheels": {
+      "A": {
+        "settling_time_s": 0.7300000000000182,
+        "tail_rmse_mm_s": 3.1420607903941007
+      },
+      "B": {
+        "settling_time_s": 2.4599999999999227,
+        "tail_rmse_mm_s": 3.699914265927755
+      },
+      "C": {
+        "settling_time_s": 3.0699999999999363,
+        "tail_rmse_mm_s": 4.07024716148118
+      },
+      "D": {
+        "settling_time_s": 3.840000000000032,
+        "tail_rmse_mm_s": 4.811965894688738
+      }
+    },
+    "battery_nominal_min_max_v": [
+      12.056,
+      12.171
+    ]
+  },
+  {
+    "trial_id": "B_GROUND_V018_R05",
+    "condition": "GROUND",
+    "speed": 0.18,
+    "start_local": "2026-10-02T11:34:07.973893+08:00",
+    "all_four_settled": false,
+    "wheels": {
+      "A": {
+        "settling_time_s": null,
+        "tail_rmse_mm_s": 3.633191738874419
+      },
+      "B": {
+        "settling_time_s": 1.2100000000000364,
+        "tail_rmse_mm_s": 3.6231917260580264
+      },
+      "C": {
+        "settling_time_s": null,
+        "tail_rmse_mm_s": 3.848024957432709
+      },
+      "D": {
+        "settling_time_s": null,
+        "tail_rmse_mm_s": 4.530405722676481
+      }
+    },
+    "battery_nominal_min_max_v": [
+      12.091,
+      12.206
+    ]
+  },
+  {
+    "trial_id": "B_GROUND_V040_R01",
+    "condition": "GROUND",
+    "speed": 0.4,
+    "start_local": "2026-10-02T11:01:28.134041+08:00",
+    "all_four_settled": true,
+    "wheels": {
+      "A": {
+        "settling_time_s": 0.6600000000003092,
+        "tail_rmse_mm_s": 2.3724992700941443
+      },
+      "B": {
+        "settling_time_s": 0.680000000000291,
+        "tail_rmse_mm_s": 2.8768529884134884
+      },
+      "C": {
+        "settling_time_s": 0.680000000000291,
+        "tail_rmse_mm_s": 2.941455082417641
+      },
+      "D": {
+        "settling_time_s": 0.7200000000002547,
+        "tail_rmse_mm_s": 4.065112225620153
+      }
+    },
+    "battery_nominal_min_max_v": [
+      12.065,
+      12.233
+    ]
+  },
+  {
+    "trial_id": "B_GROUND_V040_R02",
+    "condition": "GROUND",
+    "speed": 0.4,
+    "start_local": "2026-10-02T11:25:46.145308+08:00",
+    "all_four_settled": true,
+    "wheels": {
+      "A": {
+        "settling_time_s": 0.660000000000025,
+        "tail_rmse_mm_s": 2.366080031290038
+      },
+      "B": {
+        "settling_time_s": 0.6700000000000159,
+        "tail_rmse_mm_s": 3.15518676243003
+      },
+      "C": {
+        "settling_time_s": 0.6899999999999977,
+        "tail_rmse_mm_s": 2.271121160930595
+      },
+      "D": {
+        "settling_time_s": 0.660000000000025,
+        "tail_rmse_mm_s": 4.276868208527961
+      }
+    },
+    "battery_nominal_min_max_v": [
+      12.029,
+      12.162
+    ]
+  },
+  {
+    "trial_id": "B_GROUND_V040_R03",
+    "condition": "GROUND",
+    "speed": 0.4,
+    "start_local": "2026-10-02T11:29:20.310224+08:00",
+    "all_four_settled": true,
+    "wheels": {
+      "A": {
+        "settling_time_s": 0.6400000000001,
+        "tail_rmse_mm_s": 2.8334564488089478
+      },
+      "B": {
+        "settling_time_s": 0.6400000000001,
+        "tail_rmse_mm_s": 4.060719766913859
+      },
+      "C": {
+        "settling_time_s": 0.6700000000000728,
+        "tail_rmse_mm_s": 2.781336369922826
+      },
+      "D": {
+        "settling_time_s": 0.6900000000000546,
+        "tail_rmse_mm_s": 4.003752093035329
+      }
+    },
+    "battery_nominal_min_max_v": [
+      12.056,
+      12.162
+    ]
+  },
+  {
+    "trial_id": "B_GROUND_V040_R04",
+    "condition": "GROUND",
+    "speed": 0.4,
+    "start_local": "2026-10-02T11:32:45.840231+08:00",
+    "all_four_settled": true,
+    "wheels": {
+      "A": {
+        "settling_time_s": 0.6700000000000728,
+        "tail_rmse_mm_s": 3.4259937459585985
+      },
+      "B": {
+        "settling_time_s": 0.6299999999999955,
+        "tail_rmse_mm_s": 4.153887922619981
+      },
+      "C": {
+        "settling_time_s": 0.6900000000000546,
+        "tail_rmse_mm_s": 2.976115207416724
+      },
+      "D": {
+        "settling_time_s": 0.6700000000000728,
+        "tail_rmse_mm_s": 4.296667172040027
+      }
+    },
+    "battery_nominal_min_max_v": [
+      12.02,
+      12.162
+    ]
+  },
+  {
+    "trial_id": "B_GROUND_V040_R05",
+    "condition": "GROUND",
+    "speed": 0.4,
+    "start_local": "2026-10-02T11:36:11.851573+08:00",
+    "all_four_settled": true,
+    "wheels": {
+      "A": {
+        "settling_time_s": 0.6399999999998727,
+        "tail_rmse_mm_s": 3.804608283827869
+      },
+      "B": {
+        "settling_time_s": 0.6199999999998909,
+        "tail_rmse_mm_s": 4.347584698368603
+      },
+      "C": {
+        "settling_time_s": 0.6399999999998727,
+        "tail_rmse_mm_s": 2.8469441336257004
+      },
+      "D": {
+        "settling_time_s": 0.6199999999998909,
+        "tail_rmse_mm_s": 4.703970886579741
+      }
+    },
+    "battery_nominal_min_max_v": [
+      12.056,
+      12.198
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+{"event": "connection_opened", "pc_monotonic_ns": 7557016357300, "local_time": "2026-10-02T11:22:03.009140+08:00", "port": "COM13"}
+{"event": "command_sent", "pc_monotonic_ns": 7557016744300, "local_time": "2026-10-02T11:22:03.009520+08:00", "command_sequence": 1, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 7557041783800, "local_time": "2026-10-02T11:22:03.034563+08:00", "fields": [1, 1, 0, 5, 255, 44, 0, 2]}
+{"event": "command_sent", "pc_monotonic_ns": 7557042168200, "local_time": "2026-10-02T11:22:03.034946+08:00", "command_sequence": 2, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 7557071587400, "local_time": "2026-10-02T11:22:03.064366+08:00", "fields": [2, 8, 0, 5, 255, 44, 0, 2]}
+{"event": "command_sent", "pc_monotonic_ns": 7576912749600, "local_time": "2026-10-02T11:22:22.905530+08:00", "command_sequence": 3, "opcode": "CLEAR_FAULT", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 7576940191500, "local_time": "2026-10-02T11:22:22.932971+08:00", "fields": [3, 9, 0, 0, 255, 44, 0, 0]}
+{"event": "fault_cause_resolution", "pc_monotonic_ns": 7576940249100, "local_time": "2026-10-02T11:22:22.933024+08:00", "reason": "用户已将蓝牙两端放得更近并明确要求再次重试；本次主机ABORT故障2及停稳已读回，30秒近距离静止复核3017样本无校验错误或丢帧，通过后仅单次重测"}

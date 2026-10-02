@@ -1,0 +1,84 @@
+{
+  "recorded_local": "2026-10-02T10:41:23.863038+08:00",
+  "firmware_build_id": "WRS1-b87ba230e207f646",
+  "condition": "AIR",
+  "transport": "JDY-33 classic SPP COM13",
+  "safety_prechecks_passed": 2,
+  "trials": [
+    {
+      "trial_id": "B_AIR_BT_ADC_ABORT050",
+      "kind": "abort",
+      "passed": true,
+      "directory": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\data\\B_AIR_BT_ADC_ABORT050_20261002_103343_324680",
+      "expected_fault_flags": 2,
+      "fault_samples": 136,
+      "fault_observation_s": 1.35,
+      "pc_send_to_first_fault_receive_ms": 79.504,
+      "latency_reference": "ABORT send",
+      "latency_note": "PC timestamp interval includes serial/Bluetooth transport and receive buffering; not MCU-only response latency.",
+      "fault_outputs_all_zero": true,
+      "terminal_feedback_in_locked_zero_band": true,
+      "sequence_missing": 0,
+      "decoder_stats": {
+        "noise_bytes": 46,
+        "noise_before_first_frame": 46,
+        "frames": 20195
+      },
+      "queue_drop_max": 0,
+      "battery_voltage_nominal_v": {
+        "min": 12.171,
+        "median": 12.171,
+        "max": 12.198
+      },
+      "formal_baseline_eligible": false,
+      "normal_trial_validation_valid": false,
+      "normal_validation_note": "Intentional fault interrupts the normal phases; safety-specific review passed."
+    },
+    {
+      "trial_id": "B_AIR_BT_ADC_HEARTBEAT050",
+      "kind": "heartbeat",
+      "passed": true,
+      "directory": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\data\\B_AIR_BT_ADC_HEARTBEAT050_20261002_103809_642888",
+      "expected_fault_flags": 1,
+      "fault_samples": 132,
+      "fault_observation_s": 1.31,
+      "pc_send_to_first_fault_receive_ms": 558.6,
+      "latency_reference": "last HEARTBEAT send",
+      "latency_note": "PC timestamp interval includes serial/Bluetooth transport and receive buffering; not MCU-only response latency.",
+      "fault_outputs_all_zero": true,
+      "terminal_feedback_in_locked_zero_band": true,
+      "sequence_missing": 0,
+      "decoder_stats": {
+        "noise_bytes": 57,
+        "noise_before_first_frame": 57,
+        "frames": 1664
+      },
+      "queue_drop_max": 0,
+      "battery_voltage_nominal_v": {
+        "min": 12.135,
+        "median": 12.171,
+        "max": 12.206
+      },
+      "formal_baseline_eligible": false,
+      "normal_trial_validation_valid": false,
+      "normal_validation_note": "Intentional fault interrupts the normal phases; safety-specific review passed."
+    }
+  ],
+  "final_zero_directory": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\battery\\AIR_safety_final_zero\\LISTEN_20261002_103938_257073",
+  "final_zero_samples": 519,
+  "final_zero_targets_feedback_PWM_all_zero": true,
+  "final_fault_flags": 0,
+  "final_state": "IDLE",
+  "battery_voltage_nominal_v": {
+    "min": 12.135,
+    "median": 12.171,
+    "max": 12.206
+  },
+  "battery_independently_calibrated": false,
+  "ground_motion_started": false,
+  "failed_passive_connection_attempt_retained": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\battery\\AIR_safety_final_zero\\LISTEN_20261002_103914_054769",
+  "fault_clear_evidence": [
+    "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\static_checks\\CLEAR_FAULT_20261002_103739_987392",
+    "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\static_checks\\CLEAR_FAULT_20261002_103855_407967"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "archive": "D:\\MCU\\STM32\\AgriBot\\Windows四轮轮速响应测试_完整回传_20261002_121910.zip",
+  "bytes": 155772739,
+  "sha256": "30b12c277fdf45354a5a41cd7879ea1491bc9fe98b2b6e4df9f46e1bc0fdf749",
+  "payload_files": 3948,
+  "zip_entries": 3949,
+  "uncompressed_payload_bytes": 518163365,
+  "all_payload_hashes_verified": true,
+  "zip_CRC_verified": true,
+  "formal_valid": 20,
+  "supplemental_valid": 4,
+  "low_speed_all_four_goal_met": false,
+  "source_files_verified": 1408,
+  "patch_reconstruction_verified": true,
+  "verified_local": "2026-10-02T12:19:53.305175+08:00"
+}

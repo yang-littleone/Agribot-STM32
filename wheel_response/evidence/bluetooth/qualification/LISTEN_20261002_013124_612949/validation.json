@@ -1,0 +1,46 @@
+{
+  "valid": false,
+  "reasons": [
+    "bad_crc",
+    "missing_sequence",
+    "noise_between_frames"
+  ],
+  "mode": "listen",
+  "raw_csv_match": true,
+  "hash_mismatch_files": [],
+  "expected_samples": null,
+  "actual_samples": 3006,
+  "all_csv_samples": 3006,
+  "stage_counts": {
+    "0": 0,
+    "1": 0,
+    "2": 0
+  },
+  "sequence_missing": 12,
+  "duplicates": 0,
+  "segments": [
+    0
+  ],
+  "decoder_stats": {
+    "frames": 3011,
+    "bad_crc": 1,
+    "noise_bytes": 107,
+    "noise_between_frames": 107
+  },
+  "trailing_incomplete_bytes": 3,
+  "queue_drop_max": 0,
+  "cycle_distribution": {
+    "min_us": 10000.0,
+    "median_us": 10000.0,
+    "mean_us": 10000.0,
+    "p95_us": 10000.0,
+    "max_us": 10000.0
+  },
+  "feedback_jump_threshold_m_s_per_sample": 0.2,
+  "feedback_jump_counts": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0
+  }
+}

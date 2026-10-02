@@ -1,0 +1,10 @@
+{"event": "connection_opened", "pc_monotonic_ns": 55938255429200, "local_time": "2026-10-02T01:19:06.405508+08:00", "port": "COM13"}
+{"event": "command_sent", "pc_monotonic_ns": 55939391463800, "local_time": "2026-10-02T01:19:07.541538+08:00", "command_sequence": 1, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "command_sent", "pc_monotonic_ns": 55941704009900, "local_time": "2026-10-02T01:19:09.854089+08:00", "command_sequence": 2, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55941858343700, "local_time": "2026-10-02T01:19:10.008421+08:00", "fields": [2, 1, 0, 0, 255, 0, 0, 0]}
+{"event": "command_sent", "pc_monotonic_ns": 55941858628100, "local_time": "2026-10-02T01:19:10.008703+08:00", "command_sequence": 3, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55942071948300, "local_time": "2026-10-02T01:19:10.222025+08:00", "fields": [3, 8, 0, 0, 255, 0, 0, 0]}
+{"event": "command_sent", "pc_monotonic_ns": 55945394259600, "local_time": "2026-10-02T01:19:13.544334+08:00", "command_sequence": 4, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "command_sent", "pc_monotonic_ns": 55947705695600, "local_time": "2026-10-02T01:19:15.855775+08:00", "command_sequence": 5, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "command_sent", "pc_monotonic_ns": 55950046117900, "local_time": "2026-10-02T01:19:18.196197+08:00", "command_sequence": 6, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "command_sent", "pc_monotonic_ns": 55952352852400, "local_time": "2026-10-02T01:19:20.502932+08:00", "command_sequence": 7, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}

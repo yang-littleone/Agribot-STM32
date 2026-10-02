@@ -1,0 +1,30 @@
+{
+  "updated_local": "2026-10-02T10:41:23.863038+08:00",
+  "implemented": true,
+  "build_success": true,
+  "download_success": true,
+  "board_identity_verified": true,
+  "firmware_build_id": "WRS1-b87ba230e207f646",
+  "automatic_tests_passed": 16,
+  "static_samples": 3022,
+  "static_data_valid": true,
+  "static_voltage_median_v": 12.198,
+  "voltage_is_nominal_adc_estimate": true,
+  "independently_calibrated": false,
+  "first_three_downloads_failed_and_retained": true,
+  "connection_reseated_by_user": true,
+  "ground_started": false,
+  "powered_bridge_trials_passed": 2,
+  "powered_bridge_samples": 2200,
+  "final_zero_directory": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\battery\\final_zero\\LISTEN_20261002_101223_645151",
+  "final_zero_samples": 322,
+  "final_zero_targets_feedback_PWM_all_zero": true,
+  "strict_stop_time_unavailable": [
+    "B_AIR_BT_ADC_V040:B"
+  ],
+  "AIR_safety_prechecks_passed": 2,
+  "AIR_safety_report": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\battery\\AIR_safety_prechecks_report.json",
+  "latest_final_zero_directory": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\battery\\AIR_safety_final_zero\\LISTEN_20261002_103938_257073",
+  "latest_final_zero_samples": 519,
+  "latest_final_zero_targets_feedback_PWM_all_zero": true
+}

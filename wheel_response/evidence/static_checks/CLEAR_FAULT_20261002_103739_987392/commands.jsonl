@@ -1,0 +1,8 @@
+{"event": "connection_opened", "pc_monotonic_ns": 4896124714400, "local_time": "2026-10-02T10:37:42.117497+08:00", "port": "COM13"}
+{"event": "command_sent", "pc_monotonic_ns": 4896125095800, "local_time": "2026-10-02T10:37:42.117872+08:00", "command_sequence": 1, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 4896153636600, "local_time": "2026-10-02T10:37:42.146416+08:00", "fields": [1, 1, 0, 5, 255, 37, 0, 2]}
+{"event": "command_sent", "pc_monotonic_ns": 4896153950000, "local_time": "2026-10-02T10:37:42.146728+08:00", "command_sequence": 2, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 4896181096300, "local_time": "2026-10-02T10:37:42.173876+08:00", "fields": [2, 8, 0, 5, 255, 37, 0, 2]}
+{"event": "command_sent", "pc_monotonic_ns": 4912492308600, "local_time": "2026-10-02T10:37:58.485088+08:00", "command_sequence": 3, "opcode": "CLEAR_FAULT", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 4912534722600, "local_time": "2026-10-02T10:37:58.527502+08:00", "fields": [3, 9, 0, 0, 255, 37, 0, 0]}
+{"event": "fault_cause_resolution", "pc_monotonic_ns": 4912534777100, "local_time": "2026-10-02T10:37:58.527551+08:00", "reason": "本次架空预检主动ABORT，检查输出和反馈已停稳"}

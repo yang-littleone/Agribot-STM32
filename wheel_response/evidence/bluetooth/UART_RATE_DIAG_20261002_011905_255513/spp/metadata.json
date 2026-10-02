@@ -1,0 +1,23 @@
+{
+  "mode": "uart_rate_diagnostic",
+  "start_local": "2026-10-02T01:19:05.396260+08:00",
+  "complete": true,
+  "transport": "bluetooth_spp",
+  "end_local": "2026-10-02T01:19:22.649845+08:00",
+  "decoder_stats": {
+    "noise_bytes": 192,
+    "noise_before_first_frame": 0,
+    "frames": 34,
+    "bad_crc": 1,
+    "noise_between_frames": 192,
+    "bad_header": 1
+  },
+  "trailing_bytes": 0,
+  "samples_received": 32,
+  "hashes": {
+    "commands.jsonl": "9edd5b17dec8c1a5c92eaf2a3e8de338e0ec3d78629ad7b4ae56ae0eb71ddd64",
+    "raw_rx.bin": "20184d1cf11a20e1809b9f69202faa43b4ddfad96253a2867c8dc98eec0406e7",
+    "raw_tx.bin": "4f9907c53d99c1ea86abad152c7a42c1069a77c8f26c757c3fbf0cc73f1d5d84",
+    "samples.csv": "1dac4f7068b13e31f162434e74ed281599c8f14eb347636f69c423cb0e1240bb"
+  }
+}

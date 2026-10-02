@@ -1,0 +1,28 @@
+[
+  {
+    "historical_capture": "B_AIR_ABORT050_20261001_233247_211994",
+    "kind": "abort",
+    "passed": true,
+    "reasons": [],
+    "new_hardware_experiment": false,
+    "zero_check_modes": {
+      "A": "exact_recorded_zero_unverified_band",
+      "B": "exact_recorded_zero_unverified_band",
+      "C": "exact_recorded_zero_unverified_band",
+      "D": "exact_recorded_zero_unverified_band"
+    }
+  },
+  {
+    "historical_capture": "B_AIR_HEARTBEAT050_20261001_233632_339577",
+    "kind": "heartbeat",
+    "passed": true,
+    "reasons": [],
+    "new_hardware_experiment": false,
+    "zero_check_modes": {
+      "A": "exact_recorded_zero_unverified_band",
+      "B": "exact_recorded_zero_unverified_band",
+      "C": "exact_recorded_zero_unverified_band",
+      "D": "exact_recorded_zero_unverified_band"
+    }
+  }
+]

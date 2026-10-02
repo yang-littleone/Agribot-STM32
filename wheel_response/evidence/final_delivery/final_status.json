@@ -1,0 +1,106 @@
+{
+  "report_generated_local": "2026-10-02T12:17:00.804259+08:00",
+  "baseline_measurement_complete": true,
+  "formal_valid": 20,
+  "formal_counts": [
+    {
+      "condition": "AIR",
+      "planned": 10,
+      "started_attempts": 10,
+      "normal_completed_valid": 10,
+      "interrupted": 0,
+      "connection_failed_no_motion": 0,
+      "phase_samples_valid": 11000
+    },
+    {
+      "condition": "GROUND",
+      "planned": 10,
+      "started_attempts": 12,
+      "normal_completed_valid": 10,
+      "interrupted": 2,
+      "connection_failed_no_motion": 1,
+      "phase_samples_valid": 11000
+    }
+  ],
+  "supplemental_started": 4,
+  "supplemental_all_four_qualified": 0,
+  "supplemental_S05_S06_not_executed": true,
+  "user_requested_report_and_Linux_archive": true,
+  "performance_goal_all_conditions_persistent_5percent_achieved": false,
+  "motor_commands_during_delivery": false,
+  "last_valid_terminal_check": {
+    "trial_id": "B_GROUND_SUPP_V018_S04",
+    "directory": "wheel_response/data/B_GROUND_SUPP_V018_S04_20261002_115623_058091",
+    "check": {
+      "trial_id": "B_GROUND_SUPP_V018_S04",
+      "reviewed_local": "2026-10-02T11:57:06.802070+08:00",
+      "passed": true,
+      "reasons": [],
+      "data_valid": true,
+      "samples": 1100,
+      "wheels": {
+        "A": {
+          "hold_peak_m_s": 0.19024959206581116,
+          "hold_min_m_s": 0.0,
+          "hold_net_counts": 248133,
+          "complete_feedback_max_abs_m_s": 0.00034033917472697794,
+          "final_100ms_feedback_max_abs_m_s": 0.0,
+          "complete_pwm_max_abs": 0,
+          "zero_drive_transition_note": "Any short COMPLETE transition feedback is retained; continuation requires final 100 ms within the prelocked zero band and zero PWM throughout COMPLETE. Normal POST metrics remain unchanged."
+        },
+        "B": {
+          "hold_peak_m_s": 0.19024959206581116,
+          "hold_min_m_s": 0.0,
+          "hold_net_counts": 248142,
+          "complete_feedback_max_abs_m_s": 0.0,
+          "final_100ms_feedback_max_abs_m_s": 0.0,
+          "complete_pwm_max_abs": 0,
+          "zero_drive_transition_note": "Any short COMPLETE transition feedback is retained; continuation requires final 100 ms within the prelocked zero band and zero PWM throughout COMPLETE. Normal POST metrics remain unchanged."
+        },
+        "C": {
+          "hold_peak_m_s": 0.18786722421646118,
+          "hold_min_m_s": 0.0,
+          "hold_net_counts": 245699,
+          "complete_feedback_max_abs_m_s": 0.006126105319708586,
+          "final_100ms_feedback_max_abs_m_s": 0.0,
+          "complete_pwm_max_abs": 0,
+          "zero_drive_transition_note": "Any short COMPLETE transition feedback is retained; continuation requires final 100 ms within the prelocked zero band and zero PWM throughout COMPLETE. Normal POST metrics remain unchanged."
+        },
+        "D": {
+          "hold_peak_m_s": 0.18786722421646118,
+          "hold_min_m_s": 0.0,
+          "hold_net_counts": 245766,
+          "complete_feedback_max_abs_m_s": 0.0,
+          "final_100ms_feedback_max_abs_m_s": 0.0,
+          "complete_pwm_max_abs": 0,
+          "zero_drive_transition_note": "Any short COMPLETE transition feedback is retained; continuation requires final 100 ms within the prelocked zero band and zero PWM throughout COMPLETE. Normal POST metrics remain unchanged."
+        }
+      },
+      "performance_notes": {
+        "A": "not_settled_in_hold_window",
+        "C": "not_settled_in_hold_window"
+      },
+      "physical_setup_source": "GROUND setup recorded in the trial snapshot; operator independently confirms placement for each START. No physical observations inferred from telemetry."
+    }
+  },
+  "new_final_static_connection_attempts": [
+    {
+      "directory": "wheel_response/evidence/final_delivery/final_zero/LISTEN_20261002_120458_025512",
+      "complete": false,
+      "samples": 0,
+      "raw_tx_bytes": 0,
+      "error": "COM13 open timeout, Windows error121; actual CLI output recorded in final_static_connection_review.json",
+      "start_local": "2026-10-02T12:04:57.896847+08:00"
+    },
+    {
+      "directory": "wheel_response/evidence/final_delivery/final_zero/LISTEN_20261002_120515_658422",
+      "complete": false,
+      "samples": 0,
+      "raw_tx_bytes": 0,
+      "error": "COM13 open timeout, Windows error121; actual CLI output recorded in final_static_connection_review.json",
+      "start_local": "2026-10-02T12:05:15.534991+08:00"
+    }
+  ],
+  "fresh_static_connection_verified": false,
+  "no_board_firmware_restoration_performed": true
+}

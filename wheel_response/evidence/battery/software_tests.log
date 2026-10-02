@@ -1,0 +1,21 @@
+test_nonblocking_adc_estimate_failure_staleness_and_wrap (test_offline.BatteryTests.test_nonblocking_adc_estimate_failure_staleness_and_wrap) ... ok
+test_compiled_bootstrap_connected_9600_and_no_false_verification (test_offline.BluetoothPortTests.test_compiled_bootstrap_connected_9600_and_no_false_verification) ... ok
+test_selects_named_outgoing_spp_not_ble_incoming_or_other_devices (test_offline.BluetoothPortTests.test_selects_named_outgoing_spp_not_ble_incoming_or_other_devices) ... ok
+test_confirmation_wait_keeps_draining_serial (test_offline.LiveIntegrityTests.test_confirmation_wait_keeps_draining_serial) ... ok
+test_corrupt_live_frame_marks_run_for_abort (test_offline.LiveIntegrityTests.test_corrupt_live_frame_marks_run_for_abort) ... ok
+test_idle_corruption_is_preserved_without_motion_session_abort (test_offline.LiveIntegrityTests.test_idle_corruption_is_preserved_without_motion_session_abort) ... ok
+test_gap_prevents_settling_claim (test_offline.MetricTests.test_gap_prevents_settling_claim) ... ok
+test_known_first_order (test_offline.MetricTests.test_known_first_order) ... ok
+test_unknown_quantization (test_offline.MetricTests.test_unknown_quantization) ... ok
+test_unreachable_no_fake_zero (test_offline.MetricTests.test_unreachable_no_fake_zero) ... ok
+test_clock_missing_wrap_restart (test_offline.ProtocolTests.test_clock_missing_wrap_restart) ... ok
+test_compiled_c_protocol_and_engine (test_offline.ProtocolTests.test_compiled_c_protocol_and_engine) ... ok
+test_crc_and_sizes (test_offline.ProtocolTests.test_crc_and_sizes) ... ok
+test_fragmentation_and_resynchronization (test_offline.ProtocolTests.test_fragmentation_and_resynchronization) ... ok
+test_initial_partial_frame_distinguished_from_interior_noise (test_offline.ProtocolTests.test_initial_partial_frame_distinguished_from_interior_noise) ... ok
+test_raw_csv_phase_and_hash_audit (test_offline.ValidationTests.test_raw_csv_phase_and_hash_audit) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 1.619s
+
+OK

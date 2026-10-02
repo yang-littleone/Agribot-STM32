@@ -1,0 +1,6 @@
+{
+  "recorded_local": "2026-10-02T00:18:10.476871+08:00",
+  "initial_strict_review_preserved": "B_AIR_V018_R01/continuation_review_initial_strict.json",
+  "observed": "Brief small reverse feedback at first COMPLETE after normal POST; PWM zero throughout; final 100ms fully zero in R01 and R02.",
+  "screen_revision": "Require final 100ms within already locked zero band, zero PWM throughout COMPLETE, COMPLETE absolute feedback <=0.05m/s. Full transient retained and reported. No modification of predefined performance metrics or thresholds."
+}

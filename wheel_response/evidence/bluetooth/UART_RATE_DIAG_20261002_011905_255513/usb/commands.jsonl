@@ -1,0 +1,69 @@
+{"event": "connection_opened", "pc_monotonic_ns": 55937139055600, "local_time": "2026-10-02T01:19:05.289133+08:00", "port": "COM12"}
+{"event": "command_sent", "pc_monotonic_ns": 55937139368200, "local_time": "2026-10-02T01:19:05.289442+08:00", "command_sequence": 1, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55937149338900, "local_time": "2026-10-02T01:19:05.299415+08:00", "fields": [1, 1, 0, 0, 255, 0, 0, 0]}
+{"event": "command_sent", "pc_monotonic_ns": 55937149579500, "local_time": "2026-10-02T01:19:05.299653+08:00", "command_sequence": 2, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55937161192600, "local_time": "2026-10-02T01:19:05.311269+08:00", "fields": [2, 8, 0, 0, 255, 0, 0, 0]}
+{"event": "command_sent", "pc_monotonic_ns": 55939283200800, "local_time": "2026-10-02T01:19:07.433278+08:00", "command_sequence": 3, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55939289182900, "local_time": "2026-10-02T01:19:07.439259+08:00", "fields": [3, 1, 0, 0, 255, 0, 0, 0]}
+{"event": "command_sent", "pc_monotonic_ns": 55939289453100, "local_time": "2026-10-02T01:19:07.439527+08:00", "command_sequence": 4, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55939301219000, "local_time": "2026-10-02T01:19:07.451297+08:00", "fields": [4, 8, 0, 0, 255, 0, 0, 0]}
+{"event": "command_sent", "pc_monotonic_ns": 55939381537400, "local_time": "2026-10-02T01:19:07.531614+08:00", "command_sequence": 5, "opcode": "BT_UART_BAUD", "run_id": 0, "step_mm_s": 8, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55939391171000, "local_time": "2026-10-02T01:19:07.541248+08:00", "fields": [5, 10, 0, 0, 255, 0, 0, 0]}
+{"event": "command_sent", "pc_monotonic_ns": 55941418428200, "local_time": "2026-10-02T01:19:09.568510+08:00", "command_sequence": 6, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55941440478200, "local_time": "2026-10-02T01:19:09.590554+08:00", "fields": [6, 1, 0, 0, 255, 0, 0, 0]}
+{"event": "command_sent", "pc_monotonic_ns": 55941440768400, "local_time": "2026-10-02T01:19:09.590842+08:00", "command_sequence": 7, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55941450144500, "local_time": "2026-10-02T01:19:09.600221+08:00", "fields": [7, 8, 0, 0, 255, 0, 0, 0]}
+{"event": "command_sent", "pc_monotonic_ns": 55941530939200, "local_time": "2026-10-02T01:19:09.681016+08:00", "command_sequence": 8, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55941539976000, "local_time": "2026-10-02T01:19:09.690053+08:00", "fields": [8, 1, 0, 0, 255, 0, 0, 0]}
+{"event": "command_sent", "pc_monotonic_ns": 55941540197800, "local_time": "2026-10-02T01:19:09.690271+08:00", "command_sequence": 9, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55941552093300, "local_time": "2026-10-02T01:19:09.702170+08:00", "fields": [9, 8, 0, 0, 255, 0, 0, 0]}
+{"event": "command_sent", "pc_monotonic_ns": 55941632541200, "local_time": "2026-10-02T01:19:09.782620+08:00", "command_sequence": 10, "opcode": "BT_UART_BAUD", "run_id": 0, "step_mm_s": 4, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55941642085300, "local_time": "2026-10-02T01:19:09.792162+08:00", "fields": [10, 10, 0, 0, 255, 0, 0, 0]}
+{"event": "command_sent", "pc_monotonic_ns": 55945082742400, "local_time": "2026-10-02T01:19:13.232822+08:00", "command_sequence": 11, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55945165042900, "local_time": "2026-10-02T01:19:13.315119+08:00", "fields": [11, 1, 0, 5, 255, 0, 0, 32]}
+{"event": "command_sent", "pc_monotonic_ns": 55945165282100, "local_time": "2026-10-02T01:19:13.315356+08:00", "command_sequence": 12, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55945186014400, "local_time": "2026-10-02T01:19:13.336091+08:00", "fields": [12, 8, 0, 5, 255, 0, 0, 32]}
+{"event": "command_sent", "pc_monotonic_ns": 55945266636100, "local_time": "2026-10-02T01:19:13.416714+08:00", "command_sequence": 13, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55945283957800, "local_time": "2026-10-02T01:19:13.434034+08:00", "fields": [13, 1, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55945284224300, "local_time": "2026-10-02T01:19:13.434298+08:00", "command_sequence": 14, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55945295909400, "local_time": "2026-10-02T01:19:13.445986+08:00", "fields": [14, 8, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55945376175800, "local_time": "2026-10-02T01:19:13.526252+08:00", "command_sequence": 15, "opcode": "BT_UART_BAUD", "run_id": 0, "step_mm_s": 5, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55945394003600, "local_time": "2026-10-02T01:19:13.544080+08:00", "fields": [15, 10, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55947410869100, "local_time": "2026-10-02T01:19:15.560947+08:00", "command_sequence": 16, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55947434303700, "local_time": "2026-10-02T01:19:15.584380+08:00", "fields": [16, 1, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55947434597600, "local_time": "2026-10-02T01:19:15.584672+08:00", "command_sequence": 17, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55947451944600, "local_time": "2026-10-02T01:19:15.602020+08:00", "fields": [17, 8, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55947532815000, "local_time": "2026-10-02T01:19:15.682893+08:00", "command_sequence": 18, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55947541955000, "local_time": "2026-10-02T01:19:15.692032+08:00", "fields": [18, 1, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55947542179500, "local_time": "2026-10-02T01:19:15.692253+08:00", "command_sequence": 19, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55947553845400, "local_time": "2026-10-02T01:19:15.703923+08:00", "fields": [19, 8, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55947634083100, "local_time": "2026-10-02T01:19:15.784159+08:00", "command_sequence": 20, "opcode": "BT_UART_BAUD", "run_id": 0, "step_mm_s": 6, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55947643803300, "local_time": "2026-10-02T01:19:15.793880+08:00", "fields": [20, 10, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55949729430400, "local_time": "2026-10-02T01:19:17.879508+08:00", "command_sequence": 21, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55949754140500, "local_time": "2026-10-02T01:19:17.904218+08:00", "fields": [21, 1, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55949754419800, "local_time": "2026-10-02T01:19:17.904495+08:00", "command_sequence": 22, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55949773766200, "local_time": "2026-10-02T01:19:17.923845+08:00", "fields": [22, 8, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55949855061500, "local_time": "2026-10-02T01:19:18.005140+08:00", "command_sequence": 23, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55949872814400, "local_time": "2026-10-02T01:19:18.022892+08:00", "fields": [23, 1, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55949873074500, "local_time": "2026-10-02T01:19:18.023149+08:00", "command_sequence": 24, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55949884879000, "local_time": "2026-10-02T01:19:18.034957+08:00", "fields": [24, 8, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55949965220800, "local_time": "2026-10-02T01:19:18.115297+08:00", "command_sequence": 25, "opcode": "BT_UART_BAUD", "run_id": 0, "step_mm_s": 7, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55949983755700, "local_time": "2026-10-02T01:19:18.133833+08:00", "fields": [25, 10, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55952069118500, "local_time": "2026-10-02T01:19:20.219197+08:00", "command_sequence": 26, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55952092984900, "local_time": "2026-10-02T01:19:20.243061+08:00", "fields": [26, 1, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55952093299500, "local_time": "2026-10-02T01:19:20.243374+08:00", "command_sequence": 27, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55952099630700, "local_time": "2026-10-02T01:19:20.249706+08:00", "fields": [27, 8, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55952180693600, "local_time": "2026-10-02T01:19:20.330770+08:00", "command_sequence": 28, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55952189737300, "local_time": "2026-10-02T01:19:20.339814+08:00", "fields": [28, 1, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55952190239700, "local_time": "2026-10-02T01:19:20.340313+08:00", "command_sequence": 29, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55952201600300, "local_time": "2026-10-02T01:19:20.351677+08:00", "fields": [29, 8, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55952282119600, "local_time": "2026-10-02T01:19:20.432196+08:00", "command_sequence": 30, "opcode": "BT_UART_BAUD", "run_id": 0, "step_mm_s": 9, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55952291642800, "local_time": "2026-10-02T01:19:20.441719+08:00", "fields": [30, 10, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55954381971400, "local_time": "2026-10-02T01:19:22.532051+08:00", "command_sequence": 31, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55954411507000, "local_time": "2026-10-02T01:19:22.561585+08:00", "fields": [31, 1, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55954411818600, "local_time": "2026-10-02T01:19:22.561893+08:00", "command_sequence": 32, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55954418661700, "local_time": "2026-10-02T01:19:22.568739+08:00", "fields": [32, 8, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55954524873200, "local_time": "2026-10-02T01:19:22.674950+08:00", "command_sequence": 33, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55954544675600, "local_time": "2026-10-02T01:19:22.694752+08:00", "fields": [33, 1, 0, 5, 255, 0, 0, 160]}
+{"event": "command_sent", "pc_monotonic_ns": 55954544905800, "local_time": "2026-10-02T01:19:22.694979+08:00", "command_sequence": 34, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 55954565644600, "local_time": "2026-10-02T01:19:22.715723+08:00", "fields": [34, 8, 0, 5, 255, 0, 0, 160]}

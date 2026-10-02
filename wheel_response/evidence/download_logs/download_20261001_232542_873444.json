@@ -1,0 +1,85 @@
+{
+  "robot_id": "B",
+  "physical_readiness": "User confirmed four wheels raised, board and motor supply on in chat.",
+  "start_local": "2026-10-01T23:25:42.873444+08:00",
+  "firmware_build_id": "WRS1-db73c13a727f9ae5",
+  "image_sha256": {
+    "MDK-ARM\\WheelResponse\\WheelResponse.hex": "1586b89b4be05fb31eddde6b8a67750428aa162400306ef2d7ff3df4cbe5c49a",
+    "MDK-ARM\\WheelResponse\\WheelResponse.axf": "b420ae0ff4e53835e56ddbc86404cf7e43a1e2a7d39de2686b2490ba4e96ee5c"
+  },
+  "command": [
+    "D:\\Keil_v5\\UV4\\UV4.exe",
+    "-f",
+    "D:\\MCU\\STM32\\AgriBot-wheel-response\\MDK-ARM\\WheelResponse.uvprojx",
+    "-t",
+    "WheelResponse",
+    "-o",
+    "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\download_logs\\download_20261001_232542_873444.log",
+    "-j0",
+    "-sg"
+  ],
+  "log": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\download_logs\\download_20261001_232542_873444.log",
+  "board_identity_verified": true,
+  "exit_code": 0,
+  "keil_reported_success": true,
+  "keil_log_text": "Load \"WheelResponse\\\\WheelResponse.axf\" \nErase Done.Programming Done.Verify OK.Application running ...\nFlash Load finished at 23:25:48\n",
+  "end_local": "2026-10-01T23:25:48.822500+08:00",
+  "identity_inspection_directory": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\static_checks\\INSPECT_20261001_232620_796550",
+  "board_config": {
+    "firmware_build_id": "WRS1-db73c13a727f9ae5",
+    "baseline_git_commit": "8655eb21f9537f84b5a66effc0fdb085a4993a99",
+    "configuration_version": 1,
+    "kp_ABCD": [
+      800,
+      800,
+      800,
+      800
+    ],
+    "ki_ABCD": [
+      500,
+      500,
+      500,
+      500
+    ],
+    "nominal_period_us": 10000,
+    "diameter_m": 0.065,
+    "encoder_ppr": 500,
+    "encoder_quadrature": 4,
+    "motor_reduction_ratio": 30,
+    "wheel_spacing_m": 0.187,
+    "axle_spacing_m": 0.173,
+    "pwm_limit": 16700,
+    "inverse_limit_m_s": 1.0,
+    "allowed_mm_s": [
+      50,
+      100,
+      180,
+      400
+    ],
+    "heartbeat_timeout_ms": 500,
+    "time_resolution_us": 1000,
+    "exec_invalid": 65535,
+    "battery_invalid": 65535,
+    "deadline_us": 15000,
+    "fatal_dt_us": 30000,
+    "queue_depth": 32,
+    "sample_struct_bytes": 84,
+    "heap_free": 11024,
+    "control_stack_free_words": 411,
+    "uart_stack_free_words": 416,
+    "clock_hz": 168000000,
+    "fault_bits": {
+      "heartbeat": 1,
+      "abort": 2,
+      "scheduling": 4,
+      "encoder_range": 8,
+      "rx": 16,
+      "uart": 32,
+      "memory": 64,
+      "drops": 128
+    },
+    "encoder_invalid_on_range_fault": 0,
+    "early_stop": 0,
+    "parser_errors": 0
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "purpose": "intentional ABORT precheck; excluded from formal performance trials",
+  "final_state": 5,
+  "fault_flags": 2,
+  "intentional_abort": true,
+  "pre_fault_feedback": {
+    "A": 0.049008842557668686,
+    "B": 0.05513494461774826,
+    "C": 0.07215190678834915,
+    "D": 0.08100072294473648
+  },
+  "pre_fault_pwm": {
+    "A": 992,
+    "B": 1163,
+    "C": 1651,
+    "D": 1572
+  },
+  "fault_all_pwm_zero": true,
+  "fault_all_targets_zero": true,
+  "fault_observation_ms": 1300.0,
+  "trigger_sample_to_first_zero_ms": 20.0,
+  "pc_send_to_receive_first_zero_ms": 22.6222,
+  "final_feedback": {
+    "A": 0.0,
+    "B": 0.0,
+    "C": 0.0,
+    "D": 0.0
+  },
+  "warning": "PC receive latency is not precise MCU command-arrival latency; trigger-to-zero includes serial delivery.",
+  "passed": true,
+  "data_quality": {
+    "raw_csv_match": true,
+    "hash_mismatch_files": [],
+    "sequence_missing": 0,
+    "duplicates": 0,
+    "queue_drop_max": 0,
+    "decoder_stats": {
+      "noise_bytes": 33,
+      "noise_before_first_frame": 33,
+      "frames": 1836,
+      "noise_between_frames": 0
+    },
+    "cycle_distribution": {
+      "min_us": 10000.0,
+      "median_us": 10000.0,
+      "mean_us": 10000.0,
+      "p95_us": 10000.0,
+      "max_us": 10000.0
+    },
+    "all_capture_sequence_missing": 0
+  }
+}

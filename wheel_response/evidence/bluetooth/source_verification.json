@@ -1,0 +1,24 @@
+{
+  "verified_local": "2026-10-02T09:32:31.959052+08:00",
+  "firmware_build_id": "WRS1-a1ee5888c276a89b",
+  "source_files_verified": 1406,
+  "mismatches": [],
+  "changed_since_AIR_manifest": [
+    "Core/Inc/stm32f4xx_it.h",
+    "Core/Inc/usart.h",
+    "Core/Src/main.c",
+    "Core/Src/stm32f4xx_it.c",
+    "Core/Src/usart.c",
+    "MDK-ARM/WheelResponse.uvprojx",
+    "System/Bluetooth.c",
+    "System/Bluetooth.h",
+    "System/WheelResponseEngine.c",
+    "System/WheelResponseEngine.h",
+    "System/WheelResponseExperiment.c"
+  ],
+  "images": {
+    "MDK-ARM\\WheelResponse\\WheelResponse.hex": "27acd1572f31b33c43a5bea32f01ba1bd753cc2184797add246d3dac3fd3c533",
+    "MDK-ARM\\WheelResponse\\WheelResponse.axf": "cd9e55ea092de3ab9907a9fd70f019ef8155c093a458ffc74996cfa78f3a60b9"
+  },
+  "generated_header_verified": true
+}

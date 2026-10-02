@@ -1,0 +1,418 @@
+{
+  "mode": "run",
+  "robot_id": "B",
+  "port": "COM12",
+  "start_local": "2026-10-02T00:22:59.538153+08:00",
+  "timezone": "Asia/Shanghai",
+  "software": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "packages": {
+      "pyserial": "3.5",
+      "numpy": "2.5.3",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "complete": true,
+  "sampling_order": "timestamp;encoder_once;nominal_velocity;stage_target;original_inverse_PI_PWM;snapshot;nonblocking_fifo",
+  "time_resolution_us": 1000,
+  "raw_data_processing": "none",
+  "hardware_manifest": {
+    "robot_id": "B",
+    "date": "2026-10-02",
+    "operator": null,
+    "stm32_model": null,
+    "board_revision": null,
+    "motors": {
+      "A": null,
+      "B": null,
+      "C": null,
+      "D": null
+    },
+    "gearboxes": {
+      "A": null,
+      "B": null,
+      "C": null,
+      "D": null
+    },
+    "encoders": {
+      "A": null,
+      "B": null,
+      "C": null,
+      "D": null
+    },
+    "drivers": {
+      "A": null,
+      "B": null,
+      "C": null,
+      "D": null
+    },
+    "wheel_positions_actual": {
+      "A": "left_rear",
+      "B": "left_front",
+      "C": "right_front",
+      "D": "right_rear"
+    },
+    "wheel_diameter_measured_m": {
+      "A": 0.065,
+      "B": 0.065,
+      "C": 0.065,
+      "D": 0.065
+    },
+    "counts_per_wheel_revolution_measured": {
+      "A": 59997,
+      "B": 59666.0,
+      "C": 59682.0,
+      "D": 60031.0
+    },
+    "wheel_spacing_measured_m": null,
+    "axle_spacing_measured_m": null,
+    "vehicle_mass_kg": null,
+    "additional_load_kg": null,
+    "vehicle_configuration": null,
+    "battery_model": null,
+    "battery_voltage_measured_v": null,
+    "serial_adapter_detected": "CH9102 USB VID:PID=1A86:55D4",
+    "serial_port": "COM12",
+    "programmer": "ST-Link; Keil download and Verify OK recorded; board build ID matched",
+    "support_method": null,
+    "ground_type": null,
+    "photo_paths": [],
+    "correspondence_to_platform_A": {
+      "operator_confirmation": "User states all listed components/conditions are identical.",
+      "same_as_A": {
+        "motors": true,
+        "gearboxes": true,
+        "encoders": true,
+        "drivers": true,
+        "wheel_diameter": true,
+        "power_supply": true,
+        "load": true
+      },
+      "individual_model_labels": null,
+      "scope_note": "Results are newly measured on supplemental platform B; never historical raw data from A."
+    },
+    "user_reported_setup": {
+      "four_wheels_raised": true,
+      "board_power_on": true,
+      "motor_power_on": true,
+      "reported_in_chat": true
+    },
+    "verification": {
+      "wheel_mapping_verified": true,
+      "forward_direction_verified": true,
+      "counts_per_wheel_revolution_verified": true,
+      "wheel_diameter_measured": true,
+      "platform_correspondence_recorded": true
+    },
+    "unknown_fields_note": "null means not yet physically verified; source constants are not measured values.",
+    "wheel_mapping_evidence": {
+      "method": "latest_explicit_user_confirmation_matches_source_comment",
+      "date": "2026-10-01",
+      "positions_zh": {
+        "A": "左后",
+        "B": "左前",
+        "C": "右前",
+        "D": "右后"
+      },
+      "source": "Hardware/Motor.c:3",
+      "note": "用户更正之前的记忆，明确以原注释为准；通道代码不交换。"
+    },
+    "direction_source_review": {
+      "reviewed": true,
+      "encoder_signs": {
+        "A": 1,
+        "B": 1,
+        "C": -1,
+        "D": -1
+      },
+      "pwm_input_signs": {
+        "A": 1,
+        "B": 1,
+        "C": -1,
+        "D": -1
+      },
+      "inverse_groups": {
+        "left": [
+          "A",
+          "B"
+        ],
+        "right": [
+          "C",
+          "D"
+        ]
+      },
+      "physical_motion_test_completed": true,
+      "note": "两处C/D取反分别用于编码器反馈和驱动输出；均保留，实验层不再加取反。"
+    },
+    "wheel_mapping_correction_history": [
+      {
+        "date": "2026-10-01",
+        "superseded_positions": {
+          "A": "left_front",
+          "B": "left_rear",
+          "C": "right_rear",
+          "D": "right_front"
+        },
+        "reason": "User corrected recollection and explicitly confirmed the Motor.c comment as authoritative."
+      }
+    ],
+    "maintenance_history": [
+      {
+        "date_local": "2026-10-01T23:24:57.380953+08:00",
+        "user_report": "All four motors adjusted to normal operation; mapping A left rear, B left front, C right front, D right rear; raised and powered, COM12/ST-Link connected.",
+        "repair_details": "User re-soldered the shared motor/encoder connectors.",
+        "verification_note": "Reported by user; new four-wheel encoder feedback precheck pending.",
+        "feedback_precheck": "B_AIR_PRE050_AFTER_FIX01",
+        "four_wheel_feedback_restored": true,
+        "physical_forward_direction_confirmed": true
+      }
+    ],
+    "wheel_diameter_user_confirmed_m": {
+      "A": 0.065,
+      "B": 0.065,
+      "C": 0.065,
+      "D": 0.065
+    },
+    "wheel_diameter_confirmation_method": "User states all four actual diameters equal the 0.065 m source configuration; measuring method/photos not supplied.",
+    "counts_calibration_status": "Four manually marked one-turn measurements recorded. Source scale is consistent within 1% screening tolerance; B capture retains extra C motion and operator explanation. No firmware scaling constants changed.",
+    "encoder_calibration_evidence": {
+      "A": {
+        "path": "wheel_response/evidence/encoder_calibration/A/LISTEN_20261001_234912_632010",
+        "method": "Manual marked one full forward output-wheel revolution; user confirmed exact full turn and stopped; sum signed counts from the original single-reader control samples.",
+        "turns": 1,
+        "net_counts": 59997,
+        "absolute_counts": 60431,
+        "other_channels_net_counts": {
+          "B": 0,
+          "C": 0,
+          "D": 0
+        },
+        "data_valid": true,
+        "note": "Single-turn mark-alignment measurement; close to source nominal 60000; no controller constants changed."
+      },
+      "B": {
+        "path": "wheel_response\\evidence\\encoder_calibration\\B\\LISTEN_20261001_235220_928899",
+        "method": "Net signed original control samples during a marked complete forward wheel/output-shaft turn; no second encoder reader.",
+        "turns": 1,
+        "net_counts": 59666,
+        "data_valid": true,
+        "operator_confirmed_extra_C_motion": true,
+        "strict_single_wheel_check_passed": false,
+        "accepted_for_B_count_scale": true,
+        "note": "Full capture and additional C motion preserved; no B/C simultaneous active sample; source scale discrepancy -0.5567% within declared manual screening tolerance."
+      },
+      "C": {
+        "path": "wheel_response\\evidence\\encoder_calibration\\C\\LISTEN_20261001_235907_781126",
+        "method": "Net signed original control samples during a marked complete forward wheel/output-shaft turn; no second encoder reader.",
+        "turns": 1,
+        "net_counts": 59682,
+        "data_valid": true,
+        "direction_and_mapping_match": true,
+        "source_scale_consistent": true
+      },
+      "D": {
+        "path": "wheel_response\\evidence\\encoder_calibration\\D\\LISTEN_20261002_000140_066181",
+        "method": "Net signed original control samples during a marked complete forward wheel/output-shaft turn; no second encoder reader.",
+        "turns": 1,
+        "net_counts": 60031,
+        "data_valid": true,
+        "direction_and_mapping_match": true,
+        "source_scale_consistent": true
+      }
+    },
+    "wheel_diameter_evidence": {
+      "value_m": 0.065,
+      "source": "User explicitly confirms all four actual diameters equal the value in the source configuration.",
+      "measurement_method": null,
+      "method_note": "No caliper/ruler method or photographs supplied; recorded from operator testimony, not independently measured by Codex."
+    },
+    "battery_voltage_note": "Current numeric voltage and measurement method not supplied; telemetry battery_mv=65535 is invalid, not a measurement."
+  },
+  "operator": "现场操作者（用户，姓名未提供）",
+  "trial_id": "B_AIR_V040_R03",
+  "run_id": 8,
+  "condition": "AIR",
+  "repeat_index": 3,
+  "actual_plan": {
+    "trial_id": "B_AIR_V040_R03",
+    "run_id": 8,
+    "condition": "AIR",
+    "step_mm_s": 400,
+    "pre_ms": 3000,
+    "hold_ms": 5000,
+    "post_ms": 3000,
+    "repeat_index": 3,
+    "precheck": false
+  },
+  "baseline_git_commit": "8655eb21f9537f84b5a66effc0fdb085a4993a99",
+  "download_record": {
+    "robot_id": "B",
+    "physical_readiness": "User confirmed four wheels raised, board and motor supply on in chat.",
+    "start_local": "2026-10-01T23:25:42.873444+08:00",
+    "firmware_build_id": "WRS1-db73c13a727f9ae5",
+    "image_sha256": {
+      "MDK-ARM\\WheelResponse\\WheelResponse.hex": "1586b89b4be05fb31eddde6b8a67750428aa162400306ef2d7ff3df4cbe5c49a",
+      "MDK-ARM\\WheelResponse\\WheelResponse.axf": "b420ae0ff4e53835e56ddbc86404cf7e43a1e2a7d39de2686b2490ba4e96ee5c"
+    },
+    "command": [
+      "D:\\Keil_v5\\UV4\\UV4.exe",
+      "-f",
+      "D:\\MCU\\STM32\\AgriBot-wheel-response\\MDK-ARM\\WheelResponse.uvprojx",
+      "-t",
+      "WheelResponse",
+      "-o",
+      "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\download_logs\\download_20261001_232542_873444.log",
+      "-j0",
+      "-sg"
+    ],
+    "log": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\download_logs\\download_20261001_232542_873444.log",
+    "board_identity_verified": true,
+    "exit_code": 0,
+    "keil_reported_success": true,
+    "keil_log_text": "Load \"WheelResponse\\\\WheelResponse.axf\" \nErase Done.Programming Done.Verify OK.Application running ...\nFlash Load finished at 23:25:48\n",
+    "end_local": "2026-10-01T23:25:48.822500+08:00",
+    "identity_inspection_directory": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\static_checks\\INSPECT_20261001_232620_796550",
+    "board_config": {
+      "firmware_build_id": "WRS1-db73c13a727f9ae5",
+      "baseline_git_commit": "8655eb21f9537f84b5a66effc0fdb085a4993a99",
+      "configuration_version": 1,
+      "kp_ABCD": [
+        800,
+        800,
+        800,
+        800
+      ],
+      "ki_ABCD": [
+        500,
+        500,
+        500,
+        500
+      ],
+      "nominal_period_us": 10000,
+      "diameter_m": 0.065,
+      "encoder_ppr": 500,
+      "encoder_quadrature": 4,
+      "motor_reduction_ratio": 30,
+      "wheel_spacing_m": 0.187,
+      "axle_spacing_m": 0.173,
+      "pwm_limit": 16700,
+      "inverse_limit_m_s": 1.0,
+      "allowed_mm_s": [
+        50,
+        100,
+        180,
+        400
+      ],
+      "heartbeat_timeout_ms": 500,
+      "time_resolution_us": 1000,
+      "exec_invalid": 65535,
+      "battery_invalid": 65535,
+      "deadline_us": 15000,
+      "fatal_dt_us": 30000,
+      "queue_depth": 32,
+      "sample_struct_bytes": 84,
+      "heap_free": 11024,
+      "control_stack_free_words": 411,
+      "uart_stack_free_words": 416,
+      "clock_hz": 168000000,
+      "fault_bits": {
+        "heartbeat": 1,
+        "abort": 2,
+        "scheduling": 4,
+        "encoder_range": 8,
+        "rx": 16,
+        "uart": 32,
+        "memory": 64,
+        "drops": 128
+      },
+      "encoder_invalid_on_range_fault": 0,
+      "early_stop": 0,
+      "parser_errors": 0
+    }
+  },
+  "board_config": {
+    "firmware_build_id": "WRS1-db73c13a727f9ae5",
+    "baseline_git_commit": "8655eb21f9537f84b5a66effc0fdb085a4993a99",
+    "configuration_version": 1,
+    "kp_ABCD": [
+      800,
+      800,
+      800,
+      800
+    ],
+    "ki_ABCD": [
+      500,
+      500,
+      500,
+      500
+    ],
+    "nominal_period_us": 10000,
+    "diameter_m": 0.065,
+    "encoder_ppr": 500,
+    "encoder_quadrature": 4,
+    "motor_reduction_ratio": 30,
+    "wheel_spacing_m": 0.187,
+    "axle_spacing_m": 0.173,
+    "pwm_limit": 16700,
+    "inverse_limit_m_s": 1.0,
+    "allowed_mm_s": [
+      50,
+      100,
+      180,
+      400
+    ],
+    "heartbeat_timeout_ms": 500,
+    "time_resolution_us": 1000,
+    "exec_invalid": 65535,
+    "battery_invalid": 65535,
+    "deadline_us": 15000,
+    "fatal_dt_us": 30000,
+    "queue_depth": 32,
+    "sample_struct_bytes": 84,
+    "heap_free": 11024,
+    "control_stack_free_words": 411,
+    "uart_stack_free_words": 326,
+    "clock_hz": 168000000,
+    "fault_bits": {
+      "heartbeat": 1,
+      "abort": 2,
+      "scheduling": 4,
+      "encoder_range": 8,
+      "rx": 16,
+      "uart": 32,
+      "memory": 64,
+      "drops": 128
+    },
+    "encoder_invalid_on_range_fault": 0,
+    "early_stop": 0,
+    "parser_errors": 0
+  },
+  "initial_state": 4,
+  "actual_order": 16,
+  "final_state": 4,
+  "human_stop": false,
+  "fault_flags": 0,
+  "end_local": "2026-10-02T00:23:20.565906+08:00",
+  "decoder_stats": {
+    "noise_bytes": 14,
+    "noise_before_first_frame": 14,
+    "frames": 2089,
+    "noise_between_frames": 0
+  },
+  "trailing_bytes": 1,
+  "samples_received": 2084,
+  "hashes": {
+    "board_config.json": "8ffa51ed11b605fea38fa1d4f2eda6fe4cb09143046380c7ed0e10a9cb51d514",
+    "board_config_raw.json": "3587bbc22861ddde6f56e10852bb96e37a039e5532b806ef94744f48d71667fa",
+    "build_identity.json": "5162e004e2ba4f66e84335ed272b319d1fed6b601fffdbd3a2a38dceb5a0b148",
+    "commands.jsonl": "7faf09f476e2758b5c3b6b3f810ea1c3153d9bc2660a2861a2003a6e74c9e274",
+    "experiment_plan.json": "1123e9d48956a71ccc366f8cc2a9cf4b1c682a200e55edb08a9c60212531be83",
+    "hardware_manifest.json": "2dfb4b26be56f1c573228b2a14450bbe7e6857024a9560946c417b8d5d0890e2",
+    "metric_definition.json": "99174525f4ac57382f4a120f7b705ed000c0464d666a8e5c3d3e562b10af3061",
+    "raw_rx.bin": "ba6ad86d7772ecd9781bd4e379c35c2bfe7686695baafae1f9c2071911725292",
+    "raw_tx.bin": "6afaf8d01fd824c924822263cc71e577b68047471d5867ecda1edb0e2a824573",
+    "samples.csv": "2f52a386b1bab20f68b649dcfc86f26a0e769a59b194a4b2f350b0909dacf93c",
+    "source_identity.json": "4d3f62832ebd5d2ffec0ea9429be0f45fb0c0878debbc468080137502dafdf84"
+  }
+}

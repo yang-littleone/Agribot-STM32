@@ -1,0 +1,13 @@
+{
+  "recorded_local": "2026-10-02T09:56:37.523056+08:00",
+  "available_area_m": [
+    3,
+    1.8
+  ],
+  "dimensions_source": "User report; photo not a measurement",
+  "photo_path": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\ground_preparation\\user_indoor_floor.jpg",
+  "vehicle_still_raised": true,
+  "ground_motion_authorized": false,
+  "clear_straight_usable_length_m": null,
+  "payload_unknown": true
+}

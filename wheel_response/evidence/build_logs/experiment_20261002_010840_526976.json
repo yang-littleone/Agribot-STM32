@@ -1,0 +1,25 @@
+{
+  "uv4": "D:\\Keil_v5\\UV4\\UV4.exe",
+  "project": "D:\\MCU\\STM32\\AgriBot-wheel-response\\MDK-ARM\\WheelResponse.uvprojx",
+  "target": "WheelResponse",
+  "command": [
+    "D:\\Keil_v5\\UV4\\UV4.exe",
+    "-r",
+    "D:\\MCU\\STM32\\AgriBot-wheel-response\\MDK-ARM\\WheelResponse.uvprojx",
+    "-t",
+    "WheelResponse",
+    "-o",
+    "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\build_logs\\experiment_20261002_010840_526976.log",
+    "-j0",
+    "-sg"
+  ],
+  "exit_code": 1,
+  "success": true,
+  "log": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\build_logs\\experiment_20261002_010840_526976.log",
+  "compiler_setting": "5060960::V5.06 update 7 (build 960)::.\\ARMCC",
+  "images": {
+    "MDK-ARM\\WheelResponse\\WheelResponse.hex": "856382d8e43ba6d670a7f2afd8aecca6c76a89fb5f3b4a08be3a0b0c6aac2b2f",
+    "MDK-ARM\\WheelResponse\\WheelResponse.axf": "1bf1fb38942c8fb7ea4e0a12582d618ee9d8dabd4cedb0718bfea77018d36556"
+  },
+  "firmware_build_id": "WRS1-acb64afc38f24e0d"
+}

@@ -1,0 +1,5 @@
+﻿wheel,rise_time_s,settling_time_s,overshoot_pct,tail_mean_error_m_s,tail_mae_m_s,hold_rmse_m_s,tail_rmse_m_s,pwm_saturation_fraction,band_m_s,stop_time_s,reason,baseline_y0_m_s,actual_target_m_s,trial_id,condition,planned_speed_m_s,valid_data,precheck,validation_reasons
+A,0.17006379103816188,,13.673282955985025,,,0.03301194752208549,,0.0,0.002500000037252903,0.48,not_settled_in_hold_window;insufficient_complete_tail,0.0,0.05000000074505806,B_AIR_BT_PRE050_RETEST02,AIR,0.05,True,True,
+B,0.34593283313553974,,33.41295520345933,,,0.03952678748976142,,0.0,0.002500000037252903,0.57,not_settled_in_hold_window;insufficient_complete_tail,0.0,0.05000000074505806,B_AIR_BT_PRE050_RETEST02,AIR,0.05,True,True,
+C,0.06265643548287347,,44.98448155843494,,,0.044748014044845956,,0.0,0.002500000037252903,0.51,not_settled_in_hold_window;insufficient_complete_tail,0.0,0.05000000074505806,B_AIR_BT_PRE050_RETEST02,AIR,0.05,True,True,
+D,0.06863682036874552,,36.13566553390524,,,0.040632278134899925,,0.0,0.002500000037252903,0.53,not_settled_in_hold_window;insufficient_complete_tail,0.0,0.05000000074505806,B_AIR_BT_PRE050_RETEST02,AIR,0.05,True,True,

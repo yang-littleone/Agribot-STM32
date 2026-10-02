@@ -1,6 +1,9 @@
 #include "MyTask.h"
 #include "GetVolt.h"
 #include "Data.h"
+#if WHEEL_RESPONSE_EXPERIMENT
+#include "WheelResponseExperiment.h"
+#endif
 
 // 频率常量定义
 #define RATE_2_HZ 2
@@ -157,6 +160,9 @@ void ICM20948Task(void *pvParameters)
  */
 void CarControlTask(void const *argument)
 {
+#if WHEEL_RESPONSE_EXPERIMENT
+  WRS_ControlTask((void *)argument);
+#else
   TickType_t lastWakeTime = xTaskGetTickCount();
 
   Motor_Init();
@@ -194,4 +200,5 @@ void CarControlTask(void const *argument)
 
     xQueueOverwrite(g_RobotQueue, &Robot);
   }
+#endif
 }

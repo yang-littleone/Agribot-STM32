@@ -1,0 +1,8 @@
+{
+  "pre_last_1s_median_v": 12.198,
+  "observed_min_v": 12.127,
+  "observed_max_v": 12.242,
+  "hold_min_v": 12.127,
+  "invalid_samples": 0,
+  "method": "MCU ADC nominal estimate, not independently calibrated"
+}

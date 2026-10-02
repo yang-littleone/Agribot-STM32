@@ -1,0 +1,46 @@
+{
+  "purpose": "intentional heartbeat-loss precheck; excluded from formal performance trials",
+  "final_state": 5,
+  "fault_flags": 1,
+  "pre_fault_feedback": {
+    "A": 0.05309291183948517,
+    "B": 0.0507105328142643,
+    "C": 0.0507105328142643,
+    "D": 0.054113928228616714
+  },
+  "fault_all_pwm_zero": true,
+  "fault_all_targets_zero": true,
+  "fault_observation_ms": 1300.0,
+  "pc_last_heartbeat_send_to_receive_zero_ms": 522.3757,
+  "last_sample_before_pc_loss_event_to_first_zero_board_ms": 470.0,
+  "final_feedback": {
+    "A": 0.0,
+    "B": 0.0,
+    "C": 0.0,
+    "D": 0.0
+  },
+  "abort_commands_sent": 0,
+  "caveat": "Last heartbeat MCU arrival time is not reported; PC send-to-receive value includes transport/receive latency, not precise MCU timeout latency.",
+  "passed": true,
+  "data_quality": {
+    "raw_csv_match": true,
+    "hash_mismatch_files": [],
+    "sequence_missing": 0,
+    "duplicates": 0,
+    "queue_drop_max": 0,
+    "decoder_stats": {
+      "noise_bytes": 79,
+      "noise_before_first_frame": 79,
+      "frames": 2007,
+      "noise_between_frames": 0
+    },
+    "cycle_distribution": {
+      "min_us": 10000.0,
+      "median_us": 10000.0,
+      "mean_us": 10000.0,
+      "p95_us": 10000.0,
+      "max_us": 10000.0
+    },
+    "all_capture_sequence_missing": 0
+  }
+}

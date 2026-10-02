@@ -1,0 +1,23 @@
+{
+  "mode": "zero_armed_safety",
+  "complete": true,
+  "start_local": "2026-10-02T01:36:48.380975+08:00",
+  "transport": "bluetooth_spp",
+  "end_local": "2026-10-02T01:36:51.379261+08:00",
+  "decoder_stats": {
+    "noise_bytes": 70,
+    "noise_before_first_frame": 70,
+    "frames": 233,
+    "noise_between_frames": 0
+  },
+  "trailing_bytes": 15,
+  "samples_received": 226,
+  "hashes": {
+    "board_config.json": "5e29f2c793599ec84a4789bab72543b9db0e574e5254c0ddd9acb1a30a2990b6",
+    "board_config_raw.json": "2f329bafc74f3ea9a5b139173554ee38aebbe9289d3604527d5e9d069ceb3618",
+    "commands.jsonl": "506f7d3750772db31746d8d7708685471f16ac66b94d52a408d658b36379cb69",
+    "raw_rx.bin": "05b22d6d356f4b893c83d5019ffa975ce4b58d0478188048b798501f498a97b1",
+    "raw_tx.bin": "1420693ce20b283f05b689400b2f579ca147341114bf39660ce3f9ef0c827971",
+    "samples.csv": "fb1e152d878ed7be9c76bba76cdef96209642712f598049aabed5e7562b00677"
+  }
+}

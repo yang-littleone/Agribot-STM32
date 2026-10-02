@@ -1,0 +1,21 @@
+{
+  "mode": "zero_armed_safety",
+  "complete": true,
+  "start_local": "2026-10-02T01:36:48.347152+08:00",
+  "transport": "usb_serial",
+  "end_local": "2026-10-02T01:36:51.444360+08:00",
+  "decoder_stats": {
+    "noise_bytes": 0,
+    "noise_before_first_frame": 0,
+    "frames": 1,
+    "noise_between_frames": 0
+  },
+  "trailing_bytes": 0,
+  "samples_received": 0,
+  "hashes": {
+    "commands.jsonl": "11e555b5956f0627b01d4b8215c6f3ba20786aa795cd90db089be614dbb436f5",
+    "raw_rx.bin": "56399885b1071aa12f350b1aa181e4430446072017f850cd41217fc7b06c56aa",
+    "raw_tx.bin": "e7b902ee43daaf3da7a4d79930013dc60a6bf36cab28f15b87d196ea3c6eab3a",
+    "samples.csv": "0d3967e4d8323b8d4873b900404e6d0455f9badec8fbf3c4e219c7eabfdc36ed"
+  }
+}

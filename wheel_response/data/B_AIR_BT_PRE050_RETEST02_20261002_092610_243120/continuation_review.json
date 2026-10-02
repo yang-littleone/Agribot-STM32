@@ -1,0 +1,47 @@
+{
+  "trial_id": "B_AIR_BT_PRE050_RETEST02",
+  "reviewed_local": "2026-10-02T09:26:44.156588+08:00",
+  "passed": true,
+  "reasons": [],
+  "data_valid": true,
+  "samples": 500,
+  "wheels": {
+    "A": {
+      "hold_peak_m_s": 0.05683664232492447,
+      "hold_min_m_s": 0.0,
+      "hold_net_counts": 7604,
+      "complete_feedback_max_abs_m_s": 0.00918915681540966,
+      "final_100ms_feedback_max_abs_m_s": 0.0,
+      "complete_pwm_max_abs": 0,
+      "zero_drive_transition_note": "Any short COMPLETE transition feedback is retained; continuation requires final 100 ms within the prelocked zero band and zero PWM throughout COMPLETE. Normal POST metrics remain unchanged."
+    },
+    "B": {
+      "hold_peak_m_s": 0.06670647859573364,
+      "hold_min_m_s": 0.0,
+      "hold_net_counts": 6711,
+      "complete_feedback_max_abs_m_s": 0.0034033916890621185,
+      "final_100ms_feedback_max_abs_m_s": 0.0,
+      "complete_pwm_max_abs": 0,
+      "zero_drive_transition_note": "Any short COMPLETE transition feedback is retained; continuation requires final 100 ms within the prelocked zero band and zero PWM throughout COMPLETE. Normal POST metrics remain unchanged."
+    },
+    "C": {
+      "hold_peak_m_s": 0.07249224185943604,
+      "hold_min_m_s": 0.0,
+      "hold_net_counts": 3599,
+      "complete_feedback_max_abs_m_s": 0.015995942056179047,
+      "final_100ms_feedback_max_abs_m_s": 0.0,
+      "complete_pwm_max_abs": 0,
+      "zero_drive_transition_note": "Any short COMPLETE transition feedback is retained; continuation requires final 100 ms within the prelocked zero band and zero PWM throughout COMPLETE. Normal POST metrics remain unchanged."
+    },
+    "D": {
+      "hold_peak_m_s": 0.06806783378124237,
+      "hold_min_m_s": 0.0,
+      "hold_net_counts": 6289,
+      "complete_feedback_max_abs_m_s": 0.00034033917472697794,
+      "final_100ms_feedback_max_abs_m_s": 0.0,
+      "complete_pwm_max_abs": 0,
+      "zero_drive_transition_note": "Any short COMPLETE transition feedback is retained; continuation requires final 100 ms within the prelocked zero band and zero PWM throughout COMPLETE. Normal POST metrics remain unchanged."
+    }
+  },
+  "physical_setup_source": "User authorizes remaining AIR trials while continuously raised; no new visual observation claimed."
+}

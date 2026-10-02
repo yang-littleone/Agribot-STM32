@@ -1,0 +1,128 @@
+{
+  "robot_id": "B",
+  "date": "2026-10-01",
+  "operator": null,
+  "stm32_model": null,
+  "board_revision": null,
+  "motors": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "D": null
+  },
+  "gearboxes": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "D": null
+  },
+  "encoders": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "D": null
+  },
+  "drivers": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "D": null
+  },
+  "wheel_positions_actual": {
+    "A": "left_rear",
+    "B": "left_front",
+    "C": "right_front",
+    "D": "right_rear"
+  },
+  "wheel_diameter_measured_m": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "D": null
+  },
+  "counts_per_wheel_revolution_measured": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "D": null
+  },
+  "wheel_spacing_measured_m": null,
+  "axle_spacing_measured_m": null,
+  "vehicle_mass_kg": null,
+  "additional_load_kg": null,
+  "vehicle_configuration": null,
+  "battery_model": null,
+  "battery_voltage_measured_v": null,
+  "serial_adapter_detected": "CH9102 USB VID:PID=1A86:55D4",
+  "serial_port": "COM12",
+  "programmer": "ST-Link; Keil download and Verify OK recorded; board build ID matched",
+  "support_method": null,
+  "ground_type": null,
+  "photo_paths": [],
+  "correspondence_to_platform_A": null,
+  "user_reported_setup": {
+    "four_wheels_raised": true,
+    "board_power_on": true,
+    "motor_power_on": true,
+    "reported_in_chat": true
+  },
+  "verification": {
+    "wheel_mapping_verified": true,
+    "forward_direction_verified": false,
+    "counts_per_wheel_revolution_verified": false,
+    "wheel_diameter_measured": false,
+    "platform_correspondence_recorded": false
+  },
+  "unknown_fields_note": "null means not yet physically verified; source constants are not measured values.",
+  "wheel_mapping_evidence": {
+    "method": "latest_explicit_user_confirmation_matches_source_comment",
+    "date": "2026-10-01",
+    "positions_zh": {
+      "A": "左后",
+      "B": "左前",
+      "C": "右前",
+      "D": "右后"
+    },
+    "source": "Hardware/Motor.c:3",
+    "note": "用户更正之前的记忆，明确以原注释为准；通道代码不交换。"
+  },
+  "direction_source_review": {
+    "reviewed": true,
+    "encoder_signs": {
+      "A": 1,
+      "B": 1,
+      "C": -1,
+      "D": -1
+    },
+    "pwm_input_signs": {
+      "A": 1,
+      "B": 1,
+      "C": -1,
+      "D": -1
+    },
+    "inverse_groups": {
+      "left": [
+        "A",
+        "B"
+      ],
+      "right": [
+        "C",
+        "D"
+      ]
+    },
+    "physical_motion_test_completed": false,
+    "note": "两处C/D取反分别用于编码器反馈和驱动输出；均保留，实验层不再加取反。"
+  },
+  "wheel_mapping_correction_history": [
+    {
+      "date": "2026-10-01",
+      "superseded_positions": {
+        "A": "left_front",
+        "B": "left_rear",
+        "C": "right_rear",
+        "D": "right_front"
+      },
+      "reason": "User corrected recollection and explicitly confirmed the Motor.c comment as authoritative."
+    }
+  ]
+}

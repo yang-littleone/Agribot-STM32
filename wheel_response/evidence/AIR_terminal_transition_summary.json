@@ -1,0 +1,72 @@
+[
+  {
+    "trial_id": "B_AIR_V018_R01",
+    "directory": "wheel_response/data/B_AIR_V018_R01_20261002_000811_935022",
+    "passed": true,
+    "peak_complete_absolute_feedback_m_s": 0.01123119331896305,
+    "final_100ms_all_feedback_zero": true
+  },
+  {
+    "trial_id": "B_AIR_V018_R02",
+    "directory": "wheel_response/data/B_AIR_V018_R02_20261002_001533_611307",
+    "passed": true,
+    "peak_complete_absolute_feedback_m_s": 0.010890853591263294,
+    "final_100ms_all_feedback_zero": true
+  },
+  {
+    "trial_id": "B_AIR_V018_R03",
+    "directory": "wheel_response/data/B_AIR_V018_R03_20261002_001759_007200",
+    "passed": true,
+    "peak_complete_absolute_feedback_m_s": 0.01395390648394823,
+    "final_100ms_all_feedback_zero": true
+  },
+  {
+    "trial_id": "B_AIR_V018_R04",
+    "directory": "wheel_response/data/B_AIR_V018_R04_20261002_001858_663347",
+    "passed": true,
+    "peak_complete_absolute_feedback_m_s": 0.015315262600779533,
+    "final_100ms_all_feedback_zero": true
+  },
+  {
+    "trial_id": "B_AIR_V018_R05",
+    "directory": "wheel_response/data/B_AIR_V018_R05_20261002_001957_180317",
+    "passed": true,
+    "peak_complete_absolute_feedback_m_s": 0.010550514794886112,
+    "final_100ms_all_feedback_zero": true
+  },
+  {
+    "trial_id": "B_AIR_V040_R01",
+    "directory": "wheel_response/data/B_AIR_V040_R01_20261002_002046_396372",
+    "passed": true,
+    "peak_complete_absolute_feedback_m_s": 0.008848818019032478,
+    "final_100ms_all_feedback_zero": true
+  },
+  {
+    "trial_id": "B_AIR_V040_R02",
+    "directory": "wheel_response/data/B_AIR_V040_R02_20261002_002232_819600",
+    "passed": true,
+    "peak_complete_absolute_feedback_m_s": 0.014294245280325413,
+    "final_100ms_all_feedback_zero": true
+  },
+  {
+    "trial_id": "B_AIR_V040_R03",
+    "directory": "wheel_response/data/B_AIR_V040_R03_20261002_002259_672809",
+    "passed": true,
+    "peak_complete_absolute_feedback_m_s": 0.009869835339486599,
+    "final_100ms_all_feedback_zero": true
+  },
+  {
+    "trial_id": "B_AIR_V040_R04",
+    "directory": "wheel_response/data/B_AIR_V040_R04_20261002_002343_652309",
+    "passed": true,
+    "peak_complete_absolute_feedback_m_s": 0.015315262600779533,
+    "final_100ms_all_feedback_zero": true
+  },
+  {
+    "trial_id": "B_AIR_V040_R05",
+    "directory": "wheel_response/data/B_AIR_V040_R05_20261002_002410_479896",
+    "passed": true,
+    "peak_complete_absolute_feedback_m_s": 0.009529496543109417,
+    "final_100ms_all_feedback_zero": true
+  }
+]

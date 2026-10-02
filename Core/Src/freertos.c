@@ -28,6 +28,9 @@
 #include "stm32f4xx_hal.h"
 #include "MyTask.h"
 #include "imu_task.h"
+#if WHEEL_RESPONSE_EXPERIMENT
+#include "WheelResponseExperiment.h"
+#endif
 
 /* USER CODE END Includes */
 
@@ -78,6 +81,14 @@ void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
  */
 void MX_FREERTOS_Init(void)
 {
+#if WHEEL_RESPONSE_EXPERIMENT
+  WRS_Init();
+  if (xTaskCreate(WRS_UartTask, "WRS_UART", 512, NULL, 3, NULL) != pdPASS ||
+      xTaskCreate((TaskFunction_t)CarControlTask, "CarControlTask", 512, NULL, 4, NULL) != pdPASS) {
+    WRS_EmergencyZero(); taskDISABLE_INTERRUPTS(); for (;;) {}
+  }
+  return;
+#else
   /* USER CODE BEGIN Init */
 
   /* USER CODE END Init */
@@ -113,6 +124,7 @@ void MX_FREERTOS_Init(void)
   /* USER CODE BEGIN RTOS_EVENTS */
   /* add events, ... */
   /* USER CODE END RTOS_EVENTS */
+#endif
 }
 
 /* USER CODE BEGIN Header_StartDefaultTask */

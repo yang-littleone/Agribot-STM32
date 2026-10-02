@@ -1,0 +1,20 @@
+--- AIR/System/WheelResponseEngine.c
++++ Bluetooth/System/WheelResponseEngine.c
+@@ -1,6 +1,17 @@
+ #include "WheelResponseEngine.h"
+ #include <string.h>
+ void WRS_EngineInit(WRS_Engine *e){memset(e,0,sizeof(*e));e->stage=255;e->reset_pi=1;}
++/* USB=0, Bluetooth SPP=1. A valid HELLO may claim only a stopped session.
++ * Non-owner heartbeats cannot prolong a moving session. ABORT works from either link.
++ */
++uint8_t WRS_ApplyFromLink(WRS_Engine *e,const WRS_Command *c,uint32_t now,uint8_t source,volatile uint8_t *owner){
++    uint8_t status;
++    if(source>1)return WRS_BAD_PROTOCOL;
++    if(source!=*owner&&c->opcode!=WRS_HELLO&&c->opcode!=WRS_GET_CONFIG&&c->opcode!=WRS_ABORT)return WRS_BAD_STATE;
++    status=WRS_Apply(e,c,now);
++    if(status==WRS_OK&&c->opcode==WRS_HELLO&&(e->state==WRS_IDLE||e->state==WRS_COMPLETE||e->state==WRS_FAULT))*owner=source;
++    return status;
++}
+ void WRS_Fault(WRS_Engine *e,uint16_t flags){e->faults|=flags;e->state=WRS_FAULT;e->stage=255;e->reset_pi=1;}
+ static int plan_ok(const WRS_Command *c){
+     return c->run_id&& (c->step==50||c->step==100||c->step==180||c->step==400)&&

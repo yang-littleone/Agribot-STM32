@@ -1,0 +1,11 @@
+{
+  "saved_local": "2026-10-02T00:30:18.339027+08:00",
+  "air_planned": 10,
+  "air_completed": 10,
+  "air_data_valid": 10,
+  "ground_planned": 10,
+  "ground_completed": 0,
+  "ground_status": "User requests remaining raised and AIR delivery first.",
+  "physical_state_source": "User states vehicle remains raised; telemetry zero after final 30s check.",
+  "static_check_directory": "wheel_response/evidence/static_checks/LISTEN_20261002_002459_605990"
+}

@@ -1,0 +1,23 @@
+{
+  "mode": "uart_rate_diagnostic",
+  "start_local": "2026-10-02T01:19:05.256250+08:00",
+  "complete": true,
+  "transport": "usb_serial",
+  "end_local": "2026-10-02T01:19:22.822990+08:00",
+  "decoder_stats": {
+    "noise_bytes": 73,
+    "noise_before_first_frame": 73,
+    "frames": 1440,
+    "noise_between_frames": 0
+  },
+  "trailing_bytes": 0,
+  "samples_received": 1392,
+  "hashes": {
+    "board_config.json": "e3cef0cddb5b545de596328ee9c3b750b4b30d7ee6753aea24cb88d60178a266",
+    "board_config_raw.json": "845744169d648600a20aef6bbd8d882f9a8c532c1e5f20b701e0fb1e9d2c0195",
+    "commands.jsonl": "e36c8284f1ef9fe3deb54a35eed62636f6b5447d8673a7f10e7b2dabe4ddc859",
+    "raw_rx.bin": "fba5126e13dc65a1c748b9291fb25b70716cea91be986153e845c87ac8eb17db",
+    "raw_tx.bin": "3a578c76539a57e60023651782d7c4ae1389bd949ef9e045b68b2c8ece69b88b",
+    "samples.csv": "965de0870567b1e788caa0df45e188272bfe966e7f14503d9c70588a762e7edc"
+  }
+}

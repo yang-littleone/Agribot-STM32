@@ -1,5 +1,8 @@
 #include "CarControl.h"
 #include "Motor.h"
+#if WHEEL_RESPONSE_EXPERIMENT
+#include "WheelResponseExperiment.h"
+#endif
 
 // #include "main.h"
 /**
@@ -16,6 +19,9 @@ void GetVelocityFromEncoder(Robot_t *pRobot)
     EncoderCount.B = Encoder_GetCount('B');
     EncoderCount.C = Encoder_GetCount('C');
     EncoderCount.D = Encoder_GetCount('D');
+#if WHEEL_RESPONSE_EXPERIMENT
+    WRS_RecordEncoder(&EncoderCount);
+#endif
 
     // 获取编码器的计数值后，计算每个电机的速度
     // 速度计算公式：速度 = (编码器计数值 / 编码器分辨率) * (车轮周长) * (1 / 控制周期) / 减速比，其中，编码器分辨率 = 编码器PPR * 编码器模式脉冲数
@@ -48,10 +54,10 @@ static void Incremental_PI(MotorParam_t *pMotorParam)
     pMotorParam->Bias = pMotorParam->Target - pMotorParam->Velocity; // 计算偏差
     pMotorParam->Motor_PWM += pMotorParam->Velocity_KP * (pMotorParam->Bias - pMotorParam->Last_bias) + pMotorParam->Velocity_KI * pMotorParam->Bias;
     // 限制PWM的范围在-16700到16700之间
-    if (pMotorParam->Motor_PWM > 16700)
-        pMotorParam->Motor_PWM = 16700;
-    if (pMotorParam->Motor_PWM < -16700)
-        pMotorParam->Motor_PWM = -16700;
+    if (pMotorParam->Motor_PWM > VELOCITY_PI_PWM_LIMIT)
+        pMotorParam->Motor_PWM = VELOCITY_PI_PWM_LIMIT;
+    if (pMotorParam->Motor_PWM < -VELOCITY_PI_PWM_LIMIT)
+        pMotorParam->Motor_PWM = -VELOCITY_PI_PWM_LIMIT;
     pMotorParam->Last_bias = pMotorParam->Bias; // 保存上一次偏差
 
     // //清除PWM标志位，该位为1时代表需要清除PWM
@@ -75,8 +81,8 @@ static void Incremental_PI(MotorParam_t *pMotorParam)
 void VelocityPIDControl(Robot_t *pRobot)
 {
     // 设置PID参数
-    pRobot->MotorA.Velocity_KP = pRobot->MotorB.Velocity_KP = pRobot->MotorC.Velocity_KP = pRobot->MotorD.Velocity_KP = 800;
-    pRobot->MotorA.Velocity_KI = pRobot->MotorB.Velocity_KI = pRobot->MotorC.Velocity_KI = pRobot->MotorD.Velocity_KI = 500.0f;
+    pRobot->MotorA.Velocity_KP = pRobot->MotorB.Velocity_KP = pRobot->MotorC.Velocity_KP = pRobot->MotorD.Velocity_KP = VELOCITY_PI_KP;
+    pRobot->MotorA.Velocity_KI = pRobot->MotorB.Velocity_KI = pRobot->MotorC.Velocity_KI = pRobot->MotorD.Velocity_KI = VELOCITY_PI_KI;
     Incremental_PI(&pRobot->MotorA);
     Incremental_PI(&pRobot->MotorB);
     Incremental_PI(&pRobot->MotorC);
@@ -115,7 +121,7 @@ y = (WHEEL_SPACING + AXLE_SPACING) / 2.0f;
  */
 void InverseKinematic(Robot_t *pRobot)
 {
-    float amplitude = 1.0f; // 车轮目标速度限幅
+    float amplitude = WHEEL_TARGET_LIMIT; // 车轮目标速度限幅
     // 运动学逆解，根据vx,vy,vz计算四个电机的目标速度
     // Inverse kinematics //运动学逆解
     pRobot->MotorA.Target = pRobot->MoveSpeed.X_Speed - pRobot->MoveSpeed.Z_Speed * (WHEEL_SPACING + AXLE_SPACING) / 2.0f; // 计算出左轮的目标速度

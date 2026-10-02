@@ -1,0 +1,44 @@
+{
+  "recorded_local": "2026-10-02T10:50:33.664046+08:00",
+  "trial_id": "B_GROUND_PRE100_5M",
+  "data_valid": false,
+  "failure": "one CRC failure and 107 nonframing bytes between frames; original capture retained",
+  "CRC_location": {
+    "errors": [
+      {
+        "end_byte_offset": 52778,
+        "candidate_version": 1,
+        "candidate_kind": 1,
+        "candidate_payload_bytes": 84,
+        "last_valid_sample": {
+          "sequence": 248943,
+          "mcu_time_us": 2490606000,
+          "run_id": 39,
+          "state": 4,
+          "stage": 255
+        },
+        "candidate_preview_hex": "575253310101540070cc0300c0c873525331010154007bcc03007076759410270000270004ff00000000000000000000",
+        "first_sample_after_error": {
+          "sequence": 248956,
+          "mcu_time_us": 2490736000,
+          "run_id": 39,
+          "state": 4,
+          "stage": 255
+        }
+      }
+    ],
+    "interpretation": "Candidate frame header can itself be corrupted; location retained for diagnosis. No claim about RF root cause."
+  },
+  "CRC_before_new_trial_START": true,
+  "normal_complete": true,
+  "terminal_PWM_zero": true,
+  "static_link_requalification_passed": true,
+  "static_samples": 3014,
+  "static_all_target_feedback_PWM_zero": true,
+  "static_directory": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\ground_preparation\\PRE100_link_requalification\\LISTEN_20261002_104916_161141",
+  "next_trial": "B_GROUND_PRE100_5M_RETEST01",
+  "awaiting_physical_reset": false,
+  "ground_formal_trials_started": 0,
+  "reset_confirmation_local": "2026-10-02T10:51:24.896779+08:00",
+  "retest_authorized": true
+}

@@ -1,0 +1,74 @@
+{
+  "version": 2,
+  "locked_before_formal_measurement": true,
+  "time_origin": "first recorded wheel target positive transition",
+  "baseline_window_s": 1,
+  "rise_threshold_fraction": [
+    0.1,
+    0.9
+  ],
+  "crossing_estimator": "linear interpolation on adjacent actual samples only; no interpolation over >15 ms gaps",
+  "settling_band": "max(0.05*abs(actual_target-baseline_mean),2*verified_quantization)",
+  "remaining_hold_observation_s": 1,
+  "tail_window_s": 2,
+  "verified_quantization_m_s": {
+    "A": 0.00034035622194999174,
+    "B": 0.00034224436443424495,
+    "C": 0.00034215261298772923,
+    "D": 0.0003401634530214998
+  },
+  "zero_speed_band_m_s": {
+    "A": 0.0006807124438999835,
+    "B": 0.0006844887288684899,
+    "C": 0.0006843052259754585,
+    "D": 0.0006803269060429996
+  },
+  "pwm_control_limit": 16700,
+  "summary_unit": "trial per condition/speed/wheel; planned n=5; sample SD",
+  "fault_bits": {
+    "heartbeat": 1,
+    "abort": 2,
+    "scheduling": 4,
+    "encoder_range": 8,
+    "rx": 16,
+    "uart": 32,
+    "memory": 64,
+    "drops": 128
+  },
+  "deadline_miss_us": 15000,
+  "fatal_cycle_dt_us": 30000,
+  "feedback_jump_review_threshold_m_s_per_sample": 0.2,
+  "feedback_jump_review_only": true,
+  "invalid_values": "null with reason; never replace missing time metrics with zero",
+  "synthetic_data_policy": "tests only; never real data directory",
+  "manual_counts_per_output_turn": {
+    "A": 59997,
+    "B": 59666.0,
+    "C": 59682.0,
+    "D": 60031.0
+  },
+  "diameter_basis_m": {
+    "A": 0.065,
+    "B": 0.065,
+    "C": 0.065,
+    "D": 0.065
+  },
+  "diameter_basis_note": "Actual diameter 0.065 m explicitly confirmed by user; measuring method unspecified and recorded in hardware manifest.",
+  "calibration_method_note": "One manually marked forward output-wheel revolution per wheel, net signed count. Human mark-alignment uncertainty is not instrument calibration. Feedback remains the original source conversion using nominal 60000 counts per output revolution.",
+  "lock_status": "Locked prospectively before the first formal run; calibration and operator-confirmed hardware correspondence recorded. No later band widening.",
+  "locked_local": "2026-10-02T00:08:11.551678+08:00",
+  "fixed_absolute_settling_band_m_s": {
+    "V018": {
+      "A": 0.009,
+      "B": 0.009,
+      "C": 0.009,
+      "D": 0.009
+    },
+    "V040": {
+      "A": 0.020000000000000004,
+      "B": 0.020000000000000004,
+      "C": 0.020000000000000004,
+      "D": 0.020000000000000004
+    }
+  }
+}

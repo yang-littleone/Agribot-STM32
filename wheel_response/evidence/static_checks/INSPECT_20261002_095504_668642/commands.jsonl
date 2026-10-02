@@ -1,0 +1,5 @@
+{"event": "connection_opened", "pc_monotonic_ns": 2339649502700, "local_time": "2026-10-02T09:55:05.642285+08:00", "port": "COM13"}
+{"event": "command_sent", "pc_monotonic_ns": 2339649877600, "local_time": "2026-10-02T09:55:05.642655+08:00", "command_sequence": 1, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 2339668497100, "local_time": "2026-10-02T09:55:05.661276+08:00", "fields": [1, 1, 0, 4, 255, 32, 0, 0]}
+{"event": "command_sent", "pc_monotonic_ns": 2339668803900, "local_time": "2026-10-02T09:55:05.661581+08:00", "command_sequence": 2, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 2339703383000, "local_time": "2026-10-02T09:55:05.696166+08:00", "fields": [2, 8, 0, 4, 255, 32, 0, 0]}

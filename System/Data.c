@@ -99,6 +99,7 @@ float uchartoshort(uint8_t highdata, uint8_t lowdata)
 // #include "CarControl.h"
 extern ControlMode_t ControlMode;
 
+#if !WHEEL_RESPONSE_EXPERIMENT
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
     static uint8_t count = 0;
@@ -148,3 +149,5 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
         // HAL_UART_Transmit_IT(&huart3, (uint8_t *)ReceiveData, 8);
     }
 }
+
+#endif /* !WHEEL_RESPONSE_EXPERIMENT */

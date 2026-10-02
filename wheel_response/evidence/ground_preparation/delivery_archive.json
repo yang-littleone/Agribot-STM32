@@ -1,0 +1,11 @@
+{
+  "archive": "D:\\MCU\\STM32\\AgriBot\\Windows完整轮速实验_5米瓷砖方案_电压蓝牙固件_20261002_102957.zip",
+  "bytes": 35452898,
+  "sha256": "077ac9c264fbc1296629fcaa73bfebb42d54caaabe8b59aa72ef87e35e4d45f5",
+  "payload_files": 2467,
+  "zip_entries": 2468,
+  "all_payload_hashes_verified": true,
+  "firmware_build_id": "WRS1-b87ba230e207f646",
+  "ground_motor_tests_executed": 0,
+  "verified_local": "2026-10-02T10:30:03.535889+08:00"
+}

@@ -1,0 +1,5 @@
+sequence,mcu_time_us,cycle_dt_us,run_id,state,stage,cmd_v_m_s,cmd_w_rad_s,target_A_m_s,target_B_m_s,target_C_m_s,target_D_m_s,feedback_A_m_s,feedback_B_m_s,feedback_C_m_s,feedback_D_m_s,pwm_A_control,pwm_B_control,pwm_C_control,pwm_D_control,encoder_A_counts,encoder_B_counts,encoder_C_counts,encoder_D_counts,battery_mv,fault_flags,queue_drop_count,deadline_miss_count,control_exec_us,segment,mcu_time_unwrapped_us,pc_receive_monotonic_ns,sequence_delta,clock_event
+63,642000,10000,0,0,255,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0,0,65535,0,0,0,65535,0,642000,41412241310800,0,first
+64,652000,10000,0,0,255,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0,0,65535,0,0,0,65535,0,652000,41412325868000,1,normal
+65,662000,10000,0,0,255,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0,0,65535,0,0,0,65535,0,662000,41412333378600,1,normal
+66,672000,10000,0,0,255,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0,0,65535,0,0,0,65535,0,672000,41412342414200,1,normal

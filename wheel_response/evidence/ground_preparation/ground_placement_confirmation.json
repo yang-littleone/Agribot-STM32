@@ -1,0 +1,23 @@
+{
+  "recorded_local": "2026-10-02T10:45:22.427947+08:00",
+  "user_reply": "可以了",
+  "interpretation": {
+    "recorded_local": "2026-10-02T10:24:06.071672+08:00",
+    "ground_type": "indoor tile floor",
+    "minimum_straight_length_offered_m": 5,
+    "actual_clear_length_measured_m": null,
+    "actual_width_measured_m": null,
+    "vehicle_still_raised": false,
+    "physical_ready_confirmed": true,
+    "ground_motion_authorized": true,
+    "payload_unknown": true,
+    "source": "Latest explicit user instruction; site not yet placed or measured.",
+    "prior_3m_trial_not_executed": true,
+    "readiness_confirmed_local": "2026-10-02T10:45:22.427947+08:00",
+    "readiness_source": "User replied 可以了 to instruction to place vehicle on >=5 m straight tile floor, align and remove trailing ST-Link wire.",
+    "readiness_scope": "First low-speed ground precheck; each later START requires physical reset confirmation."
+  },
+  "additional_load_kg": null,
+  "independent_site_measurement": false,
+  "first_trial": "B_GROUND_PRE050_5M"
+}

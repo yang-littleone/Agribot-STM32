@@ -1,0 +1,2 @@
+{"event": "connection_opened", "pc_monotonic_ns": 55461147419000, "local_time": "2026-10-02T01:11:09.297500+08:00", "port": "COM13"}
+{"event": "command_sent", "pc_monotonic_ns": 55461147785200, "local_time": "2026-10-02T01:11:09.297860+08:00", "command_sequence": 1, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}

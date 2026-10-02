@@ -1,0 +1,31 @@
+{
+  "recorded_local": "2026-10-02T10:48:04.346103+08:00",
+  "trial_id": "B_GROUND_PRE050_5M",
+  "ground_started": true,
+  "formal_ground_runs": 0,
+  "prechecks_completed": 1,
+  "stage_samples": 800,
+  "continuation_check_passed": true,
+  "sequence_missing": 0,
+  "data_directory": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\data\\B_GROUND_PRE050_5M_20261002_104620_980675",
+  "voltage_pre_median_nominal_v": 12.171,
+  "final_static_directory": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\ground_preparation\\PRE050_final_zero\\LISTEN_20261002_104718_627701",
+  "final_static_samples": 522,
+  "final_static_all_feedback_target_PWM_zero": true,
+  "physical_motion_observation": "User confirms actual forward motion normal, no reported abnormal deviation or dragging wire; reset and aligned.",
+  "awaiting_physical_reset_for": "B_GROUND_PRE100_5M",
+  "performance_notes": {
+    "A": "not_settled_in_hold_window",
+    "B": "not_settled_in_hold_window",
+    "C": "not_settled_in_hold_window",
+    "D": "not_settled_in_hold_window"
+  },
+  "wheel_peaks_m_s": {
+    "A": 0.07181156426668167,
+    "B": 0.07283258438110352,
+    "C": 0.07045020908117294,
+    "D": 0.0694291889667511
+  },
+  "reset_confirmation_local": "2026-10-02T10:48:23.401699+08:00",
+  "next_trial_authorized": "B_GROUND_PRE100_5M"
+}

@@ -1,0 +1,373 @@
+{
+  "generated_local": "2026-10-02T09:32:31.959052+08:00",
+  "status": "implemented_downloaded_and_AIR_verified",
+  "firmware_build_id": "WRS1-a1ee5888c276a89b",
+  "source_verification": "source_verification.json",
+  "transport": {
+    "module": "JDY-33",
+    "name": "WHEELTEC",
+    "port": "COM13",
+    "uart": "USART2 PD5 TX / PD6 RX",
+    "baud": 115200,
+    "original_detected_baud": 9600,
+    "usb_backup": "COM12"
+  },
+  "final_zero_drive_capture": {
+    "directory": "wheel_response/evidence/bluetooth/qualification/LISTEN_20261002_092740_336178",
+    "samples": 3016,
+    "valid": true,
+    "missing": 0,
+    "crc_errors": 0,
+    "all_targets_pwm_feedback_zero": true,
+    "end_local": "2026-10-02T09:28:12.609366+08:00"
+  },
+  "powered_precheck": {
+    "trial_id": "B_AIR_BT_PRE050_RETEST02",
+    "reviewed_local": "2026-10-02T09:26:44.156588+08:00",
+    "passed": true,
+    "reasons": [],
+    "data_valid": true,
+    "samples": 500,
+    "wheels": {
+      "A": {
+        "hold_peak_m_s": 0.05683664232492447,
+        "hold_min_m_s": 0.0,
+        "hold_net_counts": 7604,
+        "complete_feedback_max_abs_m_s": 0.00918915681540966,
+        "final_100ms_feedback_max_abs_m_s": 0.0,
+        "complete_pwm_max_abs": 0,
+        "zero_drive_transition_note": "Any short COMPLETE transition feedback is retained; continuation requires final 100 ms within the prelocked zero band and zero PWM throughout COMPLETE. Normal POST metrics remain unchanged."
+      },
+      "B": {
+        "hold_peak_m_s": 0.06670647859573364,
+        "hold_min_m_s": 0.0,
+        "hold_net_counts": 6711,
+        "complete_feedback_max_abs_m_s": 0.0034033916890621185,
+        "final_100ms_feedback_max_abs_m_s": 0.0,
+        "complete_pwm_max_abs": 0,
+        "zero_drive_transition_note": "Any short COMPLETE transition feedback is retained; continuation requires final 100 ms within the prelocked zero band and zero PWM throughout COMPLETE. Normal POST metrics remain unchanged."
+      },
+      "C": {
+        "hold_peak_m_s": 0.07249224185943604,
+        "hold_min_m_s": 0.0,
+        "hold_net_counts": 3599,
+        "complete_feedback_max_abs_m_s": 0.015995942056179047,
+        "final_100ms_feedback_max_abs_m_s": 0.0,
+        "complete_pwm_max_abs": 0,
+        "zero_drive_transition_note": "Any short COMPLETE transition feedback is retained; continuation requires final 100 ms within the prelocked zero band and zero PWM throughout COMPLETE. Normal POST metrics remain unchanged."
+      },
+      "D": {
+        "hold_peak_m_s": 0.06806783378124237,
+        "hold_min_m_s": 0.0,
+        "hold_net_counts": 6289,
+        "complete_feedback_max_abs_m_s": 0.00034033917472697794,
+        "final_100ms_feedback_max_abs_m_s": 0.0,
+        "complete_pwm_max_abs": 0,
+        "zero_drive_transition_note": "Any short COMPLETE transition feedback is retained; continuation requires final 100 ms within the prelocked zero band and zero PWM throughout COMPLETE. Normal POST metrics remain unchanged."
+      }
+    },
+    "physical_setup_source": "User authorizes remaining AIR trials while continuously raised; no new visual observation claimed."
+  },
+  "zero_ARMED_safety_validation": {
+    "motion_start_sent": false,
+    "checks": [
+      {
+        "kind": "wrong_link_heartbeats_do_not_prevent_owner_timeout",
+        "expected_fault_flags": 1,
+        "observed_fault_flags": 1,
+        "run_id": 65000,
+        "first_fault_sample": {
+          "sequence": 33796,
+          "mcu_time_us": 339135000,
+          "cycle_dt_us": 10000,
+          "run_id": 65000,
+          "state": 5,
+          "stage": 255,
+          "cmd_v_m_s": 0.0,
+          "cmd_w_rad_s": 0.0,
+          "target_A_m_s": 0.0,
+          "target_B_m_s": 0.0,
+          "target_C_m_s": 0.0,
+          "target_D_m_s": 0.0,
+          "feedback_A_m_s": 0.0,
+          "feedback_B_m_s": 0.0,
+          "feedback_C_m_s": 0.0,
+          "feedback_D_m_s": 0.0,
+          "pwm_A_control": 0,
+          "pwm_B_control": 0,
+          "pwm_C_control": 0,
+          "pwm_D_control": 0,
+          "encoder_A_counts": 0,
+          "encoder_B_counts": 0,
+          "encoder_C_counts": 0,
+          "encoder_D_counts": 0,
+          "battery_mv": 65535,
+          "fault_flags": 1,
+          "queue_drop_count": 0,
+          "deadline_miss_count": 0,
+          "control_exec_us": 65535,
+          "segment": 0,
+          "mcu_time_unwrapped_us": 339135000,
+          "sequence_delta": 1,
+          "clock_event": "normal",
+          "pc_receive_monotonic_ns": 57002001786600
+        },
+        "passed": true
+      },
+      {
+        "kind": "usb_backup_abort",
+        "expected_fault_flags": 2,
+        "observed_fault_flags": 2,
+        "run_id": 65001,
+        "first_fault_sample": {
+          "sequence": 33877,
+          "mcu_time_us": 339945000,
+          "cycle_dt_us": 10000,
+          "run_id": 65001,
+          "state": 5,
+          "stage": 255,
+          "cmd_v_m_s": 0.0,
+          "cmd_w_rad_s": 0.0,
+          "target_A_m_s": 0.0,
+          "target_B_m_s": 0.0,
+          "target_C_m_s": 0.0,
+          "target_D_m_s": 0.0,
+          "feedback_A_m_s": 0.0,
+          "feedback_B_m_s": 0.0,
+          "feedback_C_m_s": 0.0,
+          "feedback_D_m_s": 0.0,
+          "pwm_A_control": 0,
+          "pwm_B_control": 0,
+          "pwm_C_control": 0,
+          "pwm_D_control": 0,
+          "encoder_A_counts": 0,
+          "encoder_B_counts": 0,
+          "encoder_C_counts": 0,
+          "encoder_D_counts": 0,
+          "battery_mv": 65535,
+          "fault_flags": 2,
+          "queue_drop_count": 0,
+          "deadline_miss_count": 0,
+          "control_exec_us": 65535,
+          "segment": 0,
+          "mcu_time_unwrapped_us": 339945000,
+          "sequence_delta": 1,
+          "clock_event": "normal",
+          "pc_receive_monotonic_ns": 57002823058300
+        },
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "traces": [
+      {
+        "channel": "spp",
+        "samples": 226,
+        "sequence_missing": 0,
+        "bad_crc": 0,
+        "bad_header": 0
+      },
+      {
+        "channel": "usb",
+        "samples": 0,
+        "sequence_missing": 0,
+        "bad_crc": 0,
+        "bad_header": 0
+      }
+    ],
+    "all_targets_pwm_feedback_zero": true,
+    "START_commands": 0
+  },
+  "module_setup": {
+    "directory": "wheel_response/evidence/bluetooth/BT_SETUP_20261002_092658_446522",
+    "verified": true,
+    "motion_commands_sent": false
+  },
+  "software_tests": {
+    "count": 15,
+    "passed": true,
+    "log": "software_tests.log"
+  },
+  "failure_resolution": [
+    "Connected JDY-33 needed AT+DISC before version detection; original baud 9600 established with real SPP HELLO.",
+    "Low-baud config TX timeout corrected; full-rate ARM requires Bluetooth baud >=115200.",
+    "Idle Bluetooth disconnect UART errors recorded/rearmed without making a stopped board FAULT; ARMED/RUN/POST UART errors remain faults.",
+    "First 30 s qualification failed CRC/sequence audit; preserved; later 30 s retest passed.",
+    "First powered capture contained 500 complete active samples but overall CRC/noise failure and 1953 missing IDLE samples while blocking input; preserved and excluded.",
+    "Host waits for input in a daemon thread while main thread continues reading; Windows RX buffer request enlarged to 64 KiB. Retest passed entire raw/CSV/hash/sequence audit.",
+    "RETEST01 host session ended before START; raw commands contain HELLO/GET_CONFIG only. Retained as interrupted; RETEST02 has a separate registration."
+  ],
+  "scope": "Bluetooth experiment transport and acquisition implemented. No GROUND/distance/interference endurance trial performed. Prior formal AIR results retain previous firmware identity.",
+  "capture_index": [
+    {
+      "directory": "wheel_response/evidence/bluetooth/BT_SETUP_20261002_092658_446522",
+      "mode": "bluetooth_setup",
+      "complete": true,
+      "error": null,
+      "data_valid": null,
+      "validation_reasons": null,
+      "samples_received": 688,
+      "actual_plan": null
+    },
+    {
+      "directory": "wheel_response/evidence/bluetooth/qualification/LISTEN_20261002_012642_794386",
+      "mode": "listen",
+      "complete": false,
+      "error": "Zero-drive listen requires IDLE or COMPLETE.",
+      "data_valid": null,
+      "validation_reasons": null,
+      "samples_received": 5,
+      "actual_plan": null
+    },
+    {
+      "directory": "wheel_response/evidence/bluetooth/qualification/LISTEN_20261002_013124_612949",
+      "mode": "listen",
+      "complete": true,
+      "error": null,
+      "data_valid": false,
+      "validation_reasons": [
+        "bad_crc",
+        "missing_sequence",
+        "noise_between_frames"
+      ],
+      "samples_received": 3006,
+      "actual_plan": null
+    },
+    {
+      "directory": "wheel_response/evidence/bluetooth/qualification/LISTEN_20261002_013900_717307",
+      "mode": "listen",
+      "complete": true,
+      "error": null,
+      "data_valid": true,
+      "validation_reasons": [],
+      "samples_received": 3015,
+      "actual_plan": null
+    },
+    {
+      "directory": "wheel_response/evidence/bluetooth/qualification/LISTEN_20261002_092740_336178",
+      "mode": "listen",
+      "complete": true,
+      "error": null,
+      "data_valid": true,
+      "validation_reasons": [],
+      "samples_received": 3016,
+      "actual_plan": null
+    },
+    {
+      "directory": "wheel_response/evidence/bluetooth/SPP_HELLO_RETRY_20261002_011241_919108",
+      "mode": "inspect",
+      "complete": false,
+      "error": null,
+      "data_valid": null,
+      "validation_reasons": null,
+      "samples_received": 0,
+      "actual_plan": null
+    },
+    {
+      "directory": "wheel_response/evidence/bluetooth/UART_RATE_DIAG_20261002_011905_255513/spp",
+      "mode": "uart_rate_diagnostic",
+      "complete": true,
+      "error": null,
+      "data_valid": null,
+      "validation_reasons": null,
+      "samples_received": 32,
+      "actual_plan": null
+    },
+    {
+      "directory": "wheel_response/evidence/bluetooth/UART_RATE_DIAG_20261002_011905_255513/usb",
+      "mode": "uart_rate_diagnostic",
+      "complete": true,
+      "error": null,
+      "data_valid": null,
+      "validation_reasons": null,
+      "samples_received": 1392,
+      "actual_plan": null
+    },
+    {
+      "directory": "wheel_response/evidence/bluetooth/ZERO_ARMED_SAFETY_20261002_013648_346412/spp",
+      "mode": "zero_armed_safety",
+      "complete": true,
+      "error": null,
+      "data_valid": null,
+      "validation_reasons": null,
+      "samples_received": 226,
+      "actual_plan": null
+    },
+    {
+      "directory": "wheel_response/evidence/bluetooth/ZERO_ARMED_SAFETY_20261002_013648_346412/usb",
+      "mode": "zero_armed_safety",
+      "complete": true,
+      "error": null,
+      "data_valid": null,
+      "validation_reasons": null,
+      "samples_received": 0,
+      "actual_plan": null
+    },
+    {
+      "directory": "wheel_response/data/B_AIR_BT_PRE050_20261002_014353_625653",
+      "mode": "run",
+      "complete": true,
+      "error": null,
+      "data_valid": false,
+      "validation_reasons": [
+        "bad_crc",
+        "noise_between_frames"
+      ],
+      "samples_received": 623,
+      "actual_plan": {
+        "trial_id": "B_AIR_BT_PRE050",
+        "run_id": 29,
+        "condition": "AIR",
+        "step_mm_s": 50,
+        "pre_ms": 1000,
+        "hold_ms": 1000,
+        "post_ms": 3000,
+        "repeat_index": null,
+        "precheck": true,
+        "purpose": "Short Bluetooth SPP powered motor precheck, excluded from formal repeats."
+      }
+    },
+    {
+      "directory": "wheel_response/data/B_AIR_BT_PRE050_RETEST01_20261002_015131_039932",
+      "mode": "run",
+      "complete": false,
+      "error": "Host turn ended while waiting for START; no ARM/START command recorded.",
+      "data_valid": null,
+      "validation_reasons": null,
+      "samples_received": null,
+      "actual_plan": {
+        "trial_id": "B_AIR_BT_PRE050_RETEST01",
+        "run_id": 30,
+        "condition": "AIR",
+        "step_mm_s": 50,
+        "pre_ms": 1000,
+        "hold_ms": 1000,
+        "post_ms": 3000,
+        "repeat_index": null,
+        "precheck": true,
+        "purpose": "Bluetooth check after pumping telemetry during START confirmation; keep previous failed capture."
+      }
+    },
+    {
+      "directory": "wheel_response/data/B_AIR_BT_PRE050_RETEST02_20261002_092610_243120",
+      "mode": "run",
+      "complete": true,
+      "error": null,
+      "data_valid": true,
+      "validation_reasons": [],
+      "samples_received": 1862,
+      "actual_plan": {
+        "trial_id": "B_AIR_BT_PRE050_RETEST02",
+        "run_id": 31,
+        "condition": "AIR",
+        "step_mm_s": 50,
+        "pre_ms": 1000,
+        "hold_ms": 1000,
+        "post_ms": 3000,
+        "repeat_index": null,
+        "precheck": true,
+        "purpose": "Resume interrupted pre-START capture; verify continuous prompt draining and Bluetooth powered precheck."
+      }
+    }
+  ]
+}

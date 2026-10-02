@@ -1,0 +1,19 @@
+{
+  "recorded_local": "2026-10-02T09:35:30.257110+08:00",
+  "user_request": "我将串口线已经拔下来了，你使用蓝牙先进行一边测试我看看效果",
+  "USB_serial_port_present": false,
+  "bluetooth_port": "COM13",
+  "test": {
+    "trial_id": "B_AIR_BT_USB_UNPLUGGED050",
+    "run_id": 32,
+    "condition": "AIR",
+    "step_mm_s": 50,
+    "pre_ms": 3000,
+    "hold_ms": 5000,
+    "post_ms": 3000,
+    "repeat_index": null,
+    "precheck": true,
+    "purpose": "User unplugged USB serial and explicitly requests one Bluetooth test for observation; continuously raised setup from existing authorization."
+  },
+  "raised_setup_source": "User prior continuous AIR authorization; no new visual claim."
+}

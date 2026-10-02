@@ -1,0 +1,27 @@
+{
+  "robot_id": "B",
+  "physical_readiness": "User confirmed four wheels raised, board and motor supply on in chat.",
+  "start_local": "2026-10-01T21:09:17.175513+08:00",
+  "firmware_build_id": "WRS1-11c46326f06100cf",
+  "image_sha256": {
+    "MDK-ARM\\WheelResponse\\WheelResponse.hex": "26abedc70348fd973a0759c0f29abd7ab74573a8725fe9021337efbe70eae114",
+    "MDK-ARM\\WheelResponse\\WheelResponse.axf": "c471b6a35f24dce94e2568f96d2daf9c30cd0b1861f1048ed67506941d393fd8"
+  },
+  "command": [
+    "D:\\Keil_v5\\UV4\\UV4.exe",
+    "-f",
+    "D:\\MCU\\STM32\\AgriBot-wheel-response\\MDK-ARM\\WheelResponse.uvprojx",
+    "-t",
+    "WheelResponse",
+    "-o",
+    "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\download_logs\\download_20261001_210917_175513.log",
+    "-j0",
+    "-sg"
+  ],
+  "log": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\download_logs\\download_20261001_210917_175513.log",
+  "board_identity_verified": false,
+  "exit_code": 0,
+  "keil_reported_success": true,
+  "keil_log_text": "Load \"WheelResponse\\\\WheelResponse.axf\" \nErase Done.Programming Done.Verify OK.Application running ...\nFlash Load finished at 21:09:23\n",
+  "end_local": "2026-10-01T21:09:23.313100+08:00"
+}

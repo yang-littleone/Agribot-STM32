@@ -1,0 +1,5 @@
+﻿wheel,rise_time_s,settling_time_s,overshoot_pct,tail_mean_error_m_s,tail_mae_m_s,hold_rmse_m_s,tail_rmse_m_s,pwm_saturation_fraction,band_m_s,stop_time_s,reason,trial_id,condition,planned_speed_m_s,valid_data,precheck,validation_reasons
+A,,,,,,,,,,,missing_pre_or_hold,B_GROUND_V018_R02_RETEST02,GROUND,0.18,False,False,firmware_identity_evidence_missing;missing_complete_sample;no_samples;not_normal_complete;phase_sample_count_mismatch
+B,,,,,,,,,,,missing_pre_or_hold,B_GROUND_V018_R02_RETEST02,GROUND,0.18,False,False,firmware_identity_evidence_missing;missing_complete_sample;no_samples;not_normal_complete;phase_sample_count_mismatch
+C,,,,,,,,,,,missing_pre_or_hold,B_GROUND_V018_R02_RETEST02,GROUND,0.18,False,False,firmware_identity_evidence_missing;missing_complete_sample;no_samples;not_normal_complete;phase_sample_count_mismatch
+D,,,,,,,,,,,missing_pre_or_hold,B_GROUND_V018_R02_RETEST02,GROUND,0.18,False,False,firmware_identity_evidence_missing;missing_complete_sample;no_samples;not_normal_complete;phase_sample_count_mismatch

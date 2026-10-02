@@ -1,0 +1,23 @@
+{
+  "verified_local": "2026-10-02T12:19:10.041758+08:00",
+  "fresh_clone": "C:\\Users\\28047\\AppData\\Local\\Temp\\codex_handoff_patch_check_sqprvmns\\source",
+  "baseline_bundle_verified": true,
+  "git_apply_check_passed": true,
+  "git_apply_passed": true,
+  "source_files_checked": 1408,
+  "exact_bytes_equal": 1408,
+  "line_endings_only_different": [],
+  "substantive_mismatches": [],
+  "patch_sha256": "e410b294e77571701c2fdf4b9e3508f242715fa379f14587e7b2021f7db63913",
+  "additional_untracked_files_in_patch": [
+    "wheel_response/README_Linux回传与复核.md",
+    "wheel_response/records/final_trial_inventory.csv",
+    "wheel_response/requirements_lock.txt",
+    "wheel_response/tools/package_final_handoff.py",
+    "wheel_response/tools/prepare_final_handoff.py",
+    "wheel_response/tools/record_supplemental.py",
+    "wheel_response/tools/verify_package.py",
+    "wheel_response/论文第5.3.1节_候选文字.md"
+  ],
+  "note": "Windows fresh clone/patch verification; not a Linux firmware build. Full snapshot source_manifest preserves exact original bytes."
+}

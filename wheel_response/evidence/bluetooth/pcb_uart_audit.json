@@ -1,0 +1,547 @@
+{
+  "reviewed_local": "2026-10-02T01:09:17.104952+08:00",
+  "source": "C:\\Users\\28047\\Desktop\\硕士简历\\pcb\\ProDoc_小车底板v1_2026-08-23.epro2",
+  "source_sha256": "6422e3ebe13b15f5046a08d7d86151bec451c5050e8ed7f40a701ca0f29b19a7",
+  "schematic_connector": "P1, Header-Female-2.54_1x6",
+  "pcb_connector_component_id": "e3813",
+  "mcu_component_id": "e10",
+  "connector_and_mcu_pads": [
+    {
+      "component_id": "e10",
+      "pad": "100",
+      "net": "3V3"
+    },
+    {
+      "component_id": "e10",
+      "pad": "99",
+      "net": "GND"
+    },
+    {
+      "component_id": "e10",
+      "pad": "98",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "97",
+      "net": "PE0"
+    },
+    {
+      "component_id": "e10",
+      "pad": "96",
+      "net": "PB9"
+    },
+    {
+      "component_id": "e10",
+      "pad": "95",
+      "net": "PB8"
+    },
+    {
+      "component_id": "e10",
+      "pad": "94",
+      "net": "BOOT0"
+    },
+    {
+      "component_id": "e10",
+      "pad": "93",
+      "net": "PB7"
+    },
+    {
+      "component_id": "e10",
+      "pad": "92",
+      "net": "PB6"
+    },
+    {
+      "component_id": "e10",
+      "pad": "91",
+      "net": "PB5"
+    },
+    {
+      "component_id": "e10",
+      "pad": "90",
+      "net": "PB4"
+    },
+    {
+      "component_id": "e10",
+      "pad": "89",
+      "net": "PB3"
+    },
+    {
+      "component_id": "e10",
+      "pad": "88",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "87",
+      "net": "PD6"
+    },
+    {
+      "component_id": "e10",
+      "pad": "86",
+      "net": "PD5"
+    },
+    {
+      "component_id": "e10",
+      "pad": "85",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "84",
+      "net": "PD3"
+    },
+    {
+      "component_id": "e10",
+      "pad": "83",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "82",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "81",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "80",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "79",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "78",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "77",
+      "net": "PA15"
+    },
+    {
+      "component_id": "e10",
+      "pad": "76",
+      "net": "SWCLK"
+    },
+    {
+      "component_id": "e10",
+      "pad": "75",
+      "net": "3V3"
+    },
+    {
+      "component_id": "e10",
+      "pad": "74",
+      "net": "GND"
+    },
+    {
+      "component_id": "e10",
+      "pad": "73",
+      "net": "$1N1639"
+    },
+    {
+      "component_id": "e10",
+      "pad": "72",
+      "net": "SWDIO"
+    },
+    {
+      "component_id": "e10",
+      "pad": "71",
+      "net": "PA12"
+    },
+    {
+      "component_id": "e10",
+      "pad": "70",
+      "net": "PA11"
+    },
+    {
+      "component_id": "e10",
+      "pad": "69",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "68",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "67",
+      "net": "PA8"
+    },
+    {
+      "component_id": "e10",
+      "pad": "66",
+      "net": "PC9"
+    },
+    {
+      "component_id": "e10",
+      "pad": "65",
+      "net": "PC8"
+    },
+    {
+      "component_id": "e10",
+      "pad": "64",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "63",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "62",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "61",
+      "net": "PD14"
+    },
+    {
+      "component_id": "e10",
+      "pad": "60",
+      "net": "PD13"
+    },
+    {
+      "component_id": "e10",
+      "pad": "59",
+      "net": "PD12"
+    },
+    {
+      "component_id": "e10",
+      "pad": "58",
+      "net": "PD11"
+    },
+    {
+      "component_id": "e10",
+      "pad": "57",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "56",
+      "net": "PD9"
+    },
+    {
+      "component_id": "e10",
+      "pad": "55",
+      "net": "PD8"
+    },
+    {
+      "component_id": "e10",
+      "pad": "54",
+      "net": "PB15"
+    },
+    {
+      "component_id": "e10",
+      "pad": "53",
+      "net": "PB14"
+    },
+    {
+      "component_id": "e10",
+      "pad": "52",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "51",
+      "net": "PB12"
+    },
+    {
+      "component_id": "e10",
+      "pad": "50",
+      "net": "3V3"
+    },
+    {
+      "component_id": "e10",
+      "pad": "49",
+      "net": "$1N1644"
+    },
+    {
+      "component_id": "e10",
+      "pad": "48",
+      "net": "PB11"
+    },
+    {
+      "component_id": "e10",
+      "pad": "47",
+      "net": "PB10"
+    },
+    {
+      "component_id": "e10",
+      "pad": "46",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "45",
+      "net": "PE14"
+    },
+    {
+      "component_id": "e10",
+      "pad": "44",
+      "net": "PE13"
+    },
+    {
+      "component_id": "e10",
+      "pad": "43",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "42",
+      "net": "PE11"
+    },
+    {
+      "component_id": "e10",
+      "pad": "41",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "40",
+      "net": "PE9"
+    },
+    {
+      "component_id": "e10",
+      "pad": "39",
+      "net": "PE8"
+    },
+    {
+      "component_id": "e10",
+      "pad": "38",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "37",
+      "net": "BOOT1"
+    },
+    {
+      "component_id": "e10",
+      "pad": "36",
+      "net": "PB1"
+    },
+    {
+      "component_id": "e10",
+      "pad": "35",
+      "net": "PB0"
+    },
+    {
+      "component_id": "e10",
+      "pad": "34",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "33",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "32",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "31",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "30",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "29",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "28",
+      "net": "3V3"
+    },
+    {
+      "component_id": "e10",
+      "pad": "27",
+      "net": "GND"
+    },
+    {
+      "component_id": "e10",
+      "pad": "26",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "25",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "24",
+      "net": "PA1"
+    },
+    {
+      "component_id": "e10",
+      "pad": "23",
+      "net": "PA0"
+    },
+    {
+      "component_id": "e10",
+      "pad": "22",
+      "net": "VDDA"
+    },
+    {
+      "component_id": "e10",
+      "pad": "21",
+      "net": "VREF+"
+    },
+    {
+      "component_id": "e10",
+      "pad": "20",
+      "net": "VSSA"
+    },
+    {
+      "component_id": "e10",
+      "pad": "19",
+      "net": "3V3"
+    },
+    {
+      "component_id": "e10",
+      "pad": "18",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "17",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "16",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "15",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "14",
+      "net": "NRST"
+    },
+    {
+      "component_id": "e10",
+      "pad": "13",
+      "net": "OSC_OUT"
+    },
+    {
+      "component_id": "e10",
+      "pad": "12",
+      "net": "OSC_IN"
+    },
+    {
+      "component_id": "e10",
+      "pad": "11",
+      "net": "3V3"
+    },
+    {
+      "component_id": "e10",
+      "pad": "10",
+      "net": "GND"
+    },
+    {
+      "component_id": "e10",
+      "pad": "9",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "8",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "7",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "6",
+      "net": "3V3"
+    },
+    {
+      "component_id": "e10",
+      "pad": "5",
+      "net": "PE6"
+    },
+    {
+      "component_id": "e10",
+      "pad": "4",
+      "net": "PE5"
+    },
+    {
+      "component_id": "e10",
+      "pad": "3",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "2",
+      "net": ""
+    },
+    {
+      "component_id": "e10",
+      "pad": "1",
+      "net": ""
+    },
+    {
+      "component_id": "e3813",
+      "pad": "6",
+      "net": ""
+    },
+    {
+      "component_id": "e3813",
+      "pad": "5",
+      "net": "PD5"
+    },
+    {
+      "component_id": "e3813",
+      "pad": "4",
+      "net": "PD6"
+    },
+    {
+      "component_id": "e3813",
+      "pad": "3",
+      "net": "GND"
+    },
+    {
+      "component_id": "e3813",
+      "pad": "2",
+      "net": "5V"
+    },
+    {
+      "component_id": "e3813",
+      "pad": "1",
+      "net": ""
+    }
+  ],
+  "link": "USART2 PD5 TX / PD6 RX, AF7",
+  "user_module_model": "JDY-33",
+  "paired_device": "WHEELTEC",
+  "windows_outgoing_spp_port": "COM13",
+  "windows_incoming_port": "COM14",
+  "module_manual": "https://fccid.io/2AXM8-JDY-33/User-Manual/15-JDY-33-UserMan-US-r2-4936883.pdf",
+  "bare_module_vs_carrier": "PCB P1 provides 5V on carrier connector; no assumption that bare JDY-33 is rated 5V."
+}

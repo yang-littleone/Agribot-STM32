@@ -1,0 +1,44 @@
+{
+  "valid": false,
+  "reasons": [
+    "bad_crc",
+    "firmware_identity_evidence_missing",
+    "missing_complete_sample",
+    "no_samples",
+    "noise_between_frames",
+    "not_normal_complete",
+    "phase_sample_count_mismatch",
+    "raw_csv_mismatch"
+  ],
+  "mode": "run",
+  "raw_csv_match": false,
+  "hash_mismatch_files": [],
+  "expected_samples": 500,
+  "actual_samples": 0,
+  "all_csv_samples": 12857,
+  "stage_counts": {
+    "0": 0,
+    "1": 0,
+    "2": 0
+  },
+  "sequence_missing": 0,
+  "duplicates": 0,
+  "segments": [],
+  "decoder_stats": {
+    "noise_bytes": 665,
+    "noise_before_first_frame": 10,
+    "frames": 12871,
+    "bad_crc": 7,
+    "noise_between_frames": 655
+  },
+  "trailing_incomplete_bytes": 60,
+  "queue_drop_max": null,
+  "cycle_distribution": {},
+  "feedback_jump_threshold_m_s_per_sample": 0.2,
+  "feedback_jump_counts": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0
+  }
+}

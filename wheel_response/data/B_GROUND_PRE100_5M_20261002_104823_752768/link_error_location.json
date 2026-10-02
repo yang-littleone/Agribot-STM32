@@ -1,0 +1,26 @@
+{
+  "errors": [
+    {
+      "end_byte_offset": 52778,
+      "candidate_version": 1,
+      "candidate_kind": 1,
+      "candidate_payload_bytes": 84,
+      "last_valid_sample": {
+        "sequence": 248943,
+        "mcu_time_us": 2490606000,
+        "run_id": 39,
+        "state": 4,
+        "stage": 255
+      },
+      "candidate_preview_hex": "575253310101540070cc0300c0c873525331010154007bcc03007076759410270000270004ff00000000000000000000",
+      "first_sample_after_error": {
+        "sequence": 248956,
+        "mcu_time_us": 2490736000,
+        "run_id": 39,
+        "state": 4,
+        "stage": 255
+      }
+    }
+  ],
+  "interpretation": "Candidate frame header can itself be corrupted; location retained for diagnosis. No claim about RF root cause."
+}

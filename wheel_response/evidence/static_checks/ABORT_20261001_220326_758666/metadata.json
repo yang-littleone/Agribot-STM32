@@ -1,0 +1,31 @@
+{
+  "mode": "abort",
+  "start_local": "2026-10-01T22:03:26.759027+08:00",
+  "port": "COM12",
+  "complete": true,
+  "ack": [
+    1,
+    5,
+    0,
+    5,
+    255,
+    27,
+    0,
+    2
+  ],
+  "end_local": "2026-10-01T22:03:26.806116+08:00",
+  "decoder_stats": {
+    "noise_bytes": 89,
+    "noise_before_first_frame": 89,
+    "frames": 1,
+    "noise_between_frames": 0
+  },
+  "trailing_bytes": 0,
+  "samples_received": 0,
+  "hashes": {
+    "commands.jsonl": "579758e901888c00079ca7663cbaadebd7678f95324fe1d7f7cb284441d2ce6e",
+    "raw_rx.bin": "403149e346fea6ea521d86059d49796145565d74ba9a77f838cf4a55ea890900",
+    "raw_tx.bin": "58f1faf1ced00190b16f28e5aa307318f5a2926ad3560d839bfb4f6a2e9882a7",
+    "samples.csv": "0d3967e4d8323b8d4873b900404e6d0455f9badec8fbf3c4e219c7eabfdc36ed"
+  }
+}

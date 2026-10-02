@@ -1,0 +1,69 @@
+{
+  "port": "COM12",
+  "baudrate": 115200,
+  "mode": "passive_read_only",
+  "motor_commands_sent": false,
+  "start_local": "2026-10-01T20:35:19.944301+08:00",
+  "ports": [
+    {
+      "port": "COM12",
+      "description": "USB-Enhanced-SERIAL CH9102 (COM12)",
+      "hwid": "USB VID:PID=1A86:55D4 SER=0002 LOCATION=1-2.4"
+    },
+    {
+      "port": "COM8",
+      "description": "蓝牙链接上的标准串行 (COM8)",
+      "hwid": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0002\\7&65AA844&0&41AA00F3347D_C00000000"
+    },
+    {
+      "port": "COM1",
+      "description": "ELTIMA Virtual Serial Port (COM1->COM2)",
+      "hwid": "VSBC7\\DEVICES\\0000"
+    },
+    {
+      "port": "COM2",
+      "description": "ELTIMA Virtual Serial Port (COM2->COM1)",
+      "hwid": "VSBC7\\DEVICES\\0001"
+    },
+    {
+      "port": "COM5",
+      "description": "蓝牙链接上的标准串行 (COM5)",
+      "hwid": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\\7&65AA844&0&000000000000_0000000F"
+    },
+    {
+      "port": "COM7",
+      "description": "蓝牙链接上的标准串行 (COM7)",
+      "hwid": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\\7&65AA844&0&000000000000_00000010"
+    },
+    {
+      "port": "COM4",
+      "description": "蓝牙链接上的标准串行 (COM4)",
+      "hwid": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\\7&65AA844&0&000000000000_00000012"
+    },
+    {
+      "port": "COM6",
+      "description": "蓝牙链接上的标准串行 (COM6)",
+      "hwid": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0002\\7&65AA844&0&41AA0060D3C7_C00000000"
+    },
+    {
+      "port": "COM3",
+      "description": "蓝牙链接上的标准串行 (COM3)",
+      "hwid": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0002\\7&65AA844&0&646876496D4F_C00000000"
+    },
+    {
+      "port": "COM13",
+      "description": "蓝牙链接上的标准串行 (COM13)",
+      "hwid": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0002\\7&65AA844&0&7AA71A040038_C00000000"
+    },
+    {
+      "port": "COM14",
+      "description": "蓝牙链接上的标准串行 (COM14)",
+      "hwid": "BTHENUM\\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\\7&65AA844&0&000000000000_00000013"
+    }
+  ],
+  "elapsed_s": 3.021762700002,
+  "status": "read_completed",
+  "received_bytes": 1441,
+  "wrs1_magic_count": 0,
+  "end_local": "2026-10-01T20:35:22.993127+08:00"
+}

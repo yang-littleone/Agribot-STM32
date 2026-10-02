@@ -1,0 +1,8 @@
+{"event": "connection_opened", "pc_monotonic_ns": 49951335316000, "local_time": "2026-10-01T23:39:19.485396+08:00", "port": "COM12"}
+{"event": "command_sent", "pc_monotonic_ns": 49951335683600, "local_time": "2026-10-01T23:39:19.485760+08:00", "command_sequence": 1, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 49951341644300, "local_time": "2026-10-01T23:39:19.491720+08:00", "fields": [1, 1, 0, 5, 255, 24, 0, 1]}
+{"event": "command_sent", "pc_monotonic_ns": 49951341931800, "local_time": "2026-10-01T23:39:19.492006+08:00", "command_sequence": 2, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 49951353645300, "local_time": "2026-10-01T23:39:19.503722+08:00", "fields": [2, 8, 0, 5, 255, 24, 0, 1]}
+{"event": "command_sent", "pc_monotonic_ns": 49969447067700, "local_time": "2026-10-01T23:39:37.597146+08:00", "command_sequence": 3, "opcode": "CLEAR_FAULT", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 49969646054200, "local_time": "2026-10-01T23:39:37.796130+08:00", "fields": [3, 9, 0, 0, 255, 24, 0, 0]}
+{"event": "fault_cause_resolution", "pc_monotonic_ns": 49969646323700, "local_time": "2026-10-01T23:39:37.796396+08:00", "reason": "Intentional heartbeat-loss precheck completed; expected fault_flags=1, zero outputs for 1.3 s, raw-data safety validation passed, operator confirmed stopped and ready."}

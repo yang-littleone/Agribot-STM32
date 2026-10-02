@@ -1,0 +1,60 @@
+{
+  "formal_trial_ids": [
+    "B_AIR_V018_R01",
+    "B_AIR_V018_R02",
+    "B_AIR_V018_R03",
+    "B_AIR_V018_R04",
+    "B_AIR_V018_R05",
+    "B_AIR_V040_R01",
+    "B_AIR_V040_R02",
+    "B_AIR_V040_R03",
+    "B_AIR_V040_R04",
+    "B_AIR_V040_R05",
+    "B_GROUND_V018_R01",
+    "B_GROUND_V018_R03",
+    "B_GROUND_V018_R04",
+    "B_GROUND_V018_R05",
+    "B_GROUND_V040_R01",
+    "B_GROUND_V040_R02",
+    "B_GROUND_V040_R03",
+    "B_GROUND_V040_R04",
+    "B_GROUND_V040_R05",
+    "B_GROUND_V018_R02_RETEST03"
+  ],
+  "formal_directories": [
+    "wheel_response/data/B_AIR_V018_R01_20261002_000811_935022",
+    "wheel_response/data/B_AIR_V018_R02_20261002_001533_611307",
+    "wheel_response/data/B_AIR_V018_R03_20261002_001759_007200",
+    "wheel_response/data/B_AIR_V018_R04_20261002_001858_663347",
+    "wheel_response/data/B_AIR_V018_R05_20261002_001957_180317",
+    "wheel_response/data/B_AIR_V040_R01_20261002_002046_396372",
+    "wheel_response/data/B_AIR_V040_R02_20261002_002232_819600",
+    "wheel_response/data/B_AIR_V040_R03_20261002_002259_672809",
+    "wheel_response/data/B_AIR_V040_R04_20261002_002343_652309",
+    "wheel_response/data/B_AIR_V040_R05_20261002_002410_479896",
+    "wheel_response/data/B_GROUND_V018_R01_20261002_105853_939085",
+    "wheel_response/data/B_GROUND_V018_R03_20261002_112725_748969",
+    "wheel_response/data/B_GROUND_V018_R04_20261002_113045_861162",
+    "wheel_response/data/B_GROUND_V018_R05_20261002_113408_105782",
+    "wheel_response/data/B_GROUND_V040_R01_20261002_110128_291528",
+    "wheel_response/data/B_GROUND_V040_R02_20261002_112546_279646",
+    "wheel_response/data/B_GROUND_V040_R03_20261002_112920_447534",
+    "wheel_response/data/B_GROUND_V040_R04_20261002_113245_970490",
+    "wheel_response/data/B_GROUND_V040_R05_20261002_113611_985982",
+    "wheel_response/data/B_GROUND_V018_R02_RETEST03_20261002_112353_171778"
+  ],
+  "supplemental_ids": [
+    "B_GROUND_SUPP_V018_S01",
+    "B_GROUND_SUPP_V018_S02",
+    "B_GROUND_SUPP_V018_S03",
+    "B_GROUND_SUPP_V018_S04"
+  ],
+  "baseline_git_commit": "8655eb21f9537f84b5a66effc0fdb085a4993a99",
+  "firmware_build_ids": [
+    "WRS1-b87ba230e207f646",
+    "WRS1-db73c13a727f9ae5"
+  ],
+  "selection_rule": "20 quality-valid registered formal trials, with independently registered retest replacing communication-invalid R02. Supplemental attempts excluded. Performance failures retained.",
+  "hash_checks": "delivery_manifest_sha256.csv verifies every packaged payload file; metadata.hashes verifies raw files per capture.",
+  "historical_status_note": "Historical AIR/Bluetooth/battery reports are snapshots at their timestamps. final_delivery/final_status.json and final execution report describe the final state."
+}

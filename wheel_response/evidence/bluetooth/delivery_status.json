@@ -1,0 +1,8 @@
+{
+  "generated_local": "2026-10-02T09:32:31.959052+08:00",
+  "feature_complete": true,
+  "motor_output_zero_verified": true,
+  "ground_trials_started": false,
+  "report": "development_report.md",
+  "final_capture": "wheel_response/evidence/bluetooth/qualification/LISTEN_20261002_092740_336178"
+}

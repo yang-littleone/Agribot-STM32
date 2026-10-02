@@ -1,0 +1,307 @@
+{
+  "generated_local": "2026-10-02T10:29:49.061019+08:00",
+  "firmware_build_id": "WRS1-b87ba230e207f646",
+  "records": [
+    {
+      "directory": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\data\\B_AIR_BT_ADC_V018_20261002_100908_041636",
+      "trial_id": "B_AIR_BT_ADC_V018",
+      "validation": {
+        "valid": true,
+        "reasons": [],
+        "mode": "run",
+        "raw_csv_match": true,
+        "hash_mismatch_files": [],
+        "expected_samples": 1100,
+        "actual_samples": 1100,
+        "all_csv_samples": 3939,
+        "stage_counts": {
+          "0": 300,
+          "1": 500,
+          "2": 300
+        },
+        "sequence_missing": 0,
+        "duplicates": 0,
+        "segments": [
+          0
+        ],
+        "decoder_stats": {
+          "noise_bytes": 57,
+          "noise_before_first_frame": 57,
+          "frames": 3944
+        },
+        "trailing_incomplete_bytes": 24,
+        "queue_drop_max": 0,
+        "cycle_distribution": {
+          "min_us": 10000.0,
+          "median_us": 10000.0,
+          "mean_us": 10000.0,
+          "p95_us": 10000.0,
+          "max_us": 10000.0
+        },
+        "feedback_jump_threshold_m_s_per_sample": 0.2,
+        "feedback_jump_counts": {
+          "A": 0,
+          "B": 0,
+          "C": 0,
+          "D": 0
+        }
+      },
+      "metrics": [
+        {
+          "wheel": "A",
+          "rise_time_s": 0.4805674289895895,
+          "settling_time_s": 0.7599999999999909,
+          "overshoot_pct": 1.9126633043025612,
+          "tail_mean_error_m_s": 0.00013470873236656188,
+          "tail_mae_m_s": 0.0011823011934757233,
+          "hold_rmse_m_s": 0.035682812469065225,
+          "tail_rmse_m_s": 0.0013832286964019693,
+          "pwm_saturation_fraction": 0.0,
+          "band_m_s": 0.00900000035762787,
+          "stop_time_s": 0.66,
+          "reason": "",
+          "baseline_y0_m_s": 0.0,
+          "actual_target_m_s": 0.18000000715255737,
+          "trial_id": "B_AIR_BT_ADC_V018",
+          "condition": "AIR",
+          "planned_speed_m_s": 0.18,
+          "valid_data": true,
+          "precheck": true,
+          "validation_reasons": ""
+        },
+        {
+          "wheel": "B",
+          "rise_time_s": 0.40951597609042684,
+          "settling_time_s": 0.7599999999999909,
+          "overshoot_pct": 1.9126633043025612,
+          "tail_mean_error_m_s": 0.0001074819266796112,
+          "tail_mae_m_s": 0.0010669809579849244,
+          "hold_rmse_m_s": 0.038024483526797416,
+          "tail_rmse_m_s": 0.0012865418343755508,
+          "pwm_saturation_fraction": 0.0,
+          "band_m_s": 0.00900000035762787,
+          "stop_time_s": 0.82,
+          "reason": "",
+          "baseline_y0_m_s": 0.0,
+          "actual_target_m_s": 0.18000000715255737,
+          "trial_id": "B_AIR_BT_ADC_V018",
+          "condition": "AIR",
+          "planned_speed_m_s": 0.18,
+          "valid_data": true,
+          "precheck": true,
+          "validation_reasons": ""
+        },
+        {
+          "wheel": "C",
+          "rise_time_s": 0.3493807433127696,
+          "settling_time_s": 0.6999999999999886,
+          "overshoot_pct": 2.479900817875035,
+          "tail_mean_error_m_s": 0.000212986022233963,
+          "tail_mae_m_s": 0.0009057311713695526,
+          "hold_rmse_m_s": 0.04315307786435982,
+          "tail_rmse_m_s": 0.0011751075415129696,
+          "pwm_saturation_fraction": 0.0,
+          "band_m_s": 0.00900000035762787,
+          "stop_time_s": 0.72,
+          "reason": "",
+          "baseline_y0_m_s": 0.0,
+          "actual_target_m_s": 0.18000000715255737,
+          "trial_id": "B_AIR_BT_ADC_V018",
+          "condition": "AIR",
+          "planned_speed_m_s": 0.18,
+          "valid_data": true,
+          "precheck": true,
+          "validation_reasons": ""
+        },
+        {
+          "wheel": "D",
+          "rise_time_s": 0.4267221329703349,
+          "settling_time_s": 0.7299999999999898,
+          "overshoot_pct": 1.3454340691526439,
+          "tail_mean_error_m_s": 0.0002861599624156952,
+          "tail_mae_m_s": 0.0008413362503051758,
+          "hold_rmse_m_s": 0.03955582674112931,
+          "tail_rmse_m_s": 0.001003066817000837,
+          "pwm_saturation_fraction": 0.0,
+          "band_m_s": 0.00900000035762787,
+          "stop_time_s": 0.71,
+          "reason": "",
+          "baseline_y0_m_s": 0.0,
+          "actual_target_m_s": 0.18000000715255737,
+          "trial_id": "B_AIR_BT_ADC_V018",
+          "condition": "AIR",
+          "planned_speed_m_s": 0.18,
+          "valid_data": true,
+          "precheck": true,
+          "validation_reasons": ""
+        }
+      ],
+      "battery": {
+        "pre_last_1s_median_v": 12.198,
+        "observed_min_v": 12.162,
+        "observed_max_v": 12.268,
+        "hold_min_v": 12.162,
+        "invalid_samples": 0,
+        "method": "MCU ADC nominal estimate, not independently calibrated"
+      }
+    },
+    {
+      "directory": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\data\\B_AIR_BT_ADC_V040_20261002_101056_291643",
+      "trial_id": "B_AIR_BT_ADC_V040",
+      "validation": {
+        "valid": true,
+        "reasons": [],
+        "mode": "run",
+        "raw_csv_match": true,
+        "hash_mismatch_files": [],
+        "expected_samples": 1100,
+        "actual_samples": 1100,
+        "all_csv_samples": 2828,
+        "stage_counts": {
+          "0": 300,
+          "1": 500,
+          "2": 300
+        },
+        "sequence_missing": 0,
+        "duplicates": 0,
+        "segments": [
+          0
+        ],
+        "decoder_stats": {
+          "noise_bytes": 45,
+          "noise_before_first_frame": 45,
+          "frames": 2833
+        },
+        "trailing_incomplete_bytes": 69,
+        "queue_drop_max": 0,
+        "cycle_distribution": {
+          "min_us": 10000.0,
+          "median_us": 10000.0,
+          "mean_us": 10000.0,
+          "p95_us": 10000.0,
+          "max_us": 10000.0
+        },
+        "feedback_jump_threshold_m_s_per_sample": 0.2,
+        "feedback_jump_counts": {
+          "A": 0,
+          "B": 0,
+          "C": 0,
+          "D": 0
+        }
+      },
+      "metrics": [
+        {
+          "wheel": "A",
+          "rise_time_s": 0.5262577832260024,
+          "settling_time_s": 0.7799999999999727,
+          "overshoot_pct": 0.9956434220724788,
+          "tail_mean_error_m_s": 6.018027663230896e-05,
+          "tail_mae_m_s": 0.0009301142394542695,
+          "hold_rmse_m_s": 0.07378538491225599,
+          "tail_rmse_m_s": 0.0011691367700550662,
+          "pwm_saturation_fraction": 0.0,
+          "band_m_s": 0.020000000298023225,
+          "stop_time_s": 0.89,
+          "reason": "",
+          "baseline_y0_m_s": 0.0,
+          "actual_target_m_s": 0.4000000059604645,
+          "trial_id": "B_AIR_BT_ADC_V040",
+          "condition": "AIR",
+          "planned_speed_m_s": 0.4,
+          "valid_data": true,
+          "precheck": true,
+          "validation_reasons": ""
+        },
+        {
+          "wheel": "B",
+          "rise_time_s": 0.5261723186774188,
+          "settling_time_s": 0.75,
+          "overshoot_pct": 1.0807290512214742,
+          "tail_mean_error_m_s": 0.00025247290730476377,
+          "tail_mae_m_s": 0.0009190447628498078,
+          "hold_rmse_m_s": 0.07570705410125467,
+          "tail_rmse_m_s": 0.0011705263348928056,
+          "pwm_saturation_fraction": 0.0,
+          "band_m_s": 0.020000000298023225,
+          "stop_time_s": null,
+          "reason": "post_zero_band_not_continuously_held",
+          "baseline_y0_m_s": 0.0,
+          "actual_target_m_s": 0.4000000059604645,
+          "trial_id": "B_AIR_BT_ADC_V040",
+          "condition": "AIR",
+          "planned_speed_m_s": 0.4,
+          "valid_data": true,
+          "precheck": true,
+          "validation_reasons": ""
+        },
+        {
+          "wheel": "C",
+          "rise_time_s": 0.4944833753773417,
+          "settling_time_s": 0.7299999999999613,
+          "overshoot_pct": 0.9956434220724788,
+          "tail_mean_error_m_s": 0.0005026212334632873,
+          "tail_mae_m_s": 0.0009027773141860962,
+          "hold_rmse_m_s": 0.08223504760279503,
+          "tail_rmse_m_s": 0.0011397771956502356,
+          "pwm_saturation_fraction": 0.0,
+          "band_m_s": 0.020000000298023225,
+          "stop_time_s": 0.76,
+          "reason": "",
+          "baseline_y0_m_s": 0.0,
+          "actual_target_m_s": 0.4000000059604645,
+          "trial_id": "B_AIR_BT_ADC_V040",
+          "condition": "AIR",
+          "planned_speed_m_s": 0.4,
+          "valid_data": true,
+          "precheck": true,
+          "validation_reasons": ""
+        },
+        {
+          "wheel": "D",
+          "rise_time_s": 0.5178842087782884,
+          "settling_time_s": 0.7599999999999909,
+          "overshoot_pct": 0.9956434220724788,
+          "tail_mean_error_m_s": 0.0001605801284313202,
+          "tail_mae_m_s": 0.0007521550357341766,
+          "hold_rmse_m_s": 0.07861330732834788,
+          "tail_rmse_m_s": 0.0009857955748827736,
+          "pwm_saturation_fraction": 0.0,
+          "band_m_s": 0.020000000298023225,
+          "stop_time_s": 0.82,
+          "reason": "",
+          "baseline_y0_m_s": 0.0,
+          "actual_target_m_s": 0.4000000059604645,
+          "trial_id": "B_AIR_BT_ADC_V040",
+          "condition": "AIR",
+          "planned_speed_m_s": 0.4,
+          "valid_data": true,
+          "precheck": true,
+          "validation_reasons": ""
+        }
+      ],
+      "battery": {
+        "pre_last_1s_median_v": 12.198,
+        "observed_min_v": 12.127,
+        "observed_max_v": 12.242,
+        "hold_min_v": 12.127,
+        "invalid_samples": 0,
+        "method": "MCU ADC nominal estimate, not independently calibrated"
+      }
+    }
+  ],
+  "final_zero": {
+    "directory": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\battery\\final_zero\\LISTEN_20261002_101223_645151",
+    "samples": 322,
+    "all_zero": true
+  },
+  "voltage_calibrated": false,
+  "late_POST_B_motion": {
+    "trial": "B_AIR_BT_ADC_V040",
+    "post_time_s": 2.63,
+    "speed_m_s": -0.003063052659854293,
+    "encoder_counts": -9,
+    "strict_stop_time_available": false,
+    "zero_band_definition_unchanged": true
+  },
+  "ground_trials_not_executed": true
+}

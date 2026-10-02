@@ -1,0 +1,11 @@
+{
+  "checked_local": "2026-10-02T00:31:28.828927+08:00",
+  "source_files": 1404,
+  "hash_mismatches": [],
+  "baseline_unmodified_files": [
+    "Hardware/Encoder.c",
+    "Hardware/Motor.c",
+    "Core/Src/tim.c"
+  ],
+  "source_changes_during_air_trials": false
+}

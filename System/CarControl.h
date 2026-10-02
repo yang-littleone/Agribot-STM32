@@ -8,6 +8,11 @@
 #include "system.h"
 // 移除对Data.h的包含，使用前向声明解决循环依赖
 
+#define VELOCITY_PI_KP 800.0f
+#define VELOCITY_PI_KI 500.0f
+#define VELOCITY_PI_PWM_LIMIT 16700
+#define WHEEL_TARGET_LIMIT 1.0f
+
 #define PI 3.1415926f
 
 #define MOTOR_REDUCTION_RATIO 30.0f                      // 减速比

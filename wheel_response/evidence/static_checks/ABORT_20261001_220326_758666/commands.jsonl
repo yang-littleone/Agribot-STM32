@@ -1,0 +1,3 @@
+{"event": "connection_opened", "pc_monotonic_ns": 44198611191900, "local_time": "2026-10-01T22:03:26.761268+08:00", "port": "COM12"}
+{"event": "command_sent", "pc_monotonic_ns": 44198611478100, "local_time": "2026-10-01T22:03:26.761552+08:00", "command_sequence": 1, "opcode": "ABORT", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 44198622849700, "local_time": "2026-10-01T22:03:26.772926+08:00", "fields": [1, 5, 0, 5, 255, 27, 0, 2]}

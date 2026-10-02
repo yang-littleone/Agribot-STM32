@@ -1,0 +1,24 @@
+{
+  "recorded_local": "2026-10-02T12:15:15.986780+08:00",
+  "source": "Actual Windows CLI output in this session: SerialException COM13 open OSError errno22/Windows121, twice.",
+  "attempts": [
+    {
+      "directory": "wheel_response\\evidence\\final_delivery\\final_zero\\LISTEN_20261002_120458_025512",
+      "opened": false,
+      "received_samples": 0,
+      "sent_bytes": 0,
+      "error": "COM13 open timeout, Windows error121",
+      "duration_requested_s": 30
+    },
+    {
+      "directory": "wheel_response\\evidence\\final_delivery\\final_zero\\LISTEN_20261002_120515_658422",
+      "opened": false,
+      "received_samples": 0,
+      "sent_bytes": 0,
+      "error": "COM13 open timeout, Windows error121",
+      "duration_requested_s": 5
+    }
+  ],
+  "new_stop_record_obtained": false,
+  "motor_commands_sent": false
+}

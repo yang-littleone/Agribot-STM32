@@ -1,0 +1,42 @@
+{
+  "trial_id": "B_AIR_V018_R01",
+  "reviewed_local": "2026-10-02T00:16:36.971504+08:00",
+  "passed": false,
+  "reasons": [
+    "terminal_not_zero_A",
+    "terminal_not_zero_D"
+  ],
+  "data_valid": true,
+  "samples": 1100,
+  "wheels": {
+    "A": {
+      "hold_peak_m_s": 0.183783158659935,
+      "hold_min_m_s": 0.0,
+      "hold_net_counts": 248450,
+      "complete_feedback_max_abs_m_s": 0.01123119331896305,
+      "complete_pwm_max_abs": 0
+    },
+    "B": {
+      "hold_peak_m_s": 0.183783158659935,
+      "hold_min_m_s": 0.0,
+      "hold_net_counts": 247327,
+      "complete_feedback_max_abs_m_s": 0.0,
+      "complete_pwm_max_abs": 0
+    },
+    "C": {
+      "hold_peak_m_s": 0.18446382880210876,
+      "hold_min_m_s": 0.0,
+      "hold_net_counts": 245745,
+      "complete_feedback_max_abs_m_s": 0.00034033917472697794,
+      "complete_pwm_max_abs": 0
+    },
+    "D": {
+      "hold_peak_m_s": 0.18412348628044128,
+      "hold_min_m_s": 0.0,
+      "hold_net_counts": 247131,
+      "complete_feedback_max_abs_m_s": 0.0013613566989079118,
+      "complete_pwm_max_abs": 0
+    }
+  },
+  "physical_setup_source": "User authorizes remaining AIR trials while continuously raised; no new visual observation claimed."
+}

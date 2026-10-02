@@ -1,0 +1,8 @@
+{
+  "firmware_build_id": "WRS1-db73c13a727f9ae5",
+  "baseline_git_commit": "8655eb21f9537f84b5a66effc0fdb085a4993a99",
+  "source_manifest_sha256": "b3a54e37814d9173b64263cc3f3eeedfc332f23882cedd272ab3789de42df08b",
+  "generated_header_sha256": "ca9adf9fa67606759b32384bfc9a7ee10bec5c73bc8eaf5cf14ae7c646e5e44c",
+  "branch": "codex/wheel-response",
+  "dirty_source": true
+}

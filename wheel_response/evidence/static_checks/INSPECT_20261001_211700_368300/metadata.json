@@ -1,0 +1,173 @@
+{
+  "mode": "inspect",
+  "robot_id": "B",
+  "port": "COM12",
+  "start_local": "2026-10-01T21:17:00.233149+08:00",
+  "timezone": "Asia/Shanghai",
+  "software": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "packages": {
+      "pyserial": "3.5",
+      "numpy": "2.5.3",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "complete": true,
+  "sampling_order": "timestamp;encoder_once;nominal_velocity;stage_target;original_inverse_PI_PWM;snapshot;nonblocking_fifo",
+  "time_resolution_us": 1000,
+  "raw_data_processing": "none",
+  "hardware_manifest": {
+    "robot_id": "B",
+    "date": "2026-10-01",
+    "operator": null,
+    "stm32_model": null,
+    "board_revision": null,
+    "motors": {
+      "A": null,
+      "B": null,
+      "C": null,
+      "D": null
+    },
+    "gearboxes": {
+      "A": null,
+      "B": null,
+      "C": null,
+      "D": null
+    },
+    "encoders": {
+      "A": null,
+      "B": null,
+      "C": null,
+      "D": null
+    },
+    "drivers": {
+      "A": null,
+      "B": null,
+      "C": null,
+      "D": null
+    },
+    "wheel_positions_actual": {
+      "A": null,
+      "B": null,
+      "C": null,
+      "D": null
+    },
+    "wheel_diameter_measured_m": {
+      "A": null,
+      "B": null,
+      "C": null,
+      "D": null
+    },
+    "counts_per_wheel_revolution_measured": {
+      "A": null,
+      "B": null,
+      "C": null,
+      "D": null
+    },
+    "wheel_spacing_measured_m": null,
+    "axle_spacing_measured_m": null,
+    "vehicle_mass_kg": null,
+    "additional_load_kg": null,
+    "vehicle_configuration": null,
+    "battery_model": null,
+    "battery_voltage_measured_v": null,
+    "serial_adapter_detected": "CH9102 USB VID:PID=1A86:55D4",
+    "serial_port": "COM12",
+    "programmer": "ST-Link (user confirmed; actual download pending)",
+    "support_method": null,
+    "ground_type": null,
+    "photo_paths": [],
+    "correspondence_to_platform_A": null,
+    "user_reported_setup": {
+      "four_wheels_raised": true,
+      "board_power_on": true,
+      "motor_power_on": true,
+      "reported_in_chat": true
+    },
+    "verification": {
+      "wheel_mapping_verified": false,
+      "forward_direction_verified": false,
+      "counts_per_wheel_revolution_verified": false,
+      "wheel_diameter_measured": false,
+      "platform_correspondence_recorded": false
+    },
+    "unknown_fields_note": "null means not yet physically verified; source constants are not measured values."
+  },
+  "operator": null,
+  "board_config": {
+    "firmware_build_id": "WRS1-db73c13a727f9ae5",
+    "baseline_git_commit": "8655eb21f9537f84b5a66effc0fdb085a4993a99",
+    "configuration_version": 1,
+    "kp_ABCD": [
+      800,
+      800,
+      800,
+      800
+    ],
+    "ki_ABCD": [
+      500,
+      500,
+      500,
+      500
+    ],
+    "nominal_period_us": 10000,
+    "diameter_m": 0.065,
+    "encoder_ppr": 500,
+    "encoder_quadrature": 4,
+    "motor_reduction_ratio": 30,
+    "wheel_spacing_m": 0.187,
+    "axle_spacing_m": 0.173,
+    "pwm_limit": 16700,
+    "inverse_limit_m_s": 1.0,
+    "allowed_mm_s": [
+      50,
+      100,
+      180,
+      400
+    ],
+    "heartbeat_timeout_ms": 500,
+    "time_resolution_us": 1000,
+    "exec_invalid": 65535,
+    "battery_invalid": 65535,
+    "deadline_us": 15000,
+    "fatal_dt_us": 30000,
+    "queue_depth": 32,
+    "sample_struct_bytes": 84,
+    "heap_free": 11024,
+    "control_stack_free_words": 411,
+    "uart_stack_free_words": 416,
+    "clock_hz": 168000000,
+    "fault_bits": {
+      "heartbeat": 1,
+      "abort": 2,
+      "scheduling": 4,
+      "encoder_range": 8,
+      "rx": 16,
+      "uart": 32,
+      "memory": 64,
+      "drops": 128
+    },
+    "encoder_invalid_on_range_fault": 0,
+    "early_stop": 0,
+    "parser_errors": 0
+  },
+  "initial_state": 0,
+  "end_local": "2026-10-01T21:17:00.531062+08:00",
+  "decoder_stats": {
+    "noise_bytes": 81,
+    "noise_before_first_frame": 81,
+    "frames": 7,
+    "noise_between_frames": 0
+  },
+  "trailing_bytes": 1,
+  "samples_received": 4,
+  "hashes": {
+    "board_config.json": "ddb341454819ee41cb90c6ea63ede8905d01ab323a0b369aeee69e04d040ba67",
+    "board_config_raw.json": "fd658ab47e8574024f37750e612903f098f47b03617111cb458db8958a7c5480",
+    "commands.jsonl": "a264f035017cb8263c0f18dba3fe83204ea053cc30ab7dc1fc89ab6849f2761a",
+    "raw_rx.bin": "873817b8f578012fb74c9abdfb7cea8292d0177a7cdd64e6aa3504b478c39ff5",
+    "raw_tx.bin": "b266509a77e75cd6500287a5eb9eca79080c99a689b17bfcc57476641e773a9c",
+    "samples.csv": "5f4c578f845ebf785762e47ae7d44b5a5c3b87d721eb6732d46b394030783cb0"
+  }
+}

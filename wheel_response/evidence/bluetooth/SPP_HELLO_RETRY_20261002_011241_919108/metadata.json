@@ -1,0 +1,17 @@
+{
+  "mode": "inspect",
+  "port": "COM13",
+  "start_local": "2026-10-02T01:12:41.919437+08:00",
+  "complete": false,
+  "transport": "bluetooth_spp",
+  "end_local": "2026-10-02T01:12:52.425831+08:00",
+  "decoder_stats": {},
+  "trailing_bytes": 0,
+  "samples_received": 0,
+  "hashes": {
+    "commands.jsonl": "f6ff8ec52f18501b2985bdd73faef48e5b1d66a073664605faa44fbe814696ae",
+    "raw_rx.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_tx.bin": "5cdca19d45e71fecef2d1f12556e29f287e87317ce032ffcab8fbab671c7d81a",
+    "samples.csv": "0d3967e4d8323b8d4873b900404e6d0455f9badec8fbf3c4e219c7eabfdc36ed"
+  }
+}

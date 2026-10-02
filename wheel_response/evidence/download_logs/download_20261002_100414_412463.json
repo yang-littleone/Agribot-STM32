@@ -1,0 +1,27 @@
+{
+  "robot_id": "B",
+  "physical_readiness": "User confirmed four wheels raised, board and motor supply on in chat.",
+  "start_local": "2026-10-02T10:04:14.412463+08:00",
+  "firmware_build_id": "WRS1-b87ba230e207f646",
+  "image_sha256": {
+    "MDK-ARM\\WheelResponse\\WheelResponse.hex": "fba817f5f19e3bbcf1c89a28cdf0583405901d0f0895277d2e1f929a43128be1",
+    "MDK-ARM\\WheelResponse\\WheelResponse.axf": "071f38525936adfd4d5ee90f49eb685986fc64e712960d14b6df8b603c99ce3a"
+  },
+  "command": [
+    "D:\\Keil_v5\\UV4\\UV4.exe",
+    "-f",
+    "D:\\MCU\\STM32\\AgriBot-wheel-response\\MDK-ARM\\WheelResponse.uvprojx",
+    "-t",
+    "WheelResponse",
+    "-o",
+    "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\download_logs\\download_20261002_100414_412463.log",
+    "-j0",
+    "-sg"
+  ],
+  "log": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\download_logs\\download_20261002_100414_412463.log",
+  "board_identity_verified": false,
+  "exit_code": 2,
+  "keil_reported_success": false,
+  "keil_log_text": "Load \"WheelResponse\\\\WheelResponse.axf\" \nError: Flash Download failed  -  Target DLL has been cancelled\nFlash Load finished at 10:04:16\n",
+  "end_local": "2026-10-02T10:04:16.618573+08:00"
+}

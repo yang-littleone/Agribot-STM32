@@ -1,0 +1,13 @@
+wheelresponse\bsp_gamepad.o: ..\Hardware\USB\bsp_gamepad.c
+wheelresponse\bsp_gamepad.o: ..\Hardware\USB\bsp_gamepad.h
+wheelresponse\bsp_gamepad.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+wheelresponse\bsp_gamepad.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+wheelresponse\bsp_gamepad.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+wheelresponse\bsp_gamepad.o: ../Core/Inc/FreeRTOSConfig.h
+wheelresponse\bsp_gamepad.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+wheelresponse\bsp_gamepad.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+wheelresponse\bsp_gamepad.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+wheelresponse\bsp_gamepad.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+wheelresponse\bsp_gamepad.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+wheelresponse\bsp_gamepad.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+wheelresponse\bsp_gamepad.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

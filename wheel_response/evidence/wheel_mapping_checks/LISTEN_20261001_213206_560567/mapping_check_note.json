@@ -1,0 +1,25 @@
+{
+  "status": "manual_mapping_check_superseded_by_user_confirmation_and_source_review",
+  "position_target_initially_requested": "left_rear",
+  "mapping_conclusion_from_this_record": null,
+  "encoder_counts": {
+    "A": {
+      "sum_counts": 0,
+      "absolute_counts": 0
+    },
+    "B": {
+      "sum_counts": 0,
+      "absolute_counts": 0
+    },
+    "C": {
+      "sum_counts": 0,
+      "absolute_counts": 0
+    },
+    "D": {
+      "sum_counts": 0,
+      "absolute_counts": 0
+    }
+  },
+  "source_audit": "wheel_response/evidence/wheel_mapping_source_audit.md",
+  "raw_record_preserved": true
+}

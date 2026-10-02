@@ -1,0 +1,93 @@
+{
+  "mode": "readonly_identity_diagnostic",
+  "port": "COM13",
+  "start_local": "2026-10-02T10:03:32.200996+08:00",
+  "complete": true,
+  "motion_commands_sent": false,
+  "transport": "bluetooth_spp",
+  "windows_receive_buffer_requested_bytes": 65536,
+  "board_config": {
+    "firmware_build_id": "WRS1-a1ee5888c276a89b",
+    "baseline_git_commit": "8655eb21f9537f84b5a66effc0fdb085a4993a99",
+    "configuration_version": 2,
+    "link": 1,
+    "btbaud": 115200,
+    "btdetected": 115200,
+    "btat": 1,
+    "btrx": 10536,
+    "bterr": 10,
+    "btsetup": 0,
+    "btreply": "2B424155443D380D0A",
+    "btlasterr": 0,
+    "kp_ABCD": [
+      800,
+      800,
+      800,
+      800
+    ],
+    "ki_ABCD": [
+      500,
+      500,
+      500,
+      500
+    ],
+    "nominal_period_us": 10000,
+    "diameter_m": 0.065,
+    "encoder_ppr": 500,
+    "encoder_quadrature": 4,
+    "motor_reduction_ratio": 30,
+    "wheel_spacing_m": 0.187,
+    "axle_spacing_m": 0.173,
+    "pwm_limit": 16700,
+    "inverse_limit_m_s": 1.0,
+    "allowed_mm_s": [
+      50,
+      100,
+      180,
+      400
+    ],
+    "heartbeat_timeout_ms": 500,
+    "time_resolution_us": 1000,
+    "exec_invalid": 65535,
+    "battery_invalid": 65535,
+    "deadline_us": 15000,
+    "fatal_dt_us": 30000,
+    "queue_depth": 32,
+    "sample_struct_bytes": 84,
+    "heap_free": 11024,
+    "control_stack_free_words": 409,
+    "uart_stack_free_words": 312,
+    "clock_hz": 168000000,
+    "fault_bits": {
+      "heartbeat": 1,
+      "abort": 2,
+      "scheduling": 4,
+      "encoder_range": 8,
+      "rx": 16,
+      "uart": 32,
+      "memory": 64,
+      "drops": 128
+    },
+    "encoder_invalid_on_range_fault": 0,
+    "early_stop": 0,
+    "parser_errors": 0
+  },
+  "final_state": 4,
+  "end_local": "2026-10-02T10:03:34.284274+08:00",
+  "decoder_stats": {
+    "noise_bytes": 82,
+    "noise_before_first_frame": 82,
+    "frames": 6,
+    "noise_between_frames": 0
+  },
+  "trailing_bytes": 58,
+  "samples_received": 3,
+  "hashes": {
+    "board_config.json": "fab68e7fe748e6e9f3b4c9b7aab02962012b236389087b309933a37ab3f8c0ea",
+    "board_config_raw.json": "c2521217670105e3e4900f4f7c4e54e8dcc0c1c69ba913467dc55ff1d7fd396d",
+    "commands.jsonl": "6a73996ec333ba1367ee6bc5125b0e5e02402b2ed81345200404fdda1d03f799",
+    "raw_rx.bin": "77b4eac9c6a77b30ca0a89252d478f0fddc9bdb8428f3d59037a46116767a93d",
+    "raw_tx.bin": "b266509a77e75cd6500287a5eb9eca79080c99a689b17bfcc57476641e773a9c",
+    "samples.csv": "68cdd6fcbe4ef4087a6d4f6a7d45ce5e3661e89f8ee0d5277a3fb7eb30670285"
+  }
+}

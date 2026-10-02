@@ -22,6 +22,9 @@
 #include "stm32f4xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#if WHEEL_RESPONSE_EXPERIMENT
+#include "WheelResponseExperiment.h"
+#endif
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -57,6 +60,7 @@
 /* External variables --------------------------------------------------------*/
 extern HCD_HandleTypeDef hhcd_USB_OTG_FS;
 extern UART_HandleTypeDef huart3;
+extern UART_HandleTypeDef huart2;
 extern TIM_HandleTypeDef htim6;
 
 /* USER CODE BEGIN EV */
@@ -72,6 +76,9 @@ extern TIM_HandleTypeDef htim6;
 void NMI_Handler(void)
 {
   /* USER CODE BEGIN NonMaskableInt_IRQn 0 */
+#if WHEEL_RESPONSE_EXPERIMENT
+  WRS_EmergencyZero();
+#endif
 
   /* USER CODE END NonMaskableInt_IRQn 0 */
   /* USER CODE BEGIN NonMaskableInt_IRQn 1 */
@@ -87,6 +94,9 @@ void NMI_Handler(void)
 void HardFault_Handler(void)
 {
   /* USER CODE BEGIN HardFault_IRQn 0 */
+#if WHEEL_RESPONSE_EXPERIMENT
+  WRS_EmergencyZero();
+#endif
 
   /* USER CODE END HardFault_IRQn 0 */
   while (1)
@@ -102,6 +112,9 @@ void HardFault_Handler(void)
 void MemManage_Handler(void)
 {
   /* USER CODE BEGIN MemoryManagement_IRQn 0 */
+#if WHEEL_RESPONSE_EXPERIMENT
+  WRS_EmergencyZero();
+#endif
 
   /* USER CODE END MemoryManagement_IRQn 0 */
   while (1)
@@ -117,6 +130,9 @@ void MemManage_Handler(void)
 void BusFault_Handler(void)
 {
   /* USER CODE BEGIN BusFault_IRQn 0 */
+#if WHEEL_RESPONSE_EXPERIMENT
+  WRS_EmergencyZero();
+#endif
 
   /* USER CODE END BusFault_IRQn 0 */
   while (1)
@@ -132,6 +148,9 @@ void BusFault_Handler(void)
 void UsageFault_Handler(void)
 {
   /* USER CODE BEGIN UsageFault_IRQn 0 */
+#if WHEEL_RESPONSE_EXPERIMENT
+  WRS_EmergencyZero();
+#endif
 
   /* USER CODE END UsageFault_IRQn 0 */
   while (1)
@@ -173,6 +192,11 @@ void USART3_IRQHandler(void)
   /* USER CODE BEGIN USART3_IRQn 1 */
 
   /* USER CODE END USART3_IRQn 1 */
+}
+
+void USART2_IRQHandler(void)
+{
+  HAL_UART_IRQHandler(&huart2);
 }
 
 /**

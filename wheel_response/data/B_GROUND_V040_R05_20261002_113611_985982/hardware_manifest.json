@@ -1,0 +1,295 @@
+{
+  "robot_id": "B",
+  "date": "2026-10-02",
+  "operator": null,
+  "stm32_model": null,
+  "board_revision": null,
+  "motors": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "D": null
+  },
+  "gearboxes": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "D": null
+  },
+  "encoders": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "D": null
+  },
+  "drivers": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "D": null
+  },
+  "wheel_positions_actual": {
+    "A": "left_rear",
+    "B": "left_front",
+    "C": "right_front",
+    "D": "right_rear"
+  },
+  "wheel_diameter_measured_m": {
+    "A": 0.065,
+    "B": 0.065,
+    "C": 0.065,
+    "D": 0.065
+  },
+  "counts_per_wheel_revolution_measured": {
+    "A": 59997,
+    "B": 59666.0,
+    "C": 59682.0,
+    "D": 60031.0
+  },
+  "wheel_spacing_measured_m": null,
+  "axle_spacing_measured_m": null,
+  "vehicle_mass_kg": null,
+  "additional_load_kg": null,
+  "vehicle_configuration": null,
+  "battery_model": null,
+  "battery_voltage_measured_v": 12.198,
+  "serial_adapter_detected": "CH9102 USB VID:PID=1A86:55D4",
+  "serial_port": "COM12",
+  "programmer": "ST-Link; Keil download and Verify OK recorded; board build ID matched",
+  "support_method": null,
+  "ground_type": "ordinary indoor tile floor; user statement and photograph",
+  "photo_paths": [],
+  "correspondence_to_platform_A": {
+    "operator_confirmation": "User states all listed components/conditions are identical.",
+    "same_as_A": {
+      "motors": true,
+      "gearboxes": true,
+      "encoders": true,
+      "drivers": true,
+      "wheel_diameter": true,
+      "power_supply": true,
+      "load": true
+    },
+    "individual_model_labels": null,
+    "scope_note": "Results are newly measured on supplemental platform B; never historical raw data from A."
+  },
+  "user_reported_setup": {
+    "four_wheels_raised": false,
+    "board_power_on": true,
+    "motor_power_on": true,
+    "reported_in_chat": true
+  },
+  "verification": {
+    "wheel_mapping_verified": true,
+    "forward_direction_verified": true,
+    "counts_per_wheel_revolution_verified": true,
+    "wheel_diameter_measured": true,
+    "platform_correspondence_recorded": true
+  },
+  "unknown_fields_note": "null means not yet physically verified; source constants are not measured values.",
+  "wheel_mapping_evidence": {
+    "method": "latest_explicit_user_confirmation_matches_source_comment",
+    "date": "2026-10-01",
+    "positions_zh": {
+      "A": "左后",
+      "B": "左前",
+      "C": "右前",
+      "D": "右后"
+    },
+    "source": "Hardware/Motor.c:3",
+    "note": "用户更正之前的记忆，明确以原注释为准；通道代码不交换。"
+  },
+  "direction_source_review": {
+    "reviewed": true,
+    "encoder_signs": {
+      "A": 1,
+      "B": 1,
+      "C": -1,
+      "D": -1
+    },
+    "pwm_input_signs": {
+      "A": 1,
+      "B": 1,
+      "C": -1,
+      "D": -1
+    },
+    "inverse_groups": {
+      "left": [
+        "A",
+        "B"
+      ],
+      "right": [
+        "C",
+        "D"
+      ]
+    },
+    "physical_motion_test_completed": true,
+    "note": "两处C/D取反分别用于编码器反馈和驱动输出；均保留，实验层不再加取反。"
+  },
+  "wheel_mapping_correction_history": [
+    {
+      "date": "2026-10-01",
+      "superseded_positions": {
+        "A": "left_front",
+        "B": "left_rear",
+        "C": "right_rear",
+        "D": "right_front"
+      },
+      "reason": "User corrected recollection and explicitly confirmed the Motor.c comment as authoritative."
+    }
+  ],
+  "maintenance_history": [
+    {
+      "date_local": "2026-10-01T23:24:57.380953+08:00",
+      "user_report": "All four motors adjusted to normal operation; mapping A left rear, B left front, C right front, D right rear; raised and powered, COM12/ST-Link connected.",
+      "repair_details": "User re-soldered the shared motor/encoder connectors.",
+      "verification_note": "Reported by user; new four-wheel encoder feedback precheck pending.",
+      "feedback_precheck": "B_AIR_PRE050_AFTER_FIX01",
+      "four_wheel_feedback_restored": true,
+      "physical_forward_direction_confirmed": true
+    }
+  ],
+  "wheel_diameter_user_confirmed_m": {
+    "A": 0.065,
+    "B": 0.065,
+    "C": 0.065,
+    "D": 0.065
+  },
+  "wheel_diameter_confirmation_method": "User states all four actual diameters equal the 0.065 m source configuration; measuring method/photos not supplied.",
+  "counts_calibration_status": "Four manually marked one-turn measurements recorded. Source scale is consistent within 1% screening tolerance; B capture retains extra C motion and operator explanation. No firmware scaling constants changed.",
+  "encoder_calibration_evidence": {
+    "A": {
+      "path": "wheel_response/evidence/encoder_calibration/A/LISTEN_20261001_234912_632010",
+      "method": "Manual marked one full forward output-wheel revolution; user confirmed exact full turn and stopped; sum signed counts from the original single-reader control samples.",
+      "turns": 1,
+      "net_counts": 59997,
+      "absolute_counts": 60431,
+      "other_channels_net_counts": {
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "data_valid": true,
+      "note": "Single-turn mark-alignment measurement; close to source nominal 60000; no controller constants changed."
+    },
+    "B": {
+      "path": "wheel_response\\evidence\\encoder_calibration\\B\\LISTEN_20261001_235220_928899",
+      "method": "Net signed original control samples during a marked complete forward wheel/output-shaft turn; no second encoder reader.",
+      "turns": 1,
+      "net_counts": 59666,
+      "data_valid": true,
+      "operator_confirmed_extra_C_motion": true,
+      "strict_single_wheel_check_passed": false,
+      "accepted_for_B_count_scale": true,
+      "note": "Full capture and additional C motion preserved; no B/C simultaneous active sample; source scale discrepancy -0.5567% within declared manual screening tolerance."
+    },
+    "C": {
+      "path": "wheel_response\\evidence\\encoder_calibration\\C\\LISTEN_20261001_235907_781126",
+      "method": "Net signed original control samples during a marked complete forward wheel/output-shaft turn; no second encoder reader.",
+      "turns": 1,
+      "net_counts": 59682,
+      "data_valid": true,
+      "direction_and_mapping_match": true,
+      "source_scale_consistent": true
+    },
+    "D": {
+      "path": "wheel_response\\evidence\\encoder_calibration\\D\\LISTEN_20261002_000140_066181",
+      "method": "Net signed original control samples during a marked complete forward wheel/output-shaft turn; no second encoder reader.",
+      "turns": 1,
+      "net_counts": 60031,
+      "data_valid": true,
+      "direction_and_mapping_match": true,
+      "source_scale_consistent": true
+    }
+  },
+  "wheel_diameter_evidence": {
+    "value_m": 0.065,
+    "source": "User explicitly confirms all four actual diameters equal the value in the source configuration.",
+    "measurement_method": null,
+    "method_note": "No caliper/ruler method or photographs supplied; recorded from operator testimony, not independently measured by Codex."
+  },
+  "battery_voltage_note": "MCU ADC-derived nominal voltage now available; no multimeter calibration. Old snapshots with 65535 remain invalid and unchanged.",
+  "communication_channels": {
+    "usb_serial": {
+      "port": "COM12",
+      "interface": "USART3 PD8 TX / PD9 RX,115200 8N1",
+      "adapter": "CH9102"
+    },
+    "bluetooth_spp": {
+      "port": "COM13",
+      "incoming_port_not_for_capture": "COM14",
+      "name": "WHEELTEC",
+      "module_user_report": "JDY-33",
+      "interface": "USART2 PD5 TX / PD6 RX,115200 8N1",
+      "pcb_connector": "P1 pin5 PD5;pin4 PD6;pin3 GND;pin2 5V carrier supply",
+      "original_uart_baud_detected": 9600,
+      "AT_baud_configuration_verified": true,
+      "identity_verified": true,
+      "100Hz_qualification": "passed 30 s retest; first capture with CRC/missing sequence retained as failed",
+      "qualification_directory": "wheel_response/evidence/bluetooth/qualification/LISTEN_20261002_092740_336178",
+      "latest_100Hz_samples": 3016,
+      "qualification_sequence_missing": 0,
+      "powered_precheck_directory": "wheel_response/data/B_AIR_BT_PRE050_RETEST02_20261002_092610_243120",
+      "powered_precheck_passed": true,
+      "last_module_configuration_directory": "wheel_response/evidence/bluetooth/BT_SETUP_20261002_092658_446522"
+    }
+  },
+  "planned_ground_setup": {
+    "recorded_local": "2026-10-02T10:24:06.071672+08:00",
+    "ground_type": "indoor tile floor",
+    "minimum_straight_length_offered_m": 5,
+    "actual_clear_length_measured_m": null,
+    "actual_width_measured_m": null,
+    "vehicle_still_raised": false,
+    "physical_ready_confirmed": true,
+    "ground_motion_authorized": true,
+    "payload_unknown": true,
+    "source": "Latest explicit user instruction; site not yet placed or measured.",
+    "prior_3m_trial_not_executed": true,
+    "readiness_confirmed_local": "2026-10-02T10:45:22.427947+08:00",
+    "readiness_source": "User replied 可以了 to instruction to place vehicle on >=5 m straight tile floor, align and remove trailing ST-Link wire.",
+    "readiness_scope": "First low-speed ground precheck; each later START requires physical reset confirmation.",
+    "last_reset_confirmed_local": "2026-10-02T11:36:11.642176+08:00",
+    "next_trial_authorized": "B_GROUND_V040_R05",
+    "last_physical_forward_observation": "User confirms formal 0.18 R05 no abnormality, reset aligned, unchanged configuration/load/current Bluetooth layout.",
+    "readiness_source_latest": "User replied 可以继续 to request to reset and align vehicle with sufficient forward clearance before 0.10 m/s retest.",
+    "fixed_configuration_and_load_user_confirmed": true,
+    "communication_qualification_current": true,
+    "readiness_block_reason": null,
+    "bluetooth_endpoints_close_user_confirmed": true,
+    "physical_stop_confirmed": true,
+    "latest_operator_request": "Retry again; user reports endpoints very close.",
+    "latest_retry_authorized_local": "2026-10-02T11:22:12.624418+08:00",
+    "actual_Bluetooth_distance_measured_m": null
+  },
+  "battery_voltage_measurement": {
+    "method": "MCU ADC nominal estimate; ADC1_IN8 PB0, nominal 3.3 V reference and x11 divider; not independently calibrated",
+    "calibrated": false,
+    "reference_v": 3.3,
+    "divider_gain": 11,
+    "period_ms": 100,
+    "source_directory": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\battery\\qualification\\LISTEN_20261002_100725_099833",
+    "minimum_v": 12.162,
+    "maximum_v": 12.268,
+    "median_v": 12.198
+  },
+  "ground_setup_revision_history": [
+    {
+      "superseded_local": "2026-10-02T10:24:06.071658+08:00",
+      "reason": "User cancels 3 m experiment and offers >=5 m tile-floor straight distance",
+      "prior_setup": {
+        "recorded_local": "2026-10-02T09:56:37.523056+08:00",
+        "available_area_m": [
+          3,
+          1.8
+        ],
+        "dimensions_source": "User report; photo not a measurement",
+        "photo_path": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\ground_preparation\\user_indoor_floor.jpg",
+        "vehicle_still_raised": true,
+        "ground_motion_authorized": false,
+        "clear_straight_usable_length_m": null,
+        "payload_unknown": true
+      }
+    }
+  ]
+}

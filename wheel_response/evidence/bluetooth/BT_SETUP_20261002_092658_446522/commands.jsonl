@@ -1,0 +1,11 @@
+{"event": "connection_opened", "pc_monotonic_ns": 652482722900, "local_time": "2026-10-02T09:26:58.475504+08:00", "port": "COM12"}
+{"event": "command_sent", "pc_monotonic_ns": 652483097300, "local_time": "2026-10-02T09:26:58.475875+08:00", "command_sequence": 1, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 652493108000, "local_time": "2026-10-02T09:26:58.485887+08:00", "fields": [1, 1, 0, 4, 255, 31, 0, 0]}
+{"event": "command_sent", "pc_monotonic_ns": 652493432600, "local_time": "2026-10-02T09:26:58.486210+08:00", "command_sequence": 2, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 652504873100, "local_time": "2026-10-02T09:26:58.497652+08:00", "fields": [2, 8, 0, 4, 255, 31, 0, 0]}
+{"event": "command_sent", "pc_monotonic_ns": 652592223400, "local_time": "2026-10-02T09:26:58.585003+08:00", "command_sequence": 3, "opcode": "BT_SETUP", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 652608915100, "local_time": "2026-10-02T09:26:58.601695+08:00", "fields": [3, 11, 0, 4, 255, 31, 0, 0]}
+{"event": "command_sent", "pc_monotonic_ns": 660609251300, "local_time": "2026-10-02T09:27:06.602031+08:00", "command_sequence": 4, "opcode": "HELLO", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 660622587800, "local_time": "2026-10-02T09:27:06.615368+08:00", "fields": [4, 1, 0, 4, 255, 31, 0, 0]}
+{"event": "command_sent", "pc_monotonic_ns": 660622850200, "local_time": "2026-10-02T09:27:06.615626+08:00", "command_sequence": 5, "opcode": "GET_CONFIG", "run_id": 0, "step_mm_s": 0, "pre_ms": 0, "hold_ms": 0, "post_ms": 0, "bytes_confirmed": 26}
+{"event": "ack", "pc_monotonic_ns": 660634582300, "local_time": "2026-10-02T09:27:06.627362+08:00", "fields": [5, 8, 0, 4, 255, 31, 0, 0]}

@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "locked_before_formal_measurement": false,
+  "time_origin": "first recorded wheel target positive transition",
+  "baseline_window_s": 1,
+  "rise_threshold_fraction": [
+    0.1,
+    0.9
+  ],
+  "crossing_estimator": "linear interpolation on adjacent actual samples only; no interpolation over >15 ms gaps",
+  "settling_band": "max(0.05*abs(actual_target-baseline_mean),2*verified_quantization)",
+  "remaining_hold_observation_s": 1,
+  "tail_window_s": 2,
+  "verified_quantization_m_s": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "D": null
+  },
+  "zero_speed_band_m_s": {
+    "A": null,
+    "B": null,
+    "C": null,
+    "D": null
+  },
+  "pwm_control_limit": 16700,
+  "summary_unit": "trial per condition/speed/wheel; planned n=5; sample SD",
+  "fault_bits": {
+    "heartbeat": 1,
+    "abort": 2,
+    "scheduling": 4,
+    "encoder_range": 8,
+    "rx": 16,
+    "uart": 32,
+    "memory": 64,
+    "drops": 128
+  },
+  "deadline_miss_us": 15000,
+  "fatal_cycle_dt_us": 30000,
+  "feedback_jump_review_threshold_m_s_per_sample": 0.2,
+  "feedback_jump_review_only": true,
+  "invalid_values": "null with reason; never replace missing time metrics with zero",
+  "synthetic_data_policy": "tests only; never real data directory"
+}

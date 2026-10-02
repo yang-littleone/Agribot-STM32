@@ -1,0 +1,12 @@
+{
+  "archive_filename": "Windows四轮轮速响应测试_完整回传_20261002_121910.zip",
+  "package_scope": "Complete experiment worktree snapshot, including current source, vendor dependencies, all build outputs, all wheel_response records, historical archives already in this worktree, baseline history bundle, source patch, taskbook, PCB and floor evidence.",
+  "excluded_paths": [
+    ".git",
+    ".venv",
+    "__pycache__"
+  ],
+  "no_original_files_deleted": true,
+  "external_prior_delivery_zips": "Remain at D:/MCU/STM32/AgriBot. All underlying experiment source and evidence are in this final full snapshot; those separate ZIP containers are not duplicated here.",
+  "no_Word_thesis_overwritten": true
+}

@@ -1,0 +1,337 @@
+{
+  "mode": "run",
+  "robot_id": "B",
+  "port": "COM12",
+  "start_local": "2026-10-01T21:49:42.133070+08:00",
+  "timezone": "Asia/Shanghai",
+  "software": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "packages": {
+      "pyserial": "3.5",
+      "numpy": "2.5.3",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "complete": true,
+  "sampling_order": "timestamp;encoder_once;nominal_velocity;stage_target;original_inverse_PI_PWM;snapshot;nonblocking_fifo",
+  "time_resolution_us": 1000,
+  "raw_data_processing": "none",
+  "hardware_manifest": {
+    "robot_id": "B",
+    "date": "2026-10-01",
+    "operator": null,
+    "stm32_model": null,
+    "board_revision": null,
+    "motors": {
+      "A": null,
+      "B": null,
+      "C": null,
+      "D": null
+    },
+    "gearboxes": {
+      "A": null,
+      "B": null,
+      "C": null,
+      "D": null
+    },
+    "encoders": {
+      "A": null,
+      "B": null,
+      "C": null,
+      "D": null
+    },
+    "drivers": {
+      "A": null,
+      "B": null,
+      "C": null,
+      "D": null
+    },
+    "wheel_positions_actual": {
+      "A": "left_rear",
+      "B": "left_front",
+      "C": "right_front",
+      "D": "right_rear"
+    },
+    "wheel_diameter_measured_m": {
+      "A": null,
+      "B": null,
+      "C": null,
+      "D": null
+    },
+    "counts_per_wheel_revolution_measured": {
+      "A": null,
+      "B": null,
+      "C": null,
+      "D": null
+    },
+    "wheel_spacing_measured_m": null,
+    "axle_spacing_measured_m": null,
+    "vehicle_mass_kg": null,
+    "additional_load_kg": null,
+    "vehicle_configuration": null,
+    "battery_model": null,
+    "battery_voltage_measured_v": null,
+    "serial_adapter_detected": "CH9102 USB VID:PID=1A86:55D4",
+    "serial_port": "COM12",
+    "programmer": "ST-Link; Keil download and Verify OK recorded; board build ID matched",
+    "support_method": null,
+    "ground_type": null,
+    "photo_paths": [],
+    "correspondence_to_platform_A": null,
+    "user_reported_setup": {
+      "four_wheels_raised": true,
+      "board_power_on": true,
+      "motor_power_on": true,
+      "reported_in_chat": true
+    },
+    "verification": {
+      "wheel_mapping_verified": true,
+      "forward_direction_verified": false,
+      "counts_per_wheel_revolution_verified": false,
+      "wheel_diameter_measured": false,
+      "platform_correspondence_recorded": false
+    },
+    "unknown_fields_note": "null means not yet physically verified; source constants are not measured values.",
+    "wheel_mapping_evidence": {
+      "method": "latest_explicit_user_confirmation_matches_source_comment",
+      "date": "2026-10-01",
+      "positions_zh": {
+        "A": "左后",
+        "B": "左前",
+        "C": "右前",
+        "D": "右后"
+      },
+      "source": "Hardware/Motor.c:3",
+      "note": "用户更正之前的记忆，明确以原注释为准；通道代码不交换。"
+    },
+    "direction_source_review": {
+      "reviewed": true,
+      "encoder_signs": {
+        "A": 1,
+        "B": 1,
+        "C": -1,
+        "D": -1
+      },
+      "pwm_input_signs": {
+        "A": 1,
+        "B": 1,
+        "C": -1,
+        "D": -1
+      },
+      "inverse_groups": {
+        "left": [
+          "A",
+          "B"
+        ],
+        "right": [
+          "C",
+          "D"
+        ]
+      },
+      "physical_motion_test_completed": false,
+      "note": "两处C/D取反分别用于编码器反馈和驱动输出；均保留，实验层不再加取反。"
+    },
+    "wheel_mapping_correction_history": [
+      {
+        "date": "2026-10-01",
+        "superseded_positions": {
+          "A": "left_front",
+          "B": "left_rear",
+          "C": "right_rear",
+          "D": "right_front"
+        },
+        "reason": "User corrected recollection and explicitly confirmed the Motor.c comment as authoritative."
+      }
+    ]
+  },
+  "operator": "现场操作者（用户，姓名未提供）",
+  "trial_id": "B_AIR_PRE050",
+  "run_id": 21,
+  "condition": "AIR",
+  "repeat_index": null,
+  "actual_plan": {
+    "trial_id": "B_AIR_PRE050",
+    "run_id": 21,
+    "condition": "AIR",
+    "step_mm_s": 50,
+    "pre_ms": 1000,
+    "hold_ms": 1000,
+    "post_ms": 3000,
+    "precheck": true
+  },
+  "baseline_git_commit": "8655eb21f9537f84b5a66effc0fdb085a4993a99",
+  "download_record": {
+    "robot_id": "B",
+    "physical_readiness": "User confirmed four wheels raised, board and motor supply on in chat.",
+    "start_local": "2026-10-01T21:16:54.072655+08:00",
+    "firmware_build_id": "WRS1-db73c13a727f9ae5",
+    "image_sha256": {
+      "MDK-ARM\\WheelResponse\\WheelResponse.hex": "1586b89b4be05fb31eddde6b8a67750428aa162400306ef2d7ff3df4cbe5c49a",
+      "MDK-ARM\\WheelResponse\\WheelResponse.axf": "6ae0a3f194d432daba9b68aa229da5307e63a27ecc9a1d6d54835b16a78be215"
+    },
+    "command": [
+      "D:\\Keil_v5\\UV4\\UV4.exe",
+      "-f",
+      "D:\\MCU\\STM32\\AgriBot-wheel-response\\MDK-ARM\\WheelResponse.uvprojx",
+      "-t",
+      "WheelResponse",
+      "-o",
+      "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\download_logs\\download_20261001_211654_072655.log",
+      "-j0",
+      "-sg"
+    ],
+    "log": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\download_logs\\download_20261001_211654_072655.log",
+    "board_identity_verified": true,
+    "exit_code": 0,
+    "keil_reported_success": true,
+    "keil_log_text": "Load \"WheelResponse\\\\WheelResponse.axf\" \nErase Done.Programming Done.Verify OK.Application running ...\nFlash Load finished at 21:16:59\n",
+    "end_local": "2026-10-01T21:17:00.032706+08:00",
+    "identity_inspection_directory": "D:\\MCU\\STM32\\AgriBot-wheel-response\\wheel_response\\evidence\\static_checks\\INSPECT_20261001_211700_368300",
+    "board_config": {
+      "firmware_build_id": "WRS1-db73c13a727f9ae5",
+      "baseline_git_commit": "8655eb21f9537f84b5a66effc0fdb085a4993a99",
+      "configuration_version": 1,
+      "kp_ABCD": [
+        800,
+        800,
+        800,
+        800
+      ],
+      "ki_ABCD": [
+        500,
+        500,
+        500,
+        500
+      ],
+      "nominal_period_us": 10000,
+      "diameter_m": 0.065,
+      "encoder_ppr": 500,
+      "encoder_quadrature": 4,
+      "motor_reduction_ratio": 30,
+      "wheel_spacing_m": 0.187,
+      "axle_spacing_m": 0.173,
+      "pwm_limit": 16700,
+      "inverse_limit_m_s": 1.0,
+      "allowed_mm_s": [
+        50,
+        100,
+        180,
+        400
+      ],
+      "heartbeat_timeout_ms": 500,
+      "time_resolution_us": 1000,
+      "exec_invalid": 65535,
+      "battery_invalid": 65535,
+      "deadline_us": 15000,
+      "fatal_dt_us": 30000,
+      "queue_depth": 32,
+      "sample_struct_bytes": 84,
+      "heap_free": 11024,
+      "control_stack_free_words": 411,
+      "uart_stack_free_words": 416,
+      "clock_hz": 168000000,
+      "fault_bits": {
+        "heartbeat": 1,
+        "abort": 2,
+        "scheduling": 4,
+        "encoder_range": 8,
+        "rx": 16,
+        "uart": 32,
+        "memory": 64,
+        "drops": 128
+      },
+      "encoder_invalid_on_range_fault": 0,
+      "early_stop": 0,
+      "parser_errors": 0
+    }
+  },
+  "board_config": {
+    "firmware_build_id": "WRS1-db73c13a727f9ae5",
+    "baseline_git_commit": "8655eb21f9537f84b5a66effc0fdb085a4993a99",
+    "configuration_version": 1,
+    "kp_ABCD": [
+      800,
+      800,
+      800,
+      800
+    ],
+    "ki_ABCD": [
+      500,
+      500,
+      500,
+      500
+    ],
+    "nominal_period_us": 10000,
+    "diameter_m": 0.065,
+    "encoder_ppr": 500,
+    "encoder_quadrature": 4,
+    "motor_reduction_ratio": 30,
+    "wheel_spacing_m": 0.187,
+    "axle_spacing_m": 0.173,
+    "pwm_limit": 16700,
+    "inverse_limit_m_s": 1.0,
+    "allowed_mm_s": [
+      50,
+      100,
+      180,
+      400
+    ],
+    "heartbeat_timeout_ms": 500,
+    "time_resolution_us": 1000,
+    "exec_invalid": 65535,
+    "battery_invalid": 65535,
+    "deadline_us": 15000,
+    "fatal_dt_us": 30000,
+    "queue_depth": 32,
+    "sample_struct_bytes": 84,
+    "heap_free": 11024,
+    "control_stack_free_words": 411,
+    "uart_stack_free_words": 416,
+    "clock_hz": 168000000,
+    "fault_bits": {
+      "heartbeat": 1,
+      "abort": 2,
+      "scheduling": 4,
+      "encoder_range": 8,
+      "rx": 16,
+      "uart": 32,
+      "memory": 64,
+      "drops": 128
+    },
+    "encoder_invalid_on_range_fault": 0,
+    "early_stop": 0,
+    "parser_errors": 0
+  },
+  "initial_state": 0,
+  "actual_order": 1,
+  "final_state": 4,
+  "human_stop": false,
+  "fault_flags": 0,
+  "end_local": "2026-10-01T21:50:45.618532+08:00",
+  "decoder_stats": {
+    "noise_bytes": 14,
+    "noise_before_first_frame": 14,
+    "frames": 6335,
+    "noise_between_frames": 0
+  },
+  "trailing_bytes": 1,
+  "samples_received": 6330,
+  "hashes": {
+    "board_config.json": "ddb341454819ee41cb90c6ea63ede8905d01ab323a0b369aeee69e04d040ba67",
+    "board_config_raw.json": "fd658ab47e8574024f37750e612903f098f47b03617111cb458db8958a7c5480",
+    "build_identity.json": "895d596a6be4857d307e69f83ecc4bef0cbf6465f1f278990e8ed6fb421e5ab6",
+    "commands.jsonl": "cdff98dca7fa62bbe4aad76f1170468ceb898e67f20db4503b3d2b62538770b1",
+    "experiment_plan.json": "071b78d6d3a6b5b68f6fc841ee09dde0fcecd08fd73748f239e2828acfe5a130",
+    "hardware_manifest.json": "72e6ccde833a0152a89b7cdfce728bd2084515d15620f13f1c11c804db48b5a7",
+    "metric_definition.json": "620fc4a4990024b94019a66b0e49bcf850a389d95861c484a1d5498446eae3c1",
+    "raw_rx.bin": "2c7fc3b18b2d917e7565218bcb3b98f2ee1989fe43e0ed8900c7dde5a4c2634b",
+    "raw_tx.bin": "8d6985c6db498f8524a1b637ea23d0ead2239b3e7c95b875db24274e44066b22",
+    "samples.csv": "55f50b943bb8d0f0f7865c76d1f24e08fe02d9d6eac9a85358df0c422ab3a627",
+    "source_identity.json": "4d3f62832ebd5d2ffec0ea9429be0f45fb0c0878debbc468080137502dafdf84"
+  },
+  "operator_observation": "User reported: did not see clearly; needs another observation.",
+  "physical_direction_verified": false,
+  "start_authorization_source": "Explicit user message in this chat: 可以开始实验了",
+  "purpose_status": "normal_rotation_not_yet_verified"
+}

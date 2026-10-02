@@ -1,0 +1,31 @@
+{
+  "counts": {
+    "A": 59997,
+    "B": 59666.0,
+    "C": 59682.0,
+    "D": 60031.0
+  },
+  "diameter_user_confirmed_m": {
+    "A": 0.065,
+    "B": 0.065,
+    "C": 0.065,
+    "D": 0.065
+  },
+  "quantization_m_s": {
+    "A": 0.00034035622194999174,
+    "B": 0.00034224436443424495,
+    "C": 0.00034215261298772923,
+    "D": 0.0003401634530214998
+  },
+  "zero_band_m_s": {
+    "A": 0.0006807124438999835,
+    "B": 0.0006844887288684899,
+    "C": 0.0006843052259754585,
+    "D": 0.0006803269060429996
+  },
+  "formal_started": true,
+  "B_capture_extra_C_movement_explained_by_operator": true,
+  "firmware_constants_changed": false,
+  "captured_local": "2026-10-02T00:06:35.735382+08:00",
+  "first_formal_trial": "B_AIR_V018_R01"
+}
